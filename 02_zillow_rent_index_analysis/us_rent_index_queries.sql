@@ -63,3 +63,23 @@ FROM crosstab(
     "2016" NUMERIC, "2017" NUMERIC, "2018" NUMERIC, "2019" NUMERIC, "2020" NUMERIC,
     "2021" NUMERIC, "2022" NUMERIC, "2023" NUMERIC, "2024" NUMERIC, "2025" NUMERIC
 );
+
+
+-- ============================================================================
+-- Q3: Top 5 States had the Highest and Lowest Rent Growth Each Year
+-- ============================================================================
+
+WITH ranked AS(
+   SELECT 
+      year,
+      state,
+      yoy_growth_pct,
+      RANK() OVER (PARTITION BY year ORDER BY yoy_growth_pct DESC) AS rank_high,
+      RANK() OVER (PARTITION BY year ORDER BY yoy_growth_pct ASC) AS rank_low
+FROM state_yoy_growth
+)
+
+SELECT *
+FROM ranked
+WHERE rank_high <= 5 OR rank_low <= 5
+ORDER BY year, rank_high, rank_low;
