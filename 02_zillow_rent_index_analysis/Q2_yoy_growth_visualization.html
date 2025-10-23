@@ -91,21 +91,52 @@
         }
         
         .positive {
-            color: #1e7e34;
             font-weight: 500;
         }
         
         .negative {
-            color: #c82333;
             font-weight: 500;
         }
         
         .neutral {
             color: #666;
+            background: #f9f9f9;
         }
         
         .empty {
             color: #ccc;
+            background: #f9f9f9;
+        }
+        
+        /* Conditional formatting - color scale */
+        .scale-high {
+            background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+            color: #1b5e20;
+        }
+        
+        .scale-med-high {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            color: #2e7d32;
+        }
+        
+        .scale-low-pos {
+            background: linear-gradient(135deg, #f1f8e9 0%, #dcedc8 100%);
+            color: #33691e;
+        }
+        
+        .scale-low-neg {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            color: #e65100;
+        }
+        
+        .scale-med-neg {
+            background: linear-gradient(135deg, #ffccbc 0%, #ffab91 100%);
+            color: #bf360c;
+        }
+        
+        .scale-high-neg {
+            background: linear-gradient(135deg, #ffab91 0%, #ff8a65 100%);
+            color: #b71c1c;
         }
         
         .legend {
@@ -157,6 +188,51 @@
             color: #333;
         }
     </style>
+    <script>
+        // Apply conditional formatting after page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const cells = document.querySelectorAll('td:not(:first-child)');
+            
+            cells.forEach(cell => {
+                const text = cell.textContent.trim();
+                
+                // Skip empty cells
+                if (text === '—') {
+                    return;
+                }
+                
+                const value = parseFloat(text);
+                
+                if (isNaN(value)) {
+                    return;
+                }
+                
+                // Apply color scale based on value
+                // High positive: >= 10%
+                // Med-high positive: 5% to 10%
+                // Low positive: 0.1% to 5%
+                // Low negative: -5% to -0.1%
+                // Med negative: -10% to -5%
+                // High negative: < -10%
+                
+                if (value >= 10) {
+                    cell.classList.add('scale-high');
+                } else if (value >= 5) {
+                    cell.classList.add('scale-med-high');
+                } else if (value > 0) {
+                    cell.classList.add('scale-low-pos');
+                } else if (value === 0) {
+                    cell.classList.add('neutral');
+                } else if (value > -5) {
+                    cell.classList.add('scale-low-neg');
+                } else if (value > -10) {
+                    cell.classList.add('scale-med-neg');
+                } else {
+                    cell.classList.add('scale-high-neg');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -181,76 +257,97 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>AK</td><td class="negative">-1.11</td><td class="negative">-1.28</td><td class="positive">0.55</td><td class="positive">1.17</td><td class="positive">2.19</td><td class="positive">9.51</td><td class="positive">9.41</td><td class="positive">6.06</td><td class="positive">3.99</td><td class="positive">7.72</td></tr>
-                    <tr><td>AL</td><td class="positive">5.01</td><td class="positive">4.01</td><td class="positive">3.33</td><td class="positive">4.35</td><td class="positive">4.37</td><td class="positive">7.43</td><td class="positive">8.85</td><td class="positive">2.32</td><td class="positive">4.61</td><td class="positive">2.91</td></tr>
-                    <tr><td>AR</td><td class="positive">2.33</td><td class="positive">2.80</td><td class="positive">2.10</td><td class="positive">2.98</td><td class="positive">3.97</td><td class="positive">9.78</td><td class="positive">9.33</td><td class="positive">3.79</td><td class="positive">0.58</td><td class="positive">1.49</td></tr>
-                    <tr><td>AZ</td><td class="positive">5.00</td><td class="positive">6.18</td><td class="positive">13.74</td><td class="positive">6.45</td><td class="positive">6.51</td><td class="positive">14.90</td><td class="positive">4.63</td><td class="positive">3.17</td><td class="positive">2.29</td><td class="positive">2.34</td></tr>
-                    <tr><td>CA</td><td class="positive">4.88</td><td class="positive">6.21</td><td class="positive">5.34</td><td class="positive">4.39</td><td class="positive">3.06</td><td class="positive">9.18</td><td class="positive">7.02</td><td class="positive">0.42</td><td class="positive">2.63</td><td class="positive">2.70</td></tr>
-                    <tr><td>CO</td><td class="positive">15.52</td><td class="positive">6.42</td><td class="positive">6.73</td><td class="positive">5.30</td><td class="positive">4.39</td><td class="positive">9.70</td><td class="positive">12.80</td><td class="positive">7.31</td><td class="positive">6.97</td><td class="positive">5.73</td></tr>
-                    <tr><td>CT</td><td class="positive">2.41</td><td class="positive">2.77</td><td class="positive">3.16</td><td class="positive">3.33</td><td class="positive">5.76</td><td class="positive">10.38</td><td class="positive">10.41</td><td class="positive">7.35</td><td class="positive">7.13</td><td class="positive">5.00</td></tr>
-                    <tr><td>DE</td><td class="positive">2.29</td><td class="positive">2.01</td><td class="positive">3.08</td><td class="positive">3.29</td><td class="positive">4.77</td><td class="positive">14.10</td><td class="positive">10.15</td><td class="positive">4.99</td><td class="positive">3.99</td><td class="positive">3.46</td></tr>
-                    <tr><td>FL</td><td class="positive">4.19</td><td class="positive">5.70</td><td class="positive">7.14</td><td class="positive">5.53</td><td class="positive">4.19</td><td class="positive">15.12</td><td class="positive">16.85</td><td class="positive">3.29</td><td class="negative">-0.24</td><td class="positive">1.33</td></tr>
-                    <tr><td>GA</td><td class="positive">1.58</td><td class="positive">0.33</td><td class="positive">4.73</td><td class="positive">5.18</td><td class="positive">5.05</td><td class="positive">12.34</td><td class="positive">13.67</td><td class="positive">5.08</td><td class="positive">3.32</td><td class="positive">0.91</td></tr>
-                    <tr><td>HI</td><td class="positive">1.95</td><td class="positive">2.08</td><td class="positive">1.79</td><td class="positive">2.39</td><td class="positive">0.71</td><td class="positive">10.33</td><td class="positive">5.44</td><td class="positive">5.57</td><td class="positive">6.41</td><td class="positive">2.35</td></tr>
-                    <tr><td>IA</td><td class="positive">6.08</td><td class="negative">-0.38</td><td class="negative">-0.02</td><td class="positive">1.90</td><td class="positive">2.15</td><td class="positive">3.78</td><td class="positive">2.11</td><td class="positive">4.72</td><td class="positive">3.36</td><td class="negative">-1.74</td></tr>
-                    <tr><td>ID</td><td class="positive">5.73</td><td class="positive">12.19</td><td class="positive">7.76</td><td class="positive">7.23</td><td class="positive">8.00</td><td class="positive">12.33</td><td class="positive">3.36</td><td class="positive">1.45</td><td class="negative">-0.01</td><td class="positive">14.08</td></tr>
-                    <tr><td>IL</td><td class="negative">-1.56</td><td class="negative">-0.99</td><td class="negative">-1.14</td><td class="positive">3.14</td><td class="positive">3.20</td><td class="positive">6.12</td><td class="positive">7.46</td><td class="positive">2.85</td><td class="positive">5.02</td><td class="negative">-1.95</td></tr>
-                    <tr><td>IN</td><td class="positive">2.98</td><td class="negative">-1.49</td><td class="positive">1.75</td><td class="positive">4.86</td><td class="positive">4.38</td><td class="positive">5.80</td><td class="positive">9.28</td><td class="positive">4.34</td><td class="positive">4.01</td><td class="positive">1.11</td></tr>
-                    <tr><td>KS</td><td class="positive">1.35</td><td class="negative">-1.00</td><td class="positive">0.07</td><td class="positive">2.49</td><td class="positive">3.28</td><td class="positive">5.35</td><td class="positive">8.98</td><td class="positive">5.21</td><td class="positive">5.19</td><td class="negative">-3.06</td></tr>
-                    <tr><td>KY</td><td class="positive">4.03</td><td class="positive">4.60</td><td class="positive">2.13</td><td class="negative">-3.04</td><td class="positive">0.91</td><td class="positive">4.50</td><td class="positive">10.90</td><td class="positive">8.05</td><td class="positive">5.34</td><td class="positive">0.58</td></tr>
-                    <tr><td>LA</td><td class="negative">-2.61</td><td class="positive">1.19</td><td class="positive">1.01</td><td class="positive">0.58</td><td class="positive">1.89</td><td class="positive">6.33</td><td class="positive">0.93</td><td class="negative">-0.13</td><td class="positive">1.92</td><td class="positive">2.63</td></tr>
-                    <tr><td>MA</td><td class="positive">3.47</td><td class="positive">3.94</td><td class="positive">4.35</td><td class="positive">3.59</td><td class="positive">3.51</td><td class="positive">2.77</td><td class="positive">10.41</td><td class="positive">7.23</td><td class="positive">5.26</td><td class="positive">4.39</td></tr>
-                    <tr><td>MD</td><td class="positive">1.58</td><td class="positive">2.25</td><td class="positive">2.53</td><td class="positive">2.82</td><td class="positive">4.13</td><td class="positive">10.12</td><td class="positive">8.27</td><td class="negative">-7.34</td><td class="positive">4.59</td><td class="positive">12.19</td></tr>
-                    <tr><td>ME</td><td class="negative">-11.57</td><td class="negative">-2.66</td><td class="positive">0.30</td><td class="positive">4.85</td><td class="positive">6.73</td><td class="positive">11.65</td><td class="positive">10.71</td><td class="positive">3.50</td><td class="positive">5.60</td><td class="positive">4.73</td></tr>
-                    <tr><td>MI</td><td class="positive">1.03</td><td class="positive">3.53</td><td class="positive">5.49</td><td class="positive">4.81</td><td class="positive">4.12</td><td class="positive">4.95</td><td class="positive">9.39</td><td class="positive">3.29</td><td class="positive">3.74</td><td class="positive">2.95</td></tr>
-                    <tr><td>MN</td><td class="neutral">0.00</td><td class="positive">3.16</td><td class="negative">-1.02</td><td class="positive">3.46</td><td class="positive">2.74</td><td class="positive">4.55</td><td class="positive">4.80</td><td class="negative">-4.29</td><td class="positive">4.63</td><td class="positive">1.84</td></tr>
-                    <tr><td>MO</td><td class="positive">2.57</td><td class="positive">3.02</td><td class="positive">0.26</td><td class="positive">3.89</td><td class="positive">4.59</td><td class="positive">6.02</td><td class="positive">4.37</td><td class="negative">-0.29</td><td class="positive">4.02</td><td class="positive">4.27</td></tr>
-                    <tr><td>MS</td><td class="positive">11.22</td><td class="positive">3.88</td><td class="positive">2.94</td><td class="positive">2.93</td><td class="positive">4.86</td><td class="positive">9.87</td><td class="positive">4.69</td><td class="positive">7.02</td><td class="positive">4.91</td><td class="positive">4.70</td></tr>
-                    <tr><td>MT</td><td class="positive">2.48</td><td class="negative">-0.45</td><td class="negative">-0.20</td><td class="positive">3.75</td><td class="positive">5.33</td><td class="positive">37.00</td><td class="positive">23.17</td><td class="negative">-0.01</td><td class="positive">2.67</td><td class="positive">2.68</td></tr>
-                    <tr><td>NC</td><td class="positive">1.84</td><td class="positive">3.70</td><td class="positive">4.49</td><td class="positive">5.26</td><td class="positive">4.64</td><td class="positive">10.52</td><td class="positive">11.83</td><td class="positive">2.43</td><td class="positive">2.67</td><td class="positive">0.81</td></tr>
-                    <tr><td>ND</td><td class="empty">—</td><td class="positive">5.53</td><td class="positive">3.62</td><td class="positive">2.09</td><td class="positive">0.60</td><td class="negative">-3.69</td><td class="positive">5.25</td><td class="positive">9.79</td><td class="positive">5.94</td><td class="positive">1.62</td></tr>
-                    <tr><td>NE</td><td class="negative">-0.90</td><td class="positive">3.20</td><td class="positive">3.33</td><td class="positive">3.06</td><td class="positive">3.95</td><td class="positive">4.76</td><td class="negative">-2.59</td><td class="positive">6.82</td><td class="positive">10.34</td><td class="positive">3.64</td></tr>
-                    <tr><td>NH</td><td class="negative">-1.66</td><td class="positive">4.92</td><td class="positive">5.34</td><td class="positive">5.21</td><td class="positive">6.92</td><td class="positive">10.49</td><td class="positive">9.61</td><td class="positive">7.02</td><td class="positive">5.69</td><td class="positive">4.31</td></tr>
-                    <tr><td>NJ</td><td class="positive">2.49</td><td class="positive">2.27</td><td class="positive">3.36</td><td class="positive">2.91</td><td class="positive">4.36</td><td class="positive">11.01</td><td class="positive">14.40</td><td class="positive">5.09</td><td class="positive">0.60</td><td class="positive">1.47</td></tr>
-                    <tr><td>NM</td><td class="positive">8.96</td><td class="positive">5.92</td><td class="positive">4.58</td><td class="positive">6.66</td><td class="positive">4.89</td><td class="positive">11.81</td><td class="positive">3.58</td><td class="negative">-1.32</td><td class="positive">17.67</td><td class="positive">7.84</td></tr>
-                    <tr><td>NV</td><td class="positive">6.24</td><td class="positive">7.90</td><td class="positive">8.95</td><td class="positive">6.15</td><td class="positive">4.30</td><td class="positive">10.82</td><td class="positive">7.43</td><td class="positive">5.14</td><td class="positive">1.67</td><td class="negative">-0.03</td></tr>
-                    <tr><td>NY</td><td class="negative">-2.76</td><td class="positive">2.92</td><td class="positive">0.15</td><td class="positive">6.10</td><td class="positive">2.88</td><td class="positive">7.38</td><td class="positive">9.67</td><td class="positive">2.77</td><td class="positive">0.87</td><td class="negative">-3.21</td></tr>
-                    <tr><td>OH</td><td class="positive">2.52</td><td class="positive">2.69</td><td class="positive">2.78</td><td class="positive">3.39</td><td class="positive">4.51</td><td class="positive">7.87</td><td class="positive">6.60</td><td class="positive">2.36</td><td class="positive">4.59</td><td class="positive">4.26</td></tr>
-                    <tr><td>OK</td><td class="positive">0.86</td><td class="positive">1.19</td><td class="positive">2.17</td><td class="positive">2.75</td><td class="positive">4.84</td><td class="positive">10.08</td><td class="positive">5.69</td><td class="negative">-1.93</td><td class="positive">7.02</td><td class="positive">1.46</td></tr>
-                    <tr><td>OR</td><td class="positive">8.15</td><td class="positive">6.30</td><td class="positive">4.51</td><td class="positive">4.68</td><td class="positive">4.57</td><td class="positive">8.99</td><td class="positive">8.18</td><td class="negative">-2.28</td><td class="positive">2.49</td><td class="positive">2.04</td></tr>
-                    <tr><td>PA</td><td class="positive">0.87</td><td class="positive">2.25</td><td class="positive">1.19</td><td class="positive">5.69</td><td class="positive">4.73</td><td class="positive">7.82</td><td class="positive">7.80</td><td class="positive">0.11</td><td class="positive">1.83</td><td class="positive">2.17</td></tr>
-                    <tr><td>RI</td><td class="positive">5.12</td><td class="positive">5.09</td><td class="positive">5.88</td><td class="positive">5.18</td><td class="positive">5.55</td><td class="positive">11.09</td><td class="positive">11.73</td><td class="positive">7.34</td><td class="positive">6.40</td><td class="positive">5.00</td></tr>
-                    <tr><td>SC</td><td class="positive">1.38</td><td class="positive">4.44</td><td class="positive">4.49</td><td class="positive">1.53</td><td class="positive">3.14</td><td class="positive">10.54</td><td class="positive">13.39</td><td class="positive">4.19</td><td class="negative">-2.59</td><td class="positive">3.89</td></tr>
-                    <tr><td>SD</td><td class="empty">—</td><td class="positive">3.84</td><td class="positive">2.84</td><td class="positive">1.67</td><td class="positive">3.44</td><td class="positive">9.47</td><td class="positive">12.83</td><td class="negative">-1.87</td><td class="positive">4.50</td><td class="positive">2.77</td></tr>
-                    <tr><td>TN</td><td class="positive">1.19</td><td class="positive">2.53</td><td class="positive">3.92</td><td class="positive">4.81</td><td class="positive">5.12</td><td class="positive">10.16</td><td class="positive">8.13</td><td class="positive">4.95</td><td class="positive">3.05</td><td class="positive">3.44</td></tr>
-                    <tr><td>TX</td><td class="positive">2.40</td><td class="positive">2.85</td><td class="positive">5.14</td><td class="positive">3.60</td><td class="positive">1.27</td><td class="positive">6.62</td><td class="positive">8.67</td><td class="positive">3.14</td><td class="positive">0.72</td><td class="positive">2.31</td></tr>
-                    <tr><td>UT</td><td class="positive">5.88</td><td class="positive">6.44</td><td class="positive">5.95</td><td class="positive">19.92</td><td class="positive">6.01</td><td class="positive">15.21</td><td class="positive">3.11</td><td class="positive">1.39</td><td class="positive">1.98</td><td class="negative">-1.42</td></tr>
-                    <tr><td>VA</td><td class="positive">2.75</td><td class="positive">3.42</td><td class="positive">0.62</td><td class="positive">2.93</td><td class="positive">4.20</td><td class="positive">8.06</td><td class="positive">10.84</td><td class="positive">1.57</td><td class="positive">0.75</td><td class="positive">3.25</td></tr>
-                    <tr><td>VT</td><td class="empty">—</td><td class="positive">4.37</td><td class="positive">3.38</td><td class="positive">2.38</td><td class="positive">2.95</td><td class="positive">6.70</td><td class="positive">11.65</td><td class="positive">7.55</td><td class="negative">-11.99</td><td class="negative">-14.37</td></tr>
-                    <tr><td>WA</td><td class="positive">4.50</td><td class="positive">8.09</td><td class="positive">6.83</td><td class="positive">5.54</td><td class="positive">5.16</td><td class="positive">10.75</td><td class="positive">0.50</td><td class="positive">1.36</td><td class="positive">3.56</td><td class="positive">3.00</td></tr>
-                    <tr><td>WI</td><td class="positive">0.59</td><td class="negative">-8.63</td><td class="positive">2.33</td><td class="positive">1.47</td><td class="positive">4.54</td><td class="positive">1.70</td><td class="positive">0.31</td><td class="positive">5.89</td><td class="positive">3.27</td><td class="positive">3.14</td></tr>
-                    <tr><td>WV</td><td class="empty">—</td><td class="negative">-7.09</td><td class="positive">2.28</td><td class="positive">0.90</td><td class="positive">2.90</td><td class="positive">0.86</td><td class="positive">2.28</td><td class="negative">-1.05</td><td class="positive">0.73</td><td class="positive">5.37</td></tr>
-                    <tr><td>WY</td><td class="positive">5.41</td><td class="negative">-1.83</td><td class="positive">1.69</td><td class="positive">4.83</td><td class="neutral">0.00</td><td class="positive">3.31</td><td class="positive">8.30</td><td class="positive">7.68</td><td class="positive">23.84</td><td class="positive">7.42</td></tr>
+                    <tr><td>AK</td><td>-1.11</td><td>-1.28</td><td>0.55</td><td>1.17</td><td>2.19</td><td>9.51</td><td>9.41</td><td>6.06</td><td>3.99</td><td>7.72</td></tr>
+                    <tr><td>AL</td><td>5.01</td><td>4.01</td><td>3.33</td><td>4.35</td><td>4.37</td><td>7.43</td><td>8.85</td><td>2.32</td><td>4.61</td><td>2.91</td></tr>
+                    <tr><td>AR</td><td>2.33</td><td>2.80</td><td>2.10</td><td>2.98</td><td>3.97</td><td>9.78</td><td>9.33</td><td>3.79</td><td>0.58</td><td>1.49</td></tr>
+                    <tr><td>AZ</td><td>5.00</td><td>6.18</td><td>13.74</td><td>6.45</td><td>6.51</td><td>14.90</td><td>4.63</td><td>3.17</td><td>2.29</td><td>2.34</td></tr>
+                    <tr><td>CA</td><td>4.88</td><td>6.21</td><td>5.34</td><td>4.39</td><td>3.06</td><td>9.18</td><td>7.02</td><td>0.42</td><td>2.63</td><td>2.70</td></tr>
+                    <tr><td>CO</td><td>15.52</td><td>6.42</td><td>6.73</td><td>5.30</td><td>4.39</td><td>9.70</td><td>12.80</td><td>7.31</td><td>6.97</td><td>5.73</td></tr>
+                    <tr><td>CT</td><td>2.41</td><td>2.77</td><td>3.16</td><td>3.33</td><td>5.76</td><td>10.38</td><td>10.41</td><td>7.35</td><td>7.13</td><td>5.00</td></tr>
+                    <tr><td>DE</td><td>2.29</td><td>2.01</td><td>3.08</td><td>3.29</td><td>4.77</td><td>14.10</td><td>10.15</td><td>4.99</td><td>3.99</td><td>3.46</td></tr>
+                    <tr><td>FL</td><td>4.19</td><td>5.70</td><td>7.14</td><td>5.53</td><td>4.19</td><td>15.12</td><td>16.85</td><td>3.29</td><td>-0.24</td><td>1.33</td></tr>
+                    <tr><td>GA</td><td>1.58</td><td>0.33</td><td>4.73</td><td>5.18</td><td>5.05</td><td>12.34</td><td>13.67</td><td>5.08</td><td>3.32</td><td>0.91</td></tr>
+                    <tr><td>HI</td><td>1.95</td><td>2.08</td><td>1.79</td><td>2.39</td><td>0.71</td><td>10.33</td><td>5.44</td><td>5.57</td><td>6.41</td><td>2.35</td></tr>
+                    <tr><td>IA</td><td>6.08</td><td>-0.38</td><td>-0.02</td><td>1.90</td><td>2.15</td><td>3.78</td><td>2.11</td><td>4.72</td><td>3.36</td><td>-1.74</td></tr>
+                    <tr><td>ID</td><td>5.73</td><td>12.19</td><td>7.76</td><td>7.23</td><td>8.00</td><td>12.33</td><td>3.36</td><td>1.45</td><td>-0.01</td><td>14.08</td></tr>
+                    <tr><td>IL</td><td>-1.56</td><td>-0.99</td><td>-1.14</td><td>3.14</td><td>3.20</td><td>6.12</td><td>7.46</td><td>2.85</td><td>5.02</td><td>-1.95</td></tr>
+                    <tr><td>IN</td><td>2.98</td><td>-1.49</td><td>1.75</td><td>4.86</td><td>4.38</td><td>5.80</td><td>9.28</td><td>4.34</td><td>4.01</td><td>1.11</td></tr>
+                    <tr><td>KS</td><td>1.35</td><td>-1.00</td><td>0.07</td><td>2.49</td><td>3.28</td><td>5.35</td><td>8.98</td><td>5.21</td><td>5.19</td><td>-3.06</td></tr>
+                    <tr><td>KY</td><td>4.03</td><td>4.60</td><td>2.13</td><td>-3.04</td><td>0.91</td><td>4.50</td><td>10.90</td><td>8.05</td><td>5.34</td><td>0.58</td></tr>
+                    <tr><td>LA</td><td>-2.61</td><td>1.19</td><td>1.01</td><td>0.58</td><td>1.89</td><td>6.33</td><td>0.93</td><td>-0.13</td><td>1.92</td><td>2.63</td></tr>
+                    <tr><td>MA</td><td>3.47</td><td>3.94</td><td>4.35</td><td>3.59</td><td>3.51</td><td>2.77</td><td>10.41</td><td>7.23</td><td>5.26</td><td>4.39</td></tr>
+                    <tr><td>MD</td><td>1.58</td><td>2.25</td><td>2.53</td><td>2.82</td><td>4.13</td><td>10.12</td><td>8.27</td><td>-7.34</td><td>4.59</td><td>12.19</td></tr>
+                    <tr><td>ME</td><td>-11.57</td><td>-2.66</td><td>0.30</td><td>4.85</td><td>6.73</td><td>11.65</td><td>10.71</td><td>3.50</td><td>5.60</td><td>4.73</td></tr>
+                    <tr><td>MI</td><td>1.03</td><td>3.53</td><td>5.49</td><td>4.81</td><td>4.12</td><td>4.95</td><td>9.39</td><td>3.29</td><td>3.74</td><td>2.95</td></tr>
+                    <tr><td>MN</td><td>0.00</td><td>3.16</td><td>-1.02</td><td>3.46</td><td>2.74</td><td>4.55</td><td>4.80</td><td>-4.29</td><td>4.63</td><td>1.84</td></tr>
+                    <tr><td>MO</td><td>2.57</td><td>3.02</td><td>0.26</td><td>3.89</td><td>4.59</td><td>6.02</td><td>4.37</td><td>-0.29</td><td>4.02</td><td>4.27</td></tr>
+                    <tr><td>MS</td><td>11.22</td><td>3.88</td><td>2.94</td><td>2.93</td><td>4.86</td><td>9.87</td><td>4.69</td><td>7.02</td><td>4.91</td><td>4.70</td></tr>
+                    <tr><td>MT</td><td>2.48</td><td>-0.45</td><td>-0.20</td><td>3.75</td><td>5.33</td><td>37.00</td><td>23.17</td><td>-0.01</td><td>2.67</td><td>2.68</td></tr>
+                    <tr><td>NC</td><td>1.84</td><td>3.70</td><td>4.49</td><td>5.26</td><td>4.64</td><td>10.52</td><td>11.83</td><td>2.43</td><td>2.67</td><td>0.81</td></tr>
+                    <tr><td>ND</td><td>—</td><td>5.53</td><td>3.62</td><td>2.09</td><td>0.60</td><td>-3.69</td><td>5.25</td><td>9.79</td><td>5.94</td><td>1.62</td></tr>
+                    <tr><td>NE</td><td>-0.90</td><td>3.20</td><td>3.33</td><td>3.06</td><td>3.95</td><td>4.76</td><td>-2.59</td><td>6.82</td><td>10.34</td><td>3.64</td></tr>
+                    <tr><td>NH</td><td>-1.66</td><td>4.92</td><td>5.34</td><td>5.21</td><td>6.92</td><td>10.49</td><td>9.61</td><td>7.02</td><td>5.69</td><td>4.31</td></tr>
+                    <tr><td>NJ</td><td>2.49</td><td>2.27</td><td>3.36</td><td>2.91</td><td>4.36</td><td>11.01</td><td>14.40</td><td>5.09</td><td>0.60</td><td>1.47</td></tr>
+                    <tr><td>NM</td><td>8.96</td><td>5.92</td><td>4.58</td><td>6.66</td><td>4.89</td><td>11.81</td><td>3.58</td><td>-1.32</td><td>17.67</td><td>7.84</td></tr>
+                    <tr><td>NV</td><td>6.24</td><td>7.90</td><td>8.95</td><td>6.15</td><td>4.30</td><td>10.82</td><td>7.43</td><td>5.14</td><td>1.67</td><td>-0.03</td></tr>
+                    <tr><td>NY</td><td>-2.76</td><td>2.92</td><td>0.15</td><td>6.10</td><td>2.88</td><td>7.38</td><td>9.67</td><td>2.77</td><td>0.87</td><td>-3.21</td></tr>
+                    <tr><td>OH</td><td>2.52</td><td>2.69</td><td>2.78</td><td>3.39</td><td>4.51</td><td>7.87</td><td>6.60</td><td>2.36</td><td>4.59</td><td>4.26</td></tr>
+                    <tr><td>OK</td><td>0.86</td><td>1.19</td><td>2.17</td><td>2.75</td><td>4.84</td><td>10.08</td><td>5.69</td><td>-1.93</td><td>7.02</td><td>1.46</td></tr>
+                    <tr><td>OR</td><td>8.15</td><td>6.30</td><td>4.51</td><td>4.68</td><td>4.57</td><td>8.99</td><td>8.18</td><td>-2.28</td><td>2.49</td><td>2.04</td></tr>
+                    <tr><td>PA</td><td>0.87</td><td>2.25</td><td>1.19</td><td>5.69</td><td>4.73</td><td>7.82</td><td>7.80</td><td>0.11</td><td>1.83</td><td>2.17</td></tr>
+                    <tr><td>RI</td><td>5.12</td><td>5.09</td><td>5.88</td><td>5.18</td><td>5.55</td><td>11.09</td><td>11.73</td><td>7.34</td><td>6.40</td><td>5.00</td></tr>
+                    <tr><td>SC</td><td>1.38</td><td>4.44</td><td>4.49</td><td>1.53</td><td>3.14</td><td>10.54</td><td>13.39</td><td>4.19</td><td>-2.59</td><td>3.89</td></tr>
+                    <tr><td>SD</td><td>—</td><td>3.84</td><td>2.84</td><td>1.67</td><td>3.44</td><td>9.47</td><td>12.83</td><td>-1.87</td><td>4.50</td><td>2.77</td></tr>
+                    <tr><td>TN</td><td>1.19</td><td>2.53</td><td>3.92</td><td>4.81</td><td>5.12</td><td>10.16</td><td>8.13</td><td>4.95</td><td>3.05</td><td>3.44</td></tr>
+                    <tr><td>TX</td><td>2.40</td><td>2.85</td><td>5.14</td><td>3.60</td><td>1.27</td><td>6.62</td><td>8.67</td><td>3.14</td><td>0.72</td><td>2.31</td></tr>
+                    <tr><td>UT</td><td>5.88</td><td>6.44</td><td>5.95</td><td>19.92</td><td>6.01</td><td>15.21</td><td>3.11</td><td>1.39</td><td>1.98</td><td>-1.42</td></tr>
+                    <tr><td>VA</td><td>2.75</td><td>3.42</td><td>0.62</td><td>2.93</td><td>4.20</td><td>8.06</td><td>10.84</td><td>1.57</td><td>0.75</td><td>3.25</td></tr>
+                    <tr><td>VT</td><td>—</td><td>4.37</td><td>3.38</td><td>2.38</td><td>2.95</td><td>6.70</td><td>11.65</td><td>7.55</td><td>-11.99</td><td>-14.37</td></tr>
+                    <tr><td>WA</td><td>4.50</td><td>8.09</td><td>6.83</td><td>5.54</td><td>5.16</td><td>10.75</td><td>0.50</td><td>1.36</td><td>3.56</td><td>3.00</td></tr>
+                    <tr><td>WI</td><td>0.59</td><td>-8.63</td><td>2.33</td><td>1.47</td><td>4.54</td><td>1.70</td><td>0.31</td><td>5.89</td><td>3.27</td><td>3.14</td></tr>
+                    <tr><td>WV</td><td>—</td><td>-7.09</td><td>2.28</td><td>0.90</td><td>2.90</td><td>0.86</td><td>2.28</td><td>-1.05</td><td>0.73</td><td>5.37</td></tr>
+                    <tr><td>WY</td><td>5.41</td><td>-1.83</td><td>1.69</td><td>4.83</td><td>0.00</td><td>3.31</td><td>8.30</td><td>7.68</td><td>23.84</td><td>7.42</td></tr>
                 </tbody>
             </table>
         </div>
         
         <div class="legend">
-            <div class="legend-item">
-                <span class="legend-color" style="background: #1e7e34;"></span>
-                <span>Positive Growth</span>
+            <h3 style="margin-bottom: 10px; font-size: 14px; color: #333;">Conditional Formatting Legend (Excel-style Color Scale)</h3>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px;">
+                <div class="legend-item">
+                    <span class="legend-color" style="background: linear-gradient(135deg, #c8e6c9, #a5d6a7);"></span>
+                    <span><strong>≥10%</strong> (High Growth)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9);"></span>
+                    <span><strong>5-10%</strong> (Med-High)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: linear-gradient(135deg, #f1f8e9, #dcedc8);"></span>
+                    <span><strong>0-5%</strong> (Low Growth)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #f9f9f9;"></span>
+                    <span><strong>0%</strong> (No Change)</span>
+                </div>
             </div>
-            <div class="legend-item">
-                <span class="legend-color" style="background: #c82333;"></span>
-                <span>Negative Growth</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-color" style="background: #666;"></span>
-                <span>Zero Growth</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-color" style="background: #ccc;"></span>
-                <span>No Data</span>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <div class="legend-item">
+                    <span class="legend-color" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2);"></span>
+                    <span><strong>0 to -5%</strong> (Low Decline)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: linear-gradient(135deg, #ffccbc, #ffab91);"></span>
+                    <span><strong>-5 to -10%</strong> (Med Decline)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: linear-gradient(135deg, #ffab91, #ff8a65);"></span>
+                    <span><strong>&lt;-10%</strong> (High Decline)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #f9f9f9; border: 1px solid #ddd;"></span>
+                    <span><strong>—</strong> (No Data)</span>
+                </div>
             </div>
         </div>
         
