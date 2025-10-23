@@ -1,0 +1,11 @@
+# Exclude raw data folders
+Home_Value _Forecast/
+Home_Value_Index/
+Rent_Index/
+
+# macOS
+.DS_Store
+
+# Temporary files
+~$*
+
