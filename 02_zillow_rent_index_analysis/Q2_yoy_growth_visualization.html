@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2: Year-over-Year Rent Growth by State (2016-2025)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        th {
+            background: #4a90e2;
+            color: white;
+            font-weight: 600;
+            padding: 12px 8px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        th:first-child {
+            text-align: left;
+            padding-left: 15px;
+        }
+        
+        td {
+            padding: 10px 8px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        
+        td:first-child {
+            font-weight: 600;
+            text-align: left;
+            padding-left: 15px;
+            background: #f9f9f9;
+            position: sticky;
+            left: 0;
+            z-index: 5;
+        }
+        
+        tr:hover td {
+            background: #f0f7ff;
+        }
+        
+        tr:hover td:first-child {
+            background: #e3f2fd;
+        }
+        
+        .positive {
+            color: #1e7e34;
+            font-weight: 500;
+        }
+        
+        .negative {
+            color: #c82333;
+            font-weight: 500;
+        }
+        
+        .neutral {
+            color: #666;
+        }
+        
+        .empty {
+            color: #ccc;
+        }
+        
+        .legend {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .legend-color {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            border-radius: 2px;
+        }
+        
+        .stats {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-box {
+            flex: 1;
+            min-width: 200px;
+            padding: 15px;
+            background: #f0f7ff;
+            border-radius: 5px;
+            border-left: 4px solid #4a90e2;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .stat-value {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Q2: Year-over-Year (YoY) Rent Growth by State</h1>
+        <p class="subtitle">Growth percentages from 2016 to 2025 | Data Source: Zillow Rent Index</p>
+        
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                        <th>2018</th>
+                        <th>2019</th>
+                        <th>2020</th>
+                        <th>2021</th>
+                        <th>2022</th>
+                        <th>2023</th>
+                        <th>2024</th>
+                        <th>2025</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>AK</td><td class="negative">-1.11</td><td class="negative">-1.28</td><td class="positive">0.55</td><td class="positive">1.17</td><td class="positive">2.19</td><td class="positive">9.51</td><td class="positive">9.41</td><td class="positive">6.06</td><td class="positive">3.99</td><td class="positive">7.72</td></tr>
+                    <tr><td>AL</td><td class="positive">5.01</td><td class="positive">4.01</td><td class="positive">3.33</td><td class="positive">4.35</td><td class="positive">4.37</td><td class="positive">7.43</td><td class="positive">8.85</td><td class="positive">2.32</td><td class="positive">4.61</td><td class="positive">2.91</td></tr>
+                    <tr><td>AR</td><td class="positive">2.33</td><td class="positive">2.80</td><td class="positive">2.10</td><td class="positive">2.98</td><td class="positive">3.97</td><td class="positive">9.78</td><td class="positive">9.33</td><td class="positive">3.79</td><td class="positive">0.58</td><td class="positive">1.49</td></tr>
+                    <tr><td>AZ</td><td class="positive">5.00</td><td class="positive">6.18</td><td class="positive">13.74</td><td class="positive">6.45</td><td class="positive">6.51</td><td class="positive">14.90</td><td class="positive">4.63</td><td class="positive">3.17</td><td class="positive">2.29</td><td class="positive">2.34</td></tr>
+                    <tr><td>CA</td><td class="positive">4.88</td><td class="positive">6.21</td><td class="positive">5.34</td><td class="positive">4.39</td><td class="positive">3.06</td><td class="positive">9.18</td><td class="positive">7.02</td><td class="positive">0.42</td><td class="positive">2.63</td><td class="positive">2.70</td></tr>
+                    <tr><td>CO</td><td class="positive">15.52</td><td class="positive">6.42</td><td class="positive">6.73</td><td class="positive">5.30</td><td class="positive">4.39</td><td class="positive">9.70</td><td class="positive">12.80</td><td class="positive">7.31</td><td class="positive">6.97</td><td class="positive">5.73</td></tr>
+                    <tr><td>CT</td><td class="positive">2.41</td><td class="positive">2.77</td><td class="positive">3.16</td><td class="positive">3.33</td><td class="positive">5.76</td><td class="positive">10.38</td><td class="positive">10.41</td><td class="positive">7.35</td><td class="positive">7.13</td><td class="positive">5.00</td></tr>
+                    <tr><td>DE</td><td class="positive">2.29</td><td class="positive">2.01</td><td class="positive">3.08</td><td class="positive">3.29</td><td class="positive">4.77</td><td class="positive">14.10</td><td class="positive">10.15</td><td class="positive">4.99</td><td class="positive">3.99</td><td class="positive">3.46</td></tr>
+                    <tr><td>FL</td><td class="positive">4.19</td><td class="positive">5.70</td><td class="positive">7.14</td><td class="positive">5.53</td><td class="positive">4.19</td><td class="positive">15.12</td><td class="positive">16.85</td><td class="positive">3.29</td><td class="negative">-0.24</td><td class="positive">1.33</td></tr>
+                    <tr><td>GA</td><td class="positive">1.58</td><td class="positive">0.33</td><td class="positive">4.73</td><td class="positive">5.18</td><td class="positive">5.05</td><td class="positive">12.34</td><td class="positive">13.67</td><td class="positive">5.08</td><td class="positive">3.32</td><td class="positive">0.91</td></tr>
+                    <tr><td>HI</td><td class="positive">1.95</td><td class="positive">2.08</td><td class="positive">1.79</td><td class="positive">2.39</td><td class="positive">0.71</td><td class="positive">10.33</td><td class="positive">5.44</td><td class="positive">5.57</td><td class="positive">6.41</td><td class="positive">2.35</td></tr>
+                    <tr><td>IA</td><td class="positive">6.08</td><td class="negative">-0.38</td><td class="negative">-0.02</td><td class="positive">1.90</td><td class="positive">2.15</td><td class="positive">3.78</td><td class="positive">2.11</td><td class="positive">4.72</td><td class="positive">3.36</td><td class="negative">-1.74</td></tr>
+                    <tr><td>ID</td><td class="positive">5.73</td><td class="positive">12.19</td><td class="positive">7.76</td><td class="positive">7.23</td><td class="positive">8.00</td><td class="positive">12.33</td><td class="positive">3.36</td><td class="positive">1.45</td><td class="negative">-0.01</td><td class="positive">14.08</td></tr>
+                    <tr><td>IL</td><td class="negative">-1.56</td><td class="negative">-0.99</td><td class="negative">-1.14</td><td class="positive">3.14</td><td class="positive">3.20</td><td class="positive">6.12</td><td class="positive">7.46</td><td class="positive">2.85</td><td class="positive">5.02</td><td class="negative">-1.95</td></tr>
+                    <tr><td>IN</td><td class="positive">2.98</td><td class="negative">-1.49</td><td class="positive">1.75</td><td class="positive">4.86</td><td class="positive">4.38</td><td class="positive">5.80</td><td class="positive">9.28</td><td class="positive">4.34</td><td class="positive">4.01</td><td class="positive">1.11</td></tr>
+                    <tr><td>KS</td><td class="positive">1.35</td><td class="negative">-1.00</td><td class="positive">0.07</td><td class="positive">2.49</td><td class="positive">3.28</td><td class="positive">5.35</td><td class="positive">8.98</td><td class="positive">5.21</td><td class="positive">5.19</td><td class="negative">-3.06</td></tr>
+                    <tr><td>KY</td><td class="positive">4.03</td><td class="positive">4.60</td><td class="positive">2.13</td><td class="negative">-3.04</td><td class="positive">0.91</td><td class="positive">4.50</td><td class="positive">10.90</td><td class="positive">8.05</td><td class="positive">5.34</td><td class="positive">0.58</td></tr>
+                    <tr><td>LA</td><td class="negative">-2.61</td><td class="positive">1.19</td><td class="positive">1.01</td><td class="positive">0.58</td><td class="positive">1.89</td><td class="positive">6.33</td><td class="positive">0.93</td><td class="negative">-0.13</td><td class="positive">1.92</td><td class="positive">2.63</td></tr>
+                    <tr><td>MA</td><td class="positive">3.47</td><td class="positive">3.94</td><td class="positive">4.35</td><td class="positive">3.59</td><td class="positive">3.51</td><td class="positive">2.77</td><td class="positive">10.41</td><td class="positive">7.23</td><td class="positive">5.26</td><td class="positive">4.39</td></tr>
+                    <tr><td>MD</td><td class="positive">1.58</td><td class="positive">2.25</td><td class="positive">2.53</td><td class="positive">2.82</td><td class="positive">4.13</td><td class="positive">10.12</td><td class="positive">8.27</td><td class="negative">-7.34</td><td class="positive">4.59</td><td class="positive">12.19</td></tr>
+                    <tr><td>ME</td><td class="negative">-11.57</td><td class="negative">-2.66</td><td class="positive">0.30</td><td class="positive">4.85</td><td class="positive">6.73</td><td class="positive">11.65</td><td class="positive">10.71</td><td class="positive">3.50</td><td class="positive">5.60</td><td class="positive">4.73</td></tr>
+                    <tr><td>MI</td><td class="positive">1.03</td><td class="positive">3.53</td><td class="positive">5.49</td><td class="positive">4.81</td><td class="positive">4.12</td><td class="positive">4.95</td><td class="positive">9.39</td><td class="positive">3.29</td><td class="positive">3.74</td><td class="positive">2.95</td></tr>
+                    <tr><td>MN</td><td class="neutral">0.00</td><td class="positive">3.16</td><td class="negative">-1.02</td><td class="positive">3.46</td><td class="positive">2.74</td><td class="positive">4.55</td><td class="positive">4.80</td><td class="negative">-4.29</td><td class="positive">4.63</td><td class="positive">1.84</td></tr>
+                    <tr><td>MO</td><td class="positive">2.57</td><td class="positive">3.02</td><td class="positive">0.26</td><td class="positive">3.89</td><td class="positive">4.59</td><td class="positive">6.02</td><td class="positive">4.37</td><td class="negative">-0.29</td><td class="positive">4.02</td><td class="positive">4.27</td></tr>
+                    <tr><td>MS</td><td class="positive">11.22</td><td class="positive">3.88</td><td class="positive">2.94</td><td class="positive">2.93</td><td class="positive">4.86</td><td class="positive">9.87</td><td class="positive">4.69</td><td class="positive">7.02</td><td class="positive">4.91</td><td class="positive">4.70</td></tr>
+                    <tr><td>MT</td><td class="positive">2.48</td><td class="negative">-0.45</td><td class="negative">-0.20</td><td class="positive">3.75</td><td class="positive">5.33</td><td class="positive">37.00</td><td class="positive">23.17</td><td class="negative">-0.01</td><td class="positive">2.67</td><td class="positive">2.68</td></tr>
+                    <tr><td>NC</td><td class="positive">1.84</td><td class="positive">3.70</td><td class="positive">4.49</td><td class="positive">5.26</td><td class="positive">4.64</td><td class="positive">10.52</td><td class="positive">11.83</td><td class="positive">2.43</td><td class="positive">2.67</td><td class="positive">0.81</td></tr>
+                    <tr><td>ND</td><td class="empty">—</td><td class="positive">5.53</td><td class="positive">3.62</td><td class="positive">2.09</td><td class="positive">0.60</td><td class="negative">-3.69</td><td class="positive">5.25</td><td class="positive">9.79</td><td class="positive">5.94</td><td class="positive">1.62</td></tr>
+                    <tr><td>NE</td><td class="negative">-0.90</td><td class="positive">3.20</td><td class="positive">3.33</td><td class="positive">3.06</td><td class="positive">3.95</td><td class="positive">4.76</td><td class="negative">-2.59</td><td class="positive">6.82</td><td class="positive">10.34</td><td class="positive">3.64</td></tr>
+                    <tr><td>NH</td><td class="negative">-1.66</td><td class="positive">4.92</td><td class="positive">5.34</td><td class="positive">5.21</td><td class="positive">6.92</td><td class="positive">10.49</td><td class="positive">9.61</td><td class="positive">7.02</td><td class="positive">5.69</td><td class="positive">4.31</td></tr>
+                    <tr><td>NJ</td><td class="positive">2.49</td><td class="positive">2.27</td><td class="positive">3.36</td><td class="positive">2.91</td><td class="positive">4.36</td><td class="positive">11.01</td><td class="positive">14.40</td><td class="positive">5.09</td><td class="positive">0.60</td><td class="positive">1.47</td></tr>
+                    <tr><td>NM</td><td class="positive">8.96</td><td class="positive">5.92</td><td class="positive">4.58</td><td class="positive">6.66</td><td class="positive">4.89</td><td class="positive">11.81</td><td class="positive">3.58</td><td class="negative">-1.32</td><td class="positive">17.67</td><td class="positive">7.84</td></tr>
+                    <tr><td>NV</td><td class="positive">6.24</td><td class="positive">7.90</td><td class="positive">8.95</td><td class="positive">6.15</td><td class="positive">4.30</td><td class="positive">10.82</td><td class="positive">7.43</td><td class="positive">5.14</td><td class="positive">1.67</td><td class="negative">-0.03</td></tr>
+                    <tr><td>NY</td><td class="negative">-2.76</td><td class="positive">2.92</td><td class="positive">0.15</td><td class="positive">6.10</td><td class="positive">2.88</td><td class="positive">7.38</td><td class="positive">9.67</td><td class="positive">2.77</td><td class="positive">0.87</td><td class="negative">-3.21</td></tr>
+                    <tr><td>OH</td><td class="positive">2.52</td><td class="positive">2.69</td><td class="positive">2.78</td><td class="positive">3.39</td><td class="positive">4.51</td><td class="positive">7.87</td><td class="positive">6.60</td><td class="positive">2.36</td><td class="positive">4.59</td><td class="positive">4.26</td></tr>
+                    <tr><td>OK</td><td class="positive">0.86</td><td class="positive">1.19</td><td class="positive">2.17</td><td class="positive">2.75</td><td class="positive">4.84</td><td class="positive">10.08</td><td class="positive">5.69</td><td class="negative">-1.93</td><td class="positive">7.02</td><td class="positive">1.46</td></tr>
+                    <tr><td>OR</td><td class="positive">8.15</td><td class="positive">6.30</td><td class="positive">4.51</td><td class="positive">4.68</td><td class="positive">4.57</td><td class="positive">8.99</td><td class="positive">8.18</td><td class="negative">-2.28</td><td class="positive">2.49</td><td class="positive">2.04</td></tr>
+                    <tr><td>PA</td><td class="positive">0.87</td><td class="positive">2.25</td><td class="positive">1.19</td><td class="positive">5.69</td><td class="positive">4.73</td><td class="positive">7.82</td><td class="positive">7.80</td><td class="positive">0.11</td><td class="positive">1.83</td><td class="positive">2.17</td></tr>
+                    <tr><td>RI</td><td class="positive">5.12</td><td class="positive">5.09</td><td class="positive">5.88</td><td class="positive">5.18</td><td class="positive">5.55</td><td class="positive">11.09</td><td class="positive">11.73</td><td class="positive">7.34</td><td class="positive">6.40</td><td class="positive">5.00</td></tr>
+                    <tr><td>SC</td><td class="positive">1.38</td><td class="positive">4.44</td><td class="positive">4.49</td><td class="positive">1.53</td><td class="positive">3.14</td><td class="positive">10.54</td><td class="positive">13.39</td><td class="positive">4.19</td><td class="negative">-2.59</td><td class="positive">3.89</td></tr>
+                    <tr><td>SD</td><td class="empty">—</td><td class="positive">3.84</td><td class="positive">2.84</td><td class="positive">1.67</td><td class="positive">3.44</td><td class="positive">9.47</td><td class="positive">12.83</td><td class="negative">-1.87</td><td class="positive">4.50</td><td class="positive">2.77</td></tr>
+                    <tr><td>TN</td><td class="positive">1.19</td><td class="positive">2.53</td><td class="positive">3.92</td><td class="positive">4.81</td><td class="positive">5.12</td><td class="positive">10.16</td><td class="positive">8.13</td><td class="positive">4.95</td><td class="positive">3.05</td><td class="positive">3.44</td></tr>
+                    <tr><td>TX</td><td class="positive">2.40</td><td class="positive">2.85</td><td class="positive">5.14</td><td class="positive">3.60</td><td class="positive">1.27</td><td class="positive">6.62</td><td class="positive">8.67</td><td class="positive">3.14</td><td class="positive">0.72</td><td class="positive">2.31</td></tr>
+                    <tr><td>UT</td><td class="positive">5.88</td><td class="positive">6.44</td><td class="positive">5.95</td><td class="positive">19.92</td><td class="positive">6.01</td><td class="positive">15.21</td><td class="positive">3.11</td><td class="positive">1.39</td><td class="positive">1.98</td><td class="negative">-1.42</td></tr>
+                    <tr><td>VA</td><td class="positive">2.75</td><td class="positive">3.42</td><td class="positive">0.62</td><td class="positive">2.93</td><td class="positive">4.20</td><td class="positive">8.06</td><td class="positive">10.84</td><td class="positive">1.57</td><td class="positive">0.75</td><td class="positive">3.25</td></tr>
+                    <tr><td>VT</td><td class="empty">—</td><td class="positive">4.37</td><td class="positive">3.38</td><td class="positive">2.38</td><td class="positive">2.95</td><td class="positive">6.70</td><td class="positive">11.65</td><td class="positive">7.55</td><td class="negative">-11.99</td><td class="negative">-14.37</td></tr>
+                    <tr><td>WA</td><td class="positive">4.50</td><td class="positive">8.09</td><td class="positive">6.83</td><td class="positive">5.54</td><td class="positive">5.16</td><td class="positive">10.75</td><td class="positive">0.50</td><td class="positive">1.36</td><td class="positive">3.56</td><td class="positive">3.00</td></tr>
+                    <tr><td>WI</td><td class="positive">0.59</td><td class="negative">-8.63</td><td class="positive">2.33</td><td class="positive">1.47</td><td class="positive">4.54</td><td class="positive">1.70</td><td class="positive">0.31</td><td class="positive">5.89</td><td class="positive">3.27</td><td class="positive">3.14</td></tr>
+                    <tr><td>WV</td><td class="empty">—</td><td class="negative">-7.09</td><td class="positive">2.28</td><td class="positive">0.90</td><td class="positive">2.90</td><td class="positive">0.86</td><td class="positive">2.28</td><td class="negative">-1.05</td><td class="positive">0.73</td><td class="positive">5.37</td></tr>
+                    <tr><td>WY</td><td class="positive">5.41</td><td class="negative">-1.83</td><td class="positive">1.69</td><td class="positive">4.83</td><td class="neutral">0.00</td><td class="positive">3.31</td><td class="positive">8.30</td><td class="positive">7.68</td><td class="positive">23.84</td><td class="positive">7.42</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-color" style="background: #1e7e34;"></span>
+                <span>Positive Growth</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background: #c82333;"></span>
+                <span>Negative Growth</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background: #666;"></span>
+                <span>Zero Growth</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background: #ccc;"></span>
+                <span>No Data</span>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-label">Highest Single-Year Growth</div>
+                <div class="stat-value">MT: 37.00% (2021)</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Lowest Single-Year Growth</div>
+                <div class="stat-value">VT: -14.37% (2025)</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Most Consistent Growth</div>
+                <div class="stat-value">CO: Positive Every Year</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
