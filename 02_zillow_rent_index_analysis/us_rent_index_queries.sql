@@ -66,20 +66,35 @@ FROM crosstab(
 
 
 -- ============================================================================
--- Q3: Top 5 States had the Highest and Lowest Rent Growth Each Year
+-- Q3: Which States had the Highest and Lowest Rent Growth from 2015 to 2025?
 -- ============================================================================
 
-WITH ranked AS(
-   SELECT 
-      year,
-      state,
-      yoy_growth_pct,
-      RANK() OVER (PARTITION BY year ORDER BY yoy_growth_pct DESC) AS rank_high,
-      RANK() OVER (PARTITION BY year ORDER BY yoy_growth_pct ASC) AS rank_low
-FROM state_yoy_growth
+-- Calculate total rent growth for each state between 2015 and 2025
+WITH growth AS (
+    SELECT
+        state,
+        MIN(CASE WHEN year = 2015 THEN yearly_avg_rent END) AS rent_2015,
+        MAX(CASE WHEN year = 2025 THEN yearly_avg_rent END) AS rent_2025
+    FROM state_year_avg_rent
+    GROUP BY state
+),
+growth_pct AS (
+    SELECT
+        state,
+        rent_2015,
+        rent_2025,
+        ROUND(((rent_2025 - rent_2015) / rent_2015) * 100, 2) AS total_growth_pct
+    FROM growth
+    WHERE rent_2015 IS NOT NULL AND rent_2025 IS NOT NULL
 )
-
+-- Show top 5 and bottom 5 states
 SELECT *
-FROM ranked
-WHERE rank_high <= 5 OR rank_low <= 5
-ORDER BY year, rank_high, rank_low;
+FROM (
+    SELECT * FROM growth_pct ORDER BY total_growth_pct DESC LIMIT 5
+) AS top_states
+UNION ALL
+SELECT *
+FROM (
+    SELECT * FROM growth_pct ORDER BY total_growth_pct ASC LIMIT 5
+) AS bottom_states
+ORDER BY total_growth_pct DESC;
