@@ -1,5 +1,9 @@
 -- SQL queries for Zillow Rent Index Analysis
 
+-- ============================================================================
+-- Q1: Average Rent per State: Yearly Breakdown
+-- ============================================================================
+
 CREATE TABLE state_year_avg_rent AS
 WITH unpivoted AS (
     SELECT
