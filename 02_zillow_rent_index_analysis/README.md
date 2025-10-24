@@ -5,16 +5,18 @@ This project analyzes rental market trends across the United States using Zillow
 
 ## Data Source
 - **Source**: Zillow Research Data (ZORI - Zillow Observed Rent Index)
-- **Raw Data File**: `us_rent_index_raw_data.csv` (697 regions)
+- **Raw Data File**: [`data/us_rent_index_raw_data.csv`](data/us_rent_index_raw_data.csv) (697 regions)
 - **Time Period**: January 2015 - September 2025 (monthly data)
 - **Geography**: Metropolitan Statistical Areas (MSAs) grouped by state
+
+For more details about the data, see [`data/README.md`](data/README.md)
 
 ---
 
 ## Analysis Questions & Results
 
 ### **Q1: Average Rent per State - Yearly Breakdown**
-**File**: [`Q1_state_year_avg_rent.csv`](Q1_state_year_avg_rent.csv)
+**File**: [`outputs/Q1_state_year_avg_rent.csv`](outputs/Q1_state_year_avg_rent.csv)
 
 Calculates the average rent index for each state by year (2015-2025).
 
@@ -29,7 +31,7 @@ CA,2015,2145.50
 ---
 
 ### **Q2: YoY (Year-over-Year) Growth per State**
-**File**: [`Q2_state_yoy_growth_wide.csv`](Q2_state_yoy_growth_wide.csv)
+**File**: [`outputs/Q2_state_yoy_growth_wide.csv`](outputs/Q2_state_yoy_growth_wide.csv)
 
 Shows year-over-year percentage growth from 2016-2025 in a wide format (one row per state).
 
@@ -52,7 +54,7 @@ Shows year-over-year percentage growth from 2016-2025 in a wide format (one row 
 ---
 
 ### **Q3: States with Highest and Lowest Rent Growth (2015-2025)**
-**File**: [`Q3_top_bottom_5_states_2015_2025.csv`](Q3_top_bottom_5_states_2015_2025.csv)
+**File**: [`outputs/Q3_top_bottom_5_states_2015_2025.csv`](outputs/Q3_top_bottom_5_states_2015_2025.csv)
 
 Identifies the top 5 and bottom 5 states by total rent growth over the 10-year period.
 
@@ -75,7 +77,7 @@ Identifies the top 5 and bottom 5 states by total rent growth over the 10-year p
 ---
 
 ## SQL Queries
-All analysis queries are available in: [`us_rent_index_queries.sql`](us_rent_index_queries.sql)
+All analysis queries are available in: [`sql/us_rent_index_queries.sql`](sql/us_rent_index_queries.sql)
 
 The queries use PostgreSQL with the `tablefunc` extension for data transformation.
 
@@ -93,14 +95,24 @@ The queries use PostgreSQL with the `tablefunc` extension for data transformatio
 ## Project Structure
 ```
 02_zillow_rent_index_analysis/
-├── README.md (this file - includes visualizations)
-├── us_rent_index_queries.sql (SQL queries for all 3 questions)
-├── us_rent_index_raw_data.csv (raw Zillow data)
-├── Q1_state_year_avg_rent.csv (yearly averages)
-├── Q2_state_yoy_growth_wide.csv (YoY growth rates)
-├── Q3_top_bottom_5_states_2015_2025.csv (top/bottom performers)
-├── charts/ (visualizations)
-└── summary_report.pdf
+│
+├── data/
+│   ├── us_rent_index_raw_data.csv (raw Zillow data)
+│   └── README.md (data source documentation)
+│
+├── sql/
+│   └── us_rent_index_queries.sql (all analysis queries)
+│
+├── outputs/
+│   ├── Q1_state_year_avg_rent.csv (yearly averages)
+│   ├── Q2_state_yoy_growth_wide.csv (YoY growth rates)
+│   └── Q3_top_bottom_5_states_2015_2025.csv (top/bottom performers)
+│
+├── reports/
+│   └── summary_report.pdf
+│
+├── README.md (this file - project documentation)
+└── .gitignore
 ```
 
 ---
