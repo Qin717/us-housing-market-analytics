@@ -29,34 +29,25 @@ CA,2015,2145.50
 ---
 
 ### **Q2: YoY (Year-over-Year) Growth per State**
-**Files**: 
-- CSV: [`Q2_state_yoy_growth_wide.csv`](Q2_state_yoy_growth_wide.csv)
-- **📊 Interactive Visualization**: [`Q2_yoy_growth_visualization.html`](Q2_yoy_growth_visualization.html)
+**File**: [`Q2_state_yoy_growth_wide.csv`](Q2_state_yoy_growth_wide.csv)
 
 Shows year-over-year percentage growth from 2016-2025 in a wide format (one row per state).
 
-#### **🎨 How to View the Interactive HTML Visualization**:
+**Sample Results**:
 
-**Option 1 - Download & Open Locally** (Recommended):
-1. Download the file: [`Q2_yoy_growth_visualization.html`](Q2_yoy_growth_visualization.html)
-2. Double-click to open in your web browser
-3. View the full interactive table with Excel-style conditional formatting
+| State | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 |
+|-------|------|------|------|------|------|------|------|------|------|------|
+| CO | 15.52% | 6.42% | 6.73% | 5.30% | 4.39% | 9.70% | 12.80% | 7.31% | 6.97% | 5.73% |
+| FL | 4.19% | 5.70% | 7.14% | 5.53% | 4.19% | 15.12% | 16.85% | 3.29% | -0.24% | 1.33% |
+| CA | 4.88% | 6.21% | 5.34% | 4.39% | 3.06% | 9.18% | 7.02% | 0.42% | 2.63% | 2.70% |
+| TX | 2.40% | 2.85% | 5.14% | 3.60% | 1.27% | 6.62% | 8.67% | 3.14% | 0.72% | 2.31% |
+| NY | -2.76% | 2.92% | 0.15% | 6.10% | 2.88% | 7.38% | 9.67% | 2.77% | 0.87% | -3.21% |
 
-**Option 2 - Use HTML Preview Service**:
-Click here to view online: [View Live Preview](https://htmlpreview.github.io/?https://github.com/Qin717/us-housing-market-analytics/blob/main/02_zillow_rent_index_analysis/Q2_yoy_growth_visualization.html)
-
-**Features**:
-- ✅ Excel-style conditional formatting with color gradients
-- ✅ Green shades = positive growth (darker = higher growth)
-- ✅ Orange/red shades = negative growth
-- ✅ Sticky headers and state column for easy scrolling
-- ✅ Hover effects on rows
-
-**Sample Output**:
-```
-state,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025
-CO,15.52,6.42,6.73,5.30,4.39,9.70,12.80,7.31,6.97,5.73
-```
+**Key Observations**:
+- 🟢 **2021-2022**: Highest growth period across most states (post-pandemic recovery)
+- 🔴 **Negative growth**: Some states showing decline in 2016 (NY, ME) and 2025 (FL, NY)
+- 📈 **Colorado**: Exceptionally high growth in 2016 (15.52%)
+- 📊 **Complete data**: View full 50-state dataset in the CSV file
 
 ---
 
@@ -102,12 +93,11 @@ The queries use PostgreSQL with the `tablefunc` extension for data transformatio
 ## Project Structure
 ```
 02_zillow_rent_index_analysis/
-├── README.md (this file)
+├── README.md (this file - includes visualizations)
 ├── us_rent_index_queries.sql (SQL queries for all 3 questions)
 ├── us_rent_index_raw_data.csv (raw Zillow data)
 ├── Q1_state_year_avg_rent.csv (yearly averages)
 ├── Q2_state_yoy_growth_wide.csv (YoY growth rates)
-├── Q2_yoy_growth_visualization.html (interactive visualization ⭐)
 ├── Q3_top_bottom_5_states_2015_2025.csv (top/bottom performers)
 ├── charts/ (visualizations)
 └── summary_report.pdf
@@ -118,7 +108,7 @@ The queries use PostgreSQL with the `tablefunc` extension for data transformatio
 ## Technologies Used
 - **Database**: PostgreSQL 14
 - **SQL Extensions**: tablefunc (for crosstab operations)
-- **Visualization**: HTML/CSS/JavaScript with conditional formatting
+- **Documentation**: Markdown with embedded tables
 - **Version Control**: Git & GitHub
 
 ---
