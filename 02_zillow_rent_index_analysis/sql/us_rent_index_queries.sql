@@ -104,6 +104,7 @@ ORDER BY total_growth_pct DESC;
 -- Q4: Top 5 States with the Most and Least Rent Volatility (2015–2025)
 -- ============================================================================
 
+-- Calculate YoY growth for each state
 WITH yoy_growth AS (
   SELECT
     state,
@@ -115,6 +116,7 @@ WITH yoy_growth AS (
     ) AS yoy_growth_pct
   FROM state_year_avg_rent
 ),
+-- Calculate volatility (standard deviation) for each state
 volatility AS (
   SELECT
     state,
@@ -123,16 +125,18 @@ volatility AS (
   WHERE yoy_growth_pct IS NOT NULL
   GROUP BY state
 )
+-- Get top 5 most volatile and top 5 least volatile states
 (
   SELECT state, rent_volatility 
   FROM volatility
-  ORDER BY rent_volatility ASC
+  ORDER BY rent_volatility DESC
   LIMIT 5
 )
 UNION ALL
 (
   SELECT state, rent_volatility
   FROM volatility
-  ORDER BY rent_volatility DESC
+  ORDER BY rent_volatility ASC
   LIMIT 5
-);
+)
+ORDER BY rent_volatility DESC;
