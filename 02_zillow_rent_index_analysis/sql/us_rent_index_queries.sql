@@ -120,7 +120,7 @@ WITH yoy_growth AS (
 volatility AS (
   SELECT
     state,
-    ROUND(STDDEV_POP(yoy_growth_pct), 2) AS rent_volatility
+    ROUND(STDDEV_POP(yoy_growth_pct), 8) AS rent_volatility
   FROM yoy_growth
   WHERE yoy_growth_pct IS NOT NULL
   GROUP BY state
