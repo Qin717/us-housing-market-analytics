@@ -1,6 +1,6 @@
-state,avg_growth_pct,rent_volatility,years_count,consistency_index
-RI,6.84,2.39,10,2.86
-AL,4.72,1.9,10,2.48
-CO,8.09,3.37,10,2.4
-OH,4.16,1.75,10,2.38
-MA,4.89,2.18,10,2.24
+state,avg_growth_pct,rent_volatility,consistency_index
+RI,6.84,2.39,2.86
+AL,4.72,1.9,2.48
+CO,8.09,3.37,2.4
+OH,4.16,1.75,2.38
+MA,4.89,2.18,2.24
