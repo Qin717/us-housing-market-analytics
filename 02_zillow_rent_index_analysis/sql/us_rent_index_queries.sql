@@ -140,3 +140,60 @@ UNION ALL
   LIMIT 5
 )
 ORDER BY rent_volatility DESC;
+
+
+-- ============================================================================
+-- Q5: Top 5 states show the strongest rent growth consistency (2015–2025)?
+-- ============================================================================
+
+-- Consistency = Average YoY Growth ÷ Rent Volatility (STDEV.P)
+
+WITH state_year_avg AS (
+    -- Step 1: Get yearly average rent per state (already calculated)
+    SELECT
+        state,
+        year,
+        ROUND(yearly_avg_rent, 2) AS state_avg_rent
+    FROM state_year_avg_rent
+    WHERE state IS NOT NULL
+      AND year BETWEEN 2015 AND 2025
+),
+
+yoy_growth AS (
+    -- Step 2: Compute YoY growth rate for each state
+    SELECT
+        state,
+        year,
+        ROUND(
+            (state_avg_rent - LAG(state_avg_rent) OVER (PARTITION BY state ORDER BY year))
+            / NULLIF(LAG(state_avg_rent) OVER (PARTITION BY state ORDER BY year), 0) * 100,
+            2
+        ) AS yoy_growth_pct
+    FROM state_year_avg
+),
+
+state_consistency AS (
+    -- Step 3: Compute average growth, volatility, and consistency index
+    SELECT
+        state,
+        ROUND(AVG(yoy_growth_pct), 2) AS avg_growth_pct,
+        ROUND(STDDEV_POP(yoy_growth_pct), 2) AS rent_volatility,
+        ROUND(
+            AVG(yoy_growth_pct) / NULLIF(STDDEV_POP(yoy_growth_pct), 0),
+            2
+        ) AS consistency_index
+    FROM yoy_growth
+    WHERE yoy_growth_pct IS NOT NULL
+    GROUP BY state
+)
+
+-- Step 4: Display Top 5 States with the Most Consistent Rent Growth
+SELECT
+    state,
+    avg_growth_pct,
+    rent_volatility,
+    consistency_index
+FROM state_consistency
+ORDER BY consistency_index DESC
+LIMIT 5;
+
