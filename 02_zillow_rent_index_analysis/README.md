@@ -122,6 +122,33 @@ Measures consistency as average growth divided by volatility - higher values ind
 
 ---
 
+### **Q6: Which States Show the Strongest Rent Recovery Post-COVID (2020–2023)?**
+**File**: [`outputs/csv_files/Q6_top_10_states_post_covid_recovery.csv`](outputs/csv_files/Q6_top_10_states_post_covid_recovery.csv)
+
+Identifies the top 10 states with the strongest rent recovery from the COVID-19 pandemic period (2020-2023).
+
+**Results**:
+
+**🏆 Top 10 States with Strongest Post-COVID Recovery**:
+1. Montana (MT): **68.72%** recovery growth
+2. Florida (FL): **38.94%** recovery growth
+3. Georgia (GA): **34.18%** recovery growth
+4. New Jersey (NJ): **33.46%** recovery growth
+5. Rhode Island (RI): **33.23%** recovery growth
+6. Colorado (CO): **32.78%** recovery growth
+7. Delaware (DE): **31.95%** recovery growth
+8. Connecticut (CT): **30.83%** recovery growth
+9. South Carolina (SC): **30.60%** recovery growth
+10. New Hampshire (NH): **29.60%** recovery growth
+
+**Key Insights**:
+- 🏔️ **Montana** led the recovery with nearly 69% growth from 2020-2023
+- 🌴 **Florida** and **Georgia** showed strong recovery in the Southeast
+- 🏙️ **Northeast states** (NJ, RI, CT, NH) demonstrated robust post-pandemic recovery
+- 📈 All top 10 states achieved 29%+ growth during the 3-year recovery period
+
+---
+
 ## SQL Queries
 All analysis queries are available in: [`sql/us_rent_index_queries.sql`](sql/us_rent_index_queries.sql)
 
@@ -155,7 +182,8 @@ The queries use PostgreSQL with the `tablefunc` extension for data transformatio
 │   │   ├── Q2_yoy_rent_growth_by_state.csv (YoY growth rates)
 │   │   ├── Q3_top_bottom_5_states_2015_2025.csv (top/bottom performers)
 │   │   ├── Q4_top_bottom_5_states_rent_volatility.csv (volatility analysis)
-│   │   └── Q5_top_bottom_5_rent_growth_consistency.csv (consistency analysis)
+│   │   ├── Q5_top_bottom_5_rent_growth_consistency.csv (consistency analysis)
+│   │   └── Q6_top_10_states_post_covid_recovery.csv (post-COVID recovery)
 │   └── charts/
 │       ├── Q2_yoy_rent_growth_by_state.png (heatmap)
 │       ├── Q3_top_bottom_5_states_rent_growth.png (bar chart)
