@@ -143,57 +143,53 @@ ORDER BY rent_volatility DESC;
 
 
 -- ============================================================================
--- Q5: Top 10 States with Strongest Rent Growth Consistency (2015–2025)?
+-- Q5: Top & Bottom 5 States by Rent Growth Consistency (2015–2025)
 -- ============================================================================
 
 -- Consistency = Average YoY Growth ÷ Rent Volatility (STDEV.P)
 
-WITH state_year_avg AS (
-    -- Step 1: Get yearly average rent per state (already calculated)
-    SELECT
-        state,
-        year,
-        ROUND(yearly_avg_rent, 2) AS state_avg_rent
-    FROM state_year_avg_rent
-    WHERE state IS NOT NULL
-      AND year BETWEEN 2015 AND 2025
-),
-
-yoy_growth AS (
-    -- Step 2: Compute YoY growth rate for each state
-    SELECT
-        state,
-        year,
-        ROUND(
-            (state_avg_rent - LAG(state_avg_rent) OVER (PARTITION BY state ORDER BY year))
-            / NULLIF(LAG(state_avg_rent) OVER (PARTITION BY state ORDER BY year), 0) * 100,
-            2
-        ) AS yoy_growth_pct
-    FROM state_year_avg
+WITH yoy_growth AS (
+  SELECT
+    state,
+    year,
+    (yearly_avg_rent - LAG(yearly_avg_rent) OVER (PARTITION BY state ORDER BY year))
+      / NULLIF(LAG(yearly_avg_rent) OVER (PARTITION BY state ORDER BY year), 0) * 100 AS yoy_growth_pct
+  FROM state_year_avg_rent
+  WHERE yearly_avg_rent IS NOT NULL
 ),
 
 state_consistency AS (
-    -- Step 3: Compute average growth, volatility, and consistency index
-    SELECT
-        state,
-        ROUND(AVG(yoy_growth_pct), 2) AS avg_growth_pct,
-        ROUND(STDDEV_POP(yoy_growth_pct), 2) AS rent_volatility,
-        ROUND(
-            AVG(yoy_growth_pct) / NULLIF(STDDEV_POP(yoy_growth_pct), 0),
-            2
-        ) AS consistency_index
-    FROM yoy_growth
-    WHERE yoy_growth_pct IS NOT NULL
-    GROUP BY state
+  SELECT
+    state,
+    AVG(yoy_growth_pct) AS avg_growth_pct,
+    STDDEV_POP(yoy_growth_pct) AS rent_volatility,
+    AVG(yoy_growth_pct) / NULLIF(STDDEV_POP(yoy_growth_pct), 0) AS consistency_index
+  FROM yoy_growth
+  WHERE yoy_growth_pct IS NOT NULL
+  GROUP BY state
 )
 
--- Step 4: Display Top 5 States with the Most Consistent Rent Growth
-SELECT
+-- Get top 5 and bottom 5 states by consistency
+(
+  SELECT
     state,
-    avg_growth_pct,
-    rent_volatility,
-    consistency_index
-FROM state_consistency
-ORDER BY consistency_index DESC
-LIMIT 10;
+    ROUND(avg_growth_pct, 3) AS avg_growth_pct,
+    ROUND(rent_volatility, 3) AS rent_volatility,
+    ROUND(consistency_index, 3) AS consistency_index
+  FROM state_consistency
+  ORDER BY consistency_index DESC
+  LIMIT 5
+)
+UNION ALL
+(
+  SELECT
+    state,
+    ROUND(avg_growth_pct, 3) AS avg_growth_pct,
+    ROUND(rent_volatility, 3) AS rent_volatility,
+    ROUND(consistency_index, 3) AS consistency_index
+  FROM state_consistency
+  ORDER BY consistency_index ASC
+  LIMIT 5
+)
+ORDER BY consistency_index DESC;
 
