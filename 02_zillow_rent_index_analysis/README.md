@@ -130,22 +130,22 @@ Identifies the top 10 states with the strongest rent recovery from the COVID-19 
 **Results**:
 
 **🏆 Top 10 States with Strongest Post-COVID Recovery**:
-1. Montana (MT): **68.72%** recovery growth
-2. Florida (FL): **38.94%** recovery growth
-3. Georgia (GA): **34.18%** recovery growth
-4. New Jersey (NJ): **33.46%** recovery growth
-5. Rhode Island (RI): **33.23%** recovery growth
-6. Colorado (CO): **32.78%** recovery growth
-7. Delaware (DE): **31.95%** recovery growth
-8. Connecticut (CT): **30.83%** recovery growth
-9. South Carolina (SC): **30.60%** recovery growth
-10. New Hampshire (NH): **29.60%** recovery growth
+1. Montana (MT): **68.72%** recovery percentage
+2. Florida (FL): **38.94%** recovery percentage
+3. Georgia (GA): **34.18%** recovery percentage
+4. New Jersey (NJ): **33.46%** recovery percentage
+5. Rhode Island (RI): **33.23%** recovery percentage
+6. Colorado (CO): **32.78%** recovery percentage
+7. Delaware (DE): **31.95%** recovery percentage
+8. Connecticut (CT): **30.83%** recovery percentage
+9. South Carolina (SC): **30.60%** recovery percentage
+10. New Hampshire (NH): **29.60%** recovery percentage
 
 **Key Insights**:
-- 🏔️ **Montana** led the recovery with nearly 69% growth from 2020-2023
+- 🏔️ **Montana** led the recovery with nearly 69% rent increase from 2020-2023
 - 🌴 **Florida** and **Georgia** showed strong recovery in the Southeast
 - 🏙️ **Northeast states** (NJ, RI, CT, NH) demonstrated robust post-pandemic recovery
-- 📈 All top 10 states achieved 29%+ growth during the 3-year recovery period
+- 📈 All top 10 states achieved 29%+ rent recovery during the 3-year period
 
 ---
 
