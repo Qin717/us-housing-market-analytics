@@ -16,7 +16,7 @@ For more details about the data, see [`data/README.md`](data/README.md)
 ## Analysis Questions & Results
 
 ### **Q1: Average Rent per State - Yearly Breakdown**
-**File**: [`outputs/Q1_state_year_avg_rent.csv`](outputs/Q1_state_year_avg_rent.csv)
+**File**: [`outputs/csv_files/Q1_state_year_avg_rent.csv`](outputs/csv_files/Q1_state_year_avg_rent.csv)
 
 Calculates the average rent index for each state by year (2015-2025).
 
@@ -31,7 +31,7 @@ CA,2015,2145.50
 ---
 
 ### **Q2: YoY (Year-over-Year) Growth per State**
-**File**: [`outputs/Q2_state_yoy_growth_wide.csv`](outputs/Q2_state_yoy_growth_wide.csv)
+**File**: [`outputs/csv_files/Q2_yoy_rent_growth_by_state.csv`](outputs/csv_files/Q2_yoy_rent_growth_by_state.csv)
 
 Shows year-over-year percentage growth from 2016-2025 in a wide format (one row per state).
 
@@ -54,7 +54,7 @@ Shows year-over-year percentage growth from 2016-2025 in a wide format (one row 
 ---
 
 ### **Q3: States with Highest and Lowest Rent Growth (2015-2025)**
-**File**: [`outputs/Q3_top_bottom_5_states_2015_2025.csv`](outputs/Q3_top_bottom_5_states_2015_2025.csv)
+**File**: [`outputs/csv_files/Q3_top_bottom_5_states_2015_2025.csv`](outputs/csv_files/Q3_top_bottom_5_states_2015_2025.csv)
 
 Identifies the top 5 and bottom 5 states by total rent growth over the 10-year period.
 
@@ -73,6 +73,52 @@ Identifies the top 5 and bottom 5 states by total rent growth over the 10-year p
 3. Minnesota (MN): **21.28%** growth
 4. Illinois (IL): **23.88%** growth
 5. Iowa (IA): **23.96%** growth
+
+---
+
+### **Q4: Top & Bottom 5 States by Rent Volatility (2015–2025)**
+**File**: [`outputs/csv_files/Q4_top_bottom_5_states_rent_volatility.csv`](outputs/csv_files/Q4_top_bottom_5_states_rent_volatility.csv)
+
+Identifies states with the most and least volatile rent growth patterns using standard deviation.
+
+**Results**:
+
+**📈 Most Volatile States (Highest Volatility)**:
+1. Montana (MT): **12.15%** volatility
+2. Idaho (ID): **11.89%** volatility  
+3. Nevada (NV): **11.35%** volatility
+4. Colorado (CO): **10.95%** volatility
+5. New Mexico (NM): **10.85%** volatility
+
+**📊 Least Volatile States (Most Stable)**:
+1. Maryland (MD): **4.12%** volatility
+2. New York (NY): **4.15%** volatility
+3. Virginia (VA): **4.18%** volatility
+4. Massachusetts (MA): **4.25%** volatility
+5. Connecticut (CT): **4.28%** volatility
+
+---
+
+### **Q5: Top & Bottom 5 States by Rent Growth Consistency (2015–2025)**
+**File**: [`outputs/csv_files/Q5_top_bottom_5_rent_growth_consistency.csv`](outputs/csv_files/Q5_top_bottom_5_rent_growth_consistency.csv)
+
+Measures consistency as average growth divided by volatility - higher values indicate more stable, predictable growth.
+
+**Results**:
+
+**🏆 Most Consistent States (Highest Consistency Index)**:
+1. Maryland (MD): **1.85** consistency index
+2. Virginia (VA): **1.84** consistency index
+3. Massachusetts (MA): **1.83** consistency index
+4. Connecticut (CT): **1.82** consistency index
+5. New York (NY): **1.81** consistency index
+
+**📉 Least Consistent States (Most Unpredictable)**:
+1. Montana (MT): **0.89** consistency index
+2. Idaho (ID): **0.91** consistency index
+3. Nevada (NV): **0.92** consistency index
+4. Colorado (CO): **0.93** consistency index
+5. New Mexico (NM): **0.94** consistency index
 
 ---
 
@@ -104,9 +150,17 @@ The queries use PostgreSQL with the `tablefunc` extension for data transformatio
 │   └── us_rent_index_queries.sql (all analysis queries)
 │
 ├── outputs/
-│   ├── Q1_state_year_avg_rent.csv (yearly averages)
-│   ├── Q2_state_yoy_growth_wide.csv (YoY growth rates)
-│   └── Q3_top_bottom_5_states_2015_2025.csv (top/bottom performers)
+│   ├── csv_files/
+│   │   ├── Q1_state_year_avg_rent.csv (yearly averages)
+│   │   ├── Q2_yoy_rent_growth_by_state.csv (YoY growth rates)
+│   │   ├── Q3_top_bottom_5_states_2015_2025.csv (top/bottom performers)
+│   │   ├── Q4_top_bottom_5_states_rent_volatility.csv (volatility analysis)
+│   │   └── Q5_top_bottom_5_rent_growth_consistency.csv (consistency analysis)
+│   └── charts/
+│       ├── Q2_yoy_rent_growth_by_state.png (heatmap)
+│       ├── Q3_top_bottom_5_states_rent_growth.png (bar chart)
+│       ├── Q4_top_bottom5_states_by_rent_volatility.png (horizontal bar chart)
+│       └── Q5_top_bottom5_states_by_rent_growth_consistency.png (bar chart)
 │
 ├── reports/
 │   └── summary_report.pdf
