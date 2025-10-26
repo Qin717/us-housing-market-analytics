@@ -143,7 +143,7 @@ ORDER BY rent_volatility DESC;
 
 
 -- ============================================================================
--- Q5: Top 5 states show the strongest rent growth consistency (2015–2025)?
+-- Q5: Top 10 States with Strongest Rent Growth Consistency (2015–2025)?
 -- ============================================================================
 
 -- Consistency = Average YoY Growth ÷ Rent Volatility (STDEV.P)
@@ -195,5 +195,5 @@ SELECT
     consistency_index
 FROM state_consistency
 ORDER BY consistency_index DESC
-LIMIT 5;
+LIMIT 10;
 
