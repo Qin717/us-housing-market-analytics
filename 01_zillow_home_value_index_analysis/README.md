@@ -9,7 +9,7 @@ This project analyzes 25 years of **Zillow Home Value Index (ZHVI)** data to exp
 It identifies where prices **grew fastest**, which markets were **most volatile**, and how regions **recovered after major downturns**.  
 
 **Data source:** Zillow Research (Jan 2000 – Aug 2025)  
-**Tools:** Excel, Python (pandas), Tableau Public  
+**Tools:** Excel  
 
 Key areas analyzed:  
 - Long-term state and city growth  
@@ -85,6 +85,26 @@ A chart can be downloaded [here](outputs/charts/q5_housing_market_crash_to_recov
 | Northeast | 5.9% | Moderate |
 
 A chart can be downloaded [here](outputs/charts/q6_regional_housing_value_trends.png).  
+
+---
+
+## Recommendations  
+
+**For Real Estate Companies:**  
+- Focus expansion and marketing strategies in **high-growth, low-volatility regions** such as the **Midwest and South** to ensure stable returns.  
+- Use **historical volatility data** to inform pricing models and manage portfolio risk.  
+
+**For Developers:**  
+- Prioritize **supply development in constrained coastal markets** (California, Hawaii, Massachusetts) where demand persistently outpaces inventory.  
+- Explore **emerging inland states** (Idaho, Utah, North Carolina) that show sustainable population growth and appreciation potential.  
+
+**For Investors:**  
+- Consider **diversified exposure** across both **growth markets (e.g., Idaho, Florida)** and **stable markets (e.g., Midwest)** to balance risk and reward.  
+- Monitor cyclical indicators such as mortgage rates and migration flows for entry and exit timing.  
+
+**For Policymakers and Stakeholders:**  
+- Support **affordable housing initiatives** in high-cost regions to reduce inequality and improve mobility.  
+- Track **regional volatility trends** to guide infrastructure investment and economic stability planning.  
 
 ---
 
