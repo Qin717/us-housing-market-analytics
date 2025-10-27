@@ -81,6 +81,6 @@ Expand housing supply in high-volatility areas to mitigate rent inflation and mi
 
 **Aggregation:** Monthly → Annual averages by state
 
-**Tools:** Excel, SQL, Python (pandas, matplotlib)
+**Tools:** SQL, Excel
 
 ✅ Clean, standardized dataset ready for rent growth, volatility, and recovery analysis.
