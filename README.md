@@ -35,7 +35,7 @@ It combines real-estate, economic, and data-analytics insights to uncover how pr
 
 | Regional Housing Value Trends | Rent Recovery |
 |-------------------------------|---------------|
-| ![Regional Housing Trends](01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) |
+| ![Regional Housing Value Trends](01_zillow_home_value_index_analysis/outputs/charts/regional_housing_value_trends_us.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) |
 
 ---
 
