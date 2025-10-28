@@ -1,15 +1,23 @@
+
 # U.S. Housing Market Analytics (2000–2025)
 
-This portfolio explores 25 years of U.S. housing and rental market dynamics using Zillow Research data.  
-It combines real-estate, economic, and data-analytics insights to uncover how property values and rents evolved across the United States — before, during, and after major market cycles such as the 2008 financial crisis and the COVID-19 recovery.
+Over the past two decades, the U.S. housing market has experienced extraordinary highs and lows — from the early 2000s boom to the 2008 financial collapse, to the pandemic-era surge and subsequent correction.  
+This portfolio analyzes those 25 years of housing and rental data from Zillow Research, translating raw market metrics into insights on **growth, volatility, and recovery** across all U.S. regions.
 
-**Purpose:** Demonstrate the ability to transform large-scale housing datasets into investor-ready insights through Excel, SQL, and data storytelling.
+Using Excel and SQL, this work traces how the American housing landscape evolved — which states accelerated, which regions lagged, and how market resilience reshaped investment strategy and affordability over time.
+
+**Purpose:** Demonstrate the ability to translate complex, longitudinal datasets into clear, company/investor/stakeholder-ready insights — bridging technical analysis and business strategy.
 
 ---
 
 ### Headline Insights
-- Idaho and Utah home values grew over 2× faster than the national average between 2015–2025.  
-- Southern states led post-COVID rent recovery by nearly 35%, highlighting regional affordability shifts.
+
+- Idaho and Utah home values grew over **2× faster than the national average**, reflecting long-term inland migration and affordability-driven demand.  
+- Southern states led **post-COVID rent recovery by nearly 35%**, signaling a lasting shift in housing demand toward more affordable regions.
+
+These patterns reveal how housing has become a barometer for economic mobility, risk exposure, and demographic change across the United States.
+
+Together, these projects show how data analytics can illuminate **regional inequality, investment risk, and market resilience** across housing cycles.
 
 ---
 
@@ -27,7 +35,7 @@ It combines real-estate, economic, and data-analytics insights to uncover how pr
 - Data cleaning and transformation using Excel Power Query and SQL aggregation  
 - Analytical modeling: CAGR, YoY growth, volatility (STDEV.P), consistency metrics  
 - Visualization and reporting through Excel dashboards and summary PDFs  
-- Data storytelling to translate quantitative findings into business insights  
+- Data storytelling: translating quantitative results into business implications  
 
 ---
 
@@ -35,16 +43,22 @@ It combines real-estate, economic, and data-analytics insights to uncover how pr
 
 | Regional Housing Value Trends | Rent Recovery |
 |-------------------------------|---------------|
-| ![Regional Housing Trends](01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) |
+| ![Regional Housing Value Trends in the U.S.](01_zillow_home_value_index_analysis/outputs/charts/regional_housing_value_trends_us.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) |
 
 ---
 
 ## Business Impact
 
-These analyses support:
-- Real-estate investors – identifying high-growth and volatile markets  
-- Developers and policymakers – understanding regional affordability and recovery patterns  
-- Data analysts and economists – benchmarking long-term housing market resilience  
+This analysis provides **strategic visibility** for key decision-makers:
+
+- **Real-estate investors:** identify markets combining high growth potential with manageable volatility to optimize risk-adjusted returns.
+  
+- **Developers and builders:** align construction priorities with regions showing sustained post-crisis recovery and long-term affordability demand.
+  
+- **Policy and planning teams:** monitor regional inequality and affordability pressures to inform sustainable housing strategies.  
+- **Market analysts and economists:** benchmark cyclical performance and forecast resilience under future shocks.
+
+By connecting 25 years of data with practical decision frameworks, this project demonstrates how analytical storytelling can guide both **investment decisions and policy design.**
 
 ---
 
