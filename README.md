@@ -282,7 +282,7 @@ The **South and Mountain regions** outpaced the nation, while coastal markets in
 
 |  |  |
 |--|--|
-| ![Regional Housing Trends](https://github.com/Qin717/us-housing-market-analytics/blob/main/01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png) | *25-year regional housing value trends (2000–2025).* |
+| ![Regional Housing Trends](https://github.com/Qin717/us-housing-market-analytics/blob/main/01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png) | 
 
 ---
 
@@ -302,7 +302,7 @@ Pandemic-era mobility and affordability migration shifted demand from urban cent
 
 |  |  |
 |--|--|
-| ![Rent Recovery](https://github.com/Qin717/us-housing-market-analytics/blob/main/02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) | *Top 10 states by post-COVID rent recovery (2020–2025).* |
+| ![Rent Recovery](https://github.com/Qin717/us-housing-market-analytics/blob/main/02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) | 
 
 ---
 
