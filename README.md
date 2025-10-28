@@ -76,9 +76,10 @@ While the West remains the most expensive, the **South and Mountain states** hav
 
 ### Visual Overview
 
-| Home Value Trends (2000–2025) | Rent Growth Heatmap (2015–2025) |
-|--------------------------------|----------------------------------|
-| ![Regional Housing Value Trends](01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png) | ![YoY Rent Growth Heatmap](02_zillow_rent_value_index_analysis/outputs/charts/q1_yoy_rent_growth_heatmap_annotated.png) |
+| Home Value Trends (2000–2025) | Post-COVID Rent Recovery (2015–2025) |
+|--------------------------------|--------------------------------------|
+| ![Regional Housing Value Trends](01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/_)_)
+
 
 *Visuals generated through Excel, SQL, and Python (Pandas, Matplotlib, Seaborn).*
 
