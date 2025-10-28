@@ -432,18 +432,19 @@ Data Analytics Portfolio | Real Estate · Market Trends · Visualization
 
 ## 1. Project Background
 
-The U.S. housing market — one of the most critical pillars of the global economy — has experienced dramatic cycles over the past 25 years: the early-2000s boom, the 2008 financial crisis, a decade-long recovery, and the post-pandemic surge and correction.  
-Understanding these shifts is essential for **investors, developers, and policymakers** seeking to navigate volatility, forecast demand, and identify long-term opportunities for sustainable growth.
+The U.S. housing market — a cornerstone of the global economy — has undergone remarkable transformations over the past 25 years: from the early-2000s boom and the 2008 financial crisis to a decade-long recovery and the pandemic-era surge and correction.  
+Understanding these shifts is vital for **investors, policymakers, and developers** aiming to navigate volatility, forecast demand, and identify sustainable growth opportunities.
 
-This project leverages **Zillow Research’s Home Value Index (ZHVI)** and **Rent Index (ZORI)** datasets from **2000–2025**, transforming complex, longitudinal data into clear insights about how **regional dynamics, affordability, and economic resilience** have shaped U.S. housing markets.
+This project analyzes **Zillow Research’s Home Value Index (ZHVI)** and **Rent Index (ZORI)** datasets covering **2000–2025**, translating 25 years of housing data into actionable insights that reveal how **regional dynamics, affordability, and resilience** have shaped U.S. market performance.
 
-The analysis explores four central questions:
-1. How have housing values and rents evolved over the past 25 years?  
-2. What were the measurable impacts of the 2008 financial crash and COVID-19 pandemic?  
-3. Which regions have shown the strongest growth, volatility, and recovery?  
-4. What strategic insights can guide investors and housing policy?  
+The analysis focuses on four key objectives:
 
-> **Scope:** 50 states · 4 U.S. regions · 25 years of housing and rent data (2000–2025)
+- **Market Trend Analysis:** Examine 25 years of national and regional housing trends to identify growth and contraction cycles.  
+- **Crisis & Recovery Evaluation:** Quantify the impact of major disruptions — the 2008 financial crash and the 2020 pandemic — on home values and rents.  
+- **Regional Performance Comparison:** Compare U.S. regions (West, South, Midwest, Northeast) by growth rate, volatility, and recovery strength.  
+- **Investment & Policy Implications:** Translate findings into insights that support real-estate investment, housing affordability, and policy development.
+
+> **Scope:** 50 states · 4 U.S. regions · 25 years of Zillow housing and rent data (2000–2025)
 
 ---
 
