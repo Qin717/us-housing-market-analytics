@@ -48,22 +48,6 @@ These analyses support:
 
 ---
 
-## Repository Structure
-
-01_zillow_home_value_index_analysis/
-│── data/
-│── excel_files/
-│── outputs/charts/
-│── reports/
-│── README.md
-│
-02_zillow_rent_value_index_analysis/
-│── data/
-│── outputs/
-│── sql/
-│── reports/
-│── README.md
--- 
 
 ## 👤 Author
 **Qin QIN**  
