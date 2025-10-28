@@ -1,64 +1,100 @@
-
 # U.S. Housing Market Analytics (2000–2025)
 
-Over the past two decades, the U.S. housing market has experienced extraordinary highs and lows — from the early 2000s boom to the 2008 financial collapse, to the pandemic-era surge and subsequent correction.  
-This portfolio analyzes those 25 years of housing and rental data from Zillow Research, translating raw market metrics into insights on **growth, volatility, and recovery** across all U.S. regions.
+## 1. Project Background
 
-Using Excel and SQL, this work traces how the American housing landscape evolved — which states accelerated, which regions lagged, and how market resilience reshaped investment strategy and affordability over time.
+The U.S. housing market — one of the most critical pillars of the global economy — has experienced extraordinary cycles over the past 25 years: the early-2000s housing boom, the 2008 financial crisis, a decade-long recovery, and the post-pandemic surge and correction.  
+Understanding these market shifts is essential for **investors, policymakers, and real-estate professionals** seeking to navigate volatility, forecast demand, and identify long-term opportunities for sustainable growth.
 
-**Purpose:** Demonstrate the ability to translate complex, longitudinal datasets into clear, company/investor/stakeholder-ready insights — bridging technical analysis and business strategy.
+This project leverages **Zillow Research’s Home Value Index (ZHVI)** and **Rent Index (ZORI)** datasets from 2000 to 2025 to uncover how property values and rental prices evolved across the United States.  
+It aims to transform complex, longitudinal data into actionable insights that explain **how regional dynamics, affordability, and economic resilience** have shaped housing market performance.
 
----
+The analysis focuses on four key objectives:
 
-### Headline Insights
+- **Market Trend Analysis:** Examine national and regional housing value trends across 25 years, identifying long-term growth and contraction cycles.  
+- **Crisis & Recovery Evaluation:** Quantify the impact of major economic disruptions — including the 2008 housing crash and the 2020 pandemic — on home and rent values.  
+- **Regional Performance Comparison:** Assess how housing markets differ across U.S. regions (West, South, Midwest, Northeast) in terms of growth rate, volatility, and recovery strength.  
+- **Investment & Policy Implications:** Translate analytical findings into insights that inform **investment strategy, affordability policy, and regional development planning.**
 
-- Idaho and Utah home values grew over **2× faster than the national average**, reflecting long-term inland migration and affordability-driven demand.  
-- Southern states led **post-COVID rent recovery by nearly 35%**, signaling a lasting shift in housing demand toward more affordable regions.
-
-These patterns reveal how housing has become a barometer for economic mobility, risk exposure, and demographic change across the United States.
-
-Together, these projects show how data analytics can illuminate **regional inequality, investment risk, and market resilience** across housing cycles.
-
----
-
-## Project Overview
-
-| Project | Tools | Focus | Key Deliverables |
-|----------|--------|--------|------------------|
-| [01 · Zillow Home Value Index Analysis](01_zillow_home_value_index_analysis/README.md) | Excel (Power Query, Pivot Tables) | 6 analytical questions on U.S. home-value trends, volatility, and recovery | Dashboards · Charts · Summary Report (PDF) |
-| [02 · Zillow Rent Value Index Analysis](02_zillow_rent_value_index_analysis/README.md) | SQL (CTEs, Window Functions) | 5 analytical questions on rent growth, volatility, and post-COVID recovery | SQL Queries · Visuals · Summary Report (PDF) |
+> **Scope:** This analysis covers 50 states, 4 major U.S. regions, and 25 years of Zillow housing and rental data, providing a complete macro-to-micro view of U.S. housing dynamics.
 
 ---
 
-## Key Skills Demonstrated
+## 2. Data Structure & Initial Checks
 
-- Data cleaning and transformation using Excel Power Query and SQL aggregation  
-- Analytical modeling: CAGR, YoY growth, volatility (STDEV.P), consistency metrics  
-- Visualization and reporting through Excel dashboards and summary PDFs  
-- Data storytelling: translating quantitative results into business implications  
+**Data Sources**
+- **Zillow Home Value Index (ZHVI):** Monthly median home value estimates by region and state (2000–2025).  
+- **Zillow Rent Index (ZORI):** Monthly median rent value estimates by region and state (2000–2025).  
+
+**Data Structure**
+- Both datasets contain approximately 6,000 rows and over 300 monthly columns.  
+- Key fields include: `RegionID`, `RegionName`, `StateName`, `Metro`, `County`, and `SizeRank`.  
+- Monthly data was **aggregated into annual averages** for year-over-year (YoY) and volatility analysis.  
+
+**Initial Data Quality Checks**
+- Verified dataset completeness across all states and time periods (2000–2025).  
+- Standardized naming conventions and removed duplicates using Excel Power Query.  
+- Conducted type consistency checks and confirmed matching region identifiers across datasets.  
+- Created yearly summary tables to calculate **CAGR**, **YoY Growth**, and **Volatility (STDEV.P)**.  
+- Validated trends between home-value and rent datasets to ensure analytical coherence.  
+
+These checks ensured a clean, unified dataset suitable for robust trend analysis across time and geography.
 
 ---
 
-## Sample Visuals
+## 3. Executive Summary
+
+**Overview**
+
+The analysis reveals clear evidence of **regional divergence and structural transformation** within the U.S. housing market from 2000 to 2025.  
+While the West remains the most expensive region, the **South and Mountain states have emerged as the fastest-growing** due to affordability and population inflows.
+
+**Key Findings**
+
+- **Long-Term Regional Divergence:**  
+  Western states maintained the highest housing prices, but Southern and inland states recorded the strongest sustained growth, reflecting long-term migration patterns.  
+
+- **Impact of Economic Crises:**  
+  The 2008 crash caused declines exceeding 40% in markets such as Nevada and Florida, while post-2012 recoveries varied widely. The pandemic shock of 2020–2021 accelerated price growth in previously undervalued regions.  
+
+- **Post-COVID Market Rebalancing:**  
+  From 2020–2025, Idaho and Utah experienced home value appreciation **over twice the national average**, while rent growth surged **35% higher in the South**, indicating structural demand shifts away from traditional coastal markets.  
+
+- **Volatility & Risk:**  
+  Coastal states (CA, NY, MA) remain more volatile, whereas interior states (TX, NC, TN) exhibit steadier year-over-year changes, offering better long-term investment balance.
+
+**Visual Overview**
 
 | Regional Housing Value Trends | Rent Recovery |
 |-------------------------------|---------------|
 | ![Regional Housing Value Trends in the U.S.](01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_average_values.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) |
 
+*Regional and rental market performance visualized across 25 years of Zillow data (2000–2025).*
+
+**Tools & Methods**
+- **Excel Power Query** – cleaning, unpivoting, and yearly aggregation  
+- **Excel Pivot Tables** – computing averages, YoY growth, and volatility  
+- **SQL (CTEs, Window Functions)** – ranking and comparative analytics  
+- **Charts & Reporting** – Excel dashboards and PDF summaries for presentation  
+
 ---
 
-## Business Impact
+## 4. Recommendations
 
-This analysis provides **strategic visibility** for key decision-makers:
+### For Real-Estate Investors
+- **Diversify geographically:** Combine exposure to high-growth inland states with stable coastal markets for optimal risk-adjusted performance.  
+- **Monitor volatility indicators:** Use standard deviation and YoY growth patterns as early signals of overheating or price correction risks.  
 
-- **Real-estate investors:** identify markets combining high growth potential with manageable volatility to optimize risk-adjusted returns.
-  
-- **Developers and builders:** align construction priorities with regions showing sustained post-crisis recovery and long-term affordability demand.
-  
-- **Policy and planning teams:** monitor regional inequality and affordability pressures to inform sustainable housing strategies.  
-- **Market analysts and economists:** benchmark cyclical performance and forecast resilience under future shocks.
+### For Developers & Builders
+- **Prioritize construction** in Southern and Mountain states with rising demand and affordability-driven inflows.  
+- **Leverage regional recovery data** to identify markets entering mid-cycle expansion phases.  
 
-By connecting 25 years of data with practical decision frameworks, this project demonstrates how analytical storytelling can guide both **investment decisions and policy design.**
+### For Policymakers
+- **Develop targeted affordability programs** in regions with above-average rent inflation post-2020.  
+- **Support sustainable development** by aligning infrastructure investment with population shifts.  
+
+### For Data Analysts & Researchers
+- Integrate additional datasets (mortgage rates, income, population migration) for advanced modeling.  
+- Extend the current SQL framework with Python-based forecasting models for 2030+ housing trends.  
 
 ---
 
