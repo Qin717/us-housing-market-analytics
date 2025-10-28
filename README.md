@@ -99,3 +99,20 @@ While the West remains the most expensive region, the **South and Mountain state
 **Qin QIN**  
 Data Analytics Portfolio | Real Estate · Market Trends · Visualization  
 🔗 [GitHub Portfolio](https://github.com/Qin717) | [LinkedIn](https://www.linkedin.com/in/qinqin0717)
+
+
+### Overview of Findings
+
+Between 2000 and 2025, the U.S. housing market experienced three major cycles — expansion (2000–2007), collapse and recovery (2008–2015), and pandemic-driven resurgence (2020–2023).  
+The analysis reveals **strong regional divergence**, with **inland and Southern states outperforming traditional coastal markets** in both growth and recovery speed.
+
+Key national performance indicators are summarized below:
+
+| Metric | 2008 Crash | 2020 Surge | 2025 Level | Interpretation |
+|:--|:--:|:--:|:--:|:--|
+| **National Home Value Growth (YoY)** | -12.6% | +16.8% | +3.5% | Prices peaked post-pandemic, then stabilized at moderate growth levels |
+| **Average Rent Growth (YoY)** | -6.2% | +14.4% | +2.7% | Rent inflation eased after a record surge during 2021–2022 |
+| **Most Volatile Region** | West | West | West | Western markets (CA, NV, AZ) remain the most cyclical |
+| **Fastest-Growing Region** | South | South | South | Sustained growth led by TX, FL, GA, and NC |
+| **Slowest-Growing Region** | Midwest | Northeast | Midwest | Limited post-2015 appreciation |
+
