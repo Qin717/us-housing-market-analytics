@@ -90,12 +90,8 @@ While the West remains the most expensive region, the **South and Mountain state
 
 ### For Policymakers
 - **Develop targeted affordability programs** in regions with above-average rent inflation post-2020.  
-- **Support sustainable development** by aligning infrastructure investment with population shifts.  
-
-### For Data Analysts & Researchers
-- Integrate additional datasets (mortgage rates, income, population migration) for advanced modeling.  
-- Extend the current SQL framework with Python-based forecasting models for 2030+ housing trends.  
-
+- **Support sustainable development** by aligning infrastructure investment with population shifts.
+  
 ---
 
 
