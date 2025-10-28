@@ -43,7 +43,7 @@ Together, these projects show how data analytics can illuminate **regional inequ
 
 | Regional Housing Value Trends | Rent Recovery |
 |-------------------------------|---------------|
-| ![Regional Housing Value Trends in the U.S.](01_zillow_home_value_index_analysis/outputs/charts/regional_housing_value_trends_us.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) |
+| ![Regional Housing Value Trends in the U.S.](01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_average_values.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) |
 
 ---
 
