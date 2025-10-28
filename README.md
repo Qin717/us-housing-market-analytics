@@ -432,33 +432,44 @@ Data Analytics Portfolio | Real Estate · Market Trends · Visualization
 
 ## 1. Project Background
 
-The U.S. housing market — a cornerstone of the global economy — has undergone remarkable transformations over the past 25 years: from the early-2000s boom and the 2008 financial crisis to a decade-long recovery and the pandemic-era surge and correction.  
-Understanding these shifts is vital for **investors, policymakers, and developers** aiming to navigate volatility, forecast demand, and identify sustainable growth opportunities.
+## 1. Project Background
 
-This project analyzes **Zillow Research’s Home Value Index (ZHVI)** and **Rent Index (ZORI)** datasets covering **2000–2025**, translating 25 years of housing data into actionable insights that reveal how **regional dynamics, affordability, and resilience** have shaped U.S. market performance.
+The U.S. housing market — one of the most critical pillars of the global economy — has experienced extraordinary cycles over the past 25 years: the early-2000s housing boom, the 2008 financial crisis, a decade-long recovery, and the post-pandemic surge and correction.  
+Understanding these market shifts is essential for **investors, policymakers, and real-estate professionals** seeking to navigate volatility, forecast demand, and identify long-term opportunities for sustainable growth.
+
+This project leverages **Zillow Research’s Home Value Index (ZHVI)** and **Rent Index (ZORI)** datasets from 2000 to 2025 to uncover how property values and rental prices evolved across the United States.  
+It aims to transform complex, longitudinal data into actionable insights that explain **how regional dynamics, affordability, and economic resilience** have shaped housing market performance.
 
 The analysis focuses on four key objectives:
 
-- **Market Trend Analysis:** Examine 25 years of national and regional housing trends to identify growth and contraction cycles.  
-- **Crisis & Recovery Evaluation:** Quantify the impact of major disruptions — the 2008 financial crash and the 2020 pandemic — on home values and rents.  
-- **Regional Performance Comparison:** Compare U.S. regions (West, South, Midwest, Northeast) by growth rate, volatility, and recovery strength.  
-- **Investment & Policy Implications:** Translate findings into insights that support real-estate investment, housing affordability, and policy development.
+- **Market Trend Analysis:** Examine national and regional housing value trends across 25 years, identifying long-term growth and contraction cycles.  
+- **Crisis & Recovery Evaluation:** Quantify the impact of major economic disruptions — including the 2008 housing crash and the 2020 pandemic — on home and rent values.  
+- **Regional Performance Comparison:** Assess how housing markets differ across U.S. regions (West, South, Midwest, Northeast) in terms of growth rate, volatility, and recovery strength.  
+- **Investment & Policy Implications:** Translate analytical findings into insights that inform **investment strategy, affordability policy, and regional development planning.**
 
-> **Scope:** 50 states · 4 U.S. regions · 25 years of Zillow housing and rent data (2000–2025)
+> **Scope:** This analysis covers 50 states, 4 major U.S. regions, and 25 years of Zillow housing and rental data, providing a complete macro-to-micro view of U.S. housing dynamics.
 
 ---
 
 ## 2. Data Structure & Initial Checks
 
-- **Datasets:** Zillow Home Value Index (ZHVI) and Zillow Rent Index (ZORI)  
-- **Coverage:** 2000–2025 · Monthly data aggregated to yearly averages  
-- **Granularity:** State- and region-level  
-- **Processing:**  
-  - Cleaned and reshaped using Excel Power Query and SQL  
-  - Computed YoY growth, CAGR, and volatility (STDEV.P)  
-  - Validated completeness and consistency across datasets  
+**Data Sources**
+- **Zillow Home Value Index (ZHVI):** Monthly median home value estimates by region and state (2000–2025).  
+- **Zillow Rent Index (ZORI):** Monthly median rent value estimates by region and state (2000–2025).  
 
-This workflow ensured a reliable foundation for comparing long-term market trends and regional performance.
+**Data Structure**
+- Both datasets contain approximately 6,000 rows and over 300 monthly columns.  
+- Key fields include: `RegionID`, `RegionName`, `StateName`, `Metro`, `County`, and `SizeRank`.  
+- Monthly data was **aggregated into annual averages** for year-over-year (YoY) and volatility analysis.  
+
+**Initial Data Quality Checks**
+- Verified dataset completeness across all states and time periods (2000–2025).  
+- Standardized naming conventions and removed duplicates using Excel Power Query.  
+- Conducted type consistency checks and confirmed matching region identifiers across datasets.  
+- Created yearly summary tables to calculate **CAGR**, **YoY Growth**, and **Volatility (STDEV.P)**.  
+- Validated trends between home-value and rent datasets to ensure analytical coherence.  
+
+These checks ensured a clean, unified dataset suitable for robust trend analysis across time and geography.
 
 ---
 
