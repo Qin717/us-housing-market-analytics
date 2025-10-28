@@ -426,3 +426,113 @@ Support sustainable housing supply through data-driven zoning and infrastructure
 Data Analytics Portfolio | Real Estate · Market Trends · Visualization  
 🔗 [GitHub Portfolio](https://github.com/Qin717) | [LinkedIn](https://www.linkedin.com/in/qinqin0717)
 
+
+
+# U.S. Housing Market Analytics (2000–2025)
+
+## 1. Project Background
+
+The U.S. housing market — one of the most critical pillars of the global economy — has experienced dramatic cycles over the past 25 years: the early-2000s boom, the 2008 financial crisis, a decade-long recovery, and the post-pandemic surge and correction.  
+Understanding these shifts is essential for **investors, developers, and policymakers** seeking to navigate volatility, forecast demand, and identify long-term opportunities for sustainable growth.
+
+This project leverages **Zillow Research’s Home Value Index (ZHVI)** and **Rent Index (ZORI)** datasets from **2000–2025**, transforming complex, longitudinal data into clear insights about how **regional dynamics, affordability, and economic resilience** have shaped U.S. housing markets.
+
+The analysis explores four central questions:
+1. How have housing values and rents evolved over the past 25 years?  
+2. What were the measurable impacts of the 2008 financial crash and COVID-19 pandemic?  
+3. Which regions have shown the strongest growth, volatility, and recovery?  
+4. What strategic insights can guide investors and housing policy?  
+
+> **Scope:** 50 states · 4 U.S. regions · 25 years of housing and rent data (2000–2025)
+
+---
+
+## 2. Data Structure & Initial Checks
+
+- **Datasets:** Zillow Home Value Index (ZHVI) and Zillow Rent Index (ZORI)  
+- **Coverage:** 2000–2025 · Monthly data aggregated to yearly averages  
+- **Granularity:** State- and region-level  
+- **Processing:**  
+  - Cleaned and reshaped using Excel Power Query and SQL  
+  - Computed YoY growth, CAGR, and volatility (STDEV.P)  
+  - Validated completeness and consistency across datasets  
+
+This workflow ensured a reliable foundation for comparing long-term market trends and regional performance.
+
+---
+
+## 3. Executive Summary
+
+### 🏠 Project 1: Home Value Analysis (Excel)
+
+**Market Overview**  
+From 2000–2025, U.S. home values rose steadily at an average **+5.1% per year**, with major inflection points:  
+a **-12.6% decline in 2009** during the housing crash and a **+16.8% surge in 2021** following pandemic-driven demand.  
+The **South and Mountain regions** led appreciation, while the **West** remained the most volatile yet highest-valued region.
+
+**Key Highlights**
+
+| Metric | State / Region | Value | Period | Insight |
+|--------|----------------|-------|--------|----------|
+| **Fastest Home Value Growth (CAGR)** | Idaho | **+11.8% per year** | 2015–2025 | Driven by affordability migration and population inflows |
+| **Most Volatile Market** | Nevada | **9.6 Volatility Index** | 2000–2025 | Characterized by speculative cycles and sharp corrections |
+| **Strongest Post-2008 Recovery** | Texas | **3 Years to Recover** | 2008–2011 | Early rebound due to diversified economy |
+| **Peak National Growth** | United States | **+16.8% YoY** | 2021 | Stimulus-driven surge under record-low rates |
+| **Deepest Market Decline** | United States | **-12.6% YoY** | 2009 | Reflects the depth of the subprime crisis |
+
+**Regional Trends**  
+The **South** achieved the fastest and most consistent growth, fueled by affordability and migration.  
+The **West** remained high-value but highly cyclical, while the **Midwest** demonstrated long-term stability and resilience.
+
+![Regional Housing Value Trends](https://github.com/Qin717/us-housing-market-analytics/blob/main/01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png)  
+*Regional housing value trends in the U.S. (2000–2025).*
+
+---
+
+### 🏢 Project 2: Rent Value Analysis (SQL)
+
+**Market Overview**  
+Rental markets mirrored home-value trends but reacted faster to economic shocks.  
+From 2020–2025, rents surged nationwide — led by **Southern states with +35% cumulative growth** — as affordability migration and remote work reshaped regional demand.
+
+**Key Highlights**
+
+| Metric | State / Region | Value | Period | Insight |
+|--------|----------------|-------|--------|----------|
+| **Fastest Rent Growth** | Florida | **+41% increase** | 2020–2025 | Driven by population migration and housing demand |
+| **Most Stable Rent Market** | Midwest | **< 4 Volatility Index** | 2000–2025 | Consistent rent growth with minimal swings |
+| **Strongest Rent Rebound Post-2020** | Texas | **+29% YoY peak** | 2021 | Rapid recovery reflecting economic resilience |
+| **Highest Regional Rent Growth** | South | **+35% cumulative** | 2020–2025 | Affordability and job creation attracted new renters |
+| **Lowest Rent Growth** | Northeast | **+12% cumulative** | 2020–2025 | Slowest recovery due to population outflows |
+
+**Regional Trends**  
+Southern and Mountain states drove the strongest rental recovery post-2020, while the Midwest remained a model of stability.  
+The Northeast lagged as migration and affordability pressures shifted population centers inland.
+
+![Post-COVID Rent Recovery](https://github.com/Qin717/us-housing-market-analytics/blob/main/02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png)  
+*Top 10 states by post-COVID rent recovery (2020–2025).*
+
+---
+
+## 4. Recommendations
+
+**For Investors**  
+- Diversify across **high-growth (South & Mountain)** and **low-volatility (Midwest)** markets for stable long-term performance.  
+- Track volatility metrics and YoY shifts as early signals of market overheating.  
+
+**For Developers**  
+- Focus on affordable, fast-growing states such as **Texas, Georgia, and North Carolina**.  
+- Use rental performance data to identify emerging suburban demand centers.  
+
+**For Policymakers**  
+- Monitor **rent-to-income ratios** in high-growth states to address affordability challenges.  
+- Support balanced regional development through housing supply incentives and zoning reforms.  
+
+---
+
+## 👤 Author
+**Qin QIN**  
+Data Analytics Portfolio | Real Estate · Market Trends · Visualization  
+🔗 [GitHub Portfolio](https://github.com/Qin717) | [LinkedIn](https://www.linkedin.com/in/qinqin0717)
+
+
