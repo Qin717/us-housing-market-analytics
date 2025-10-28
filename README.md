@@ -101,18 +101,109 @@ Data Analytics Portfolio | Real Estate · Market Trends · Visualization
 🔗 [GitHub Portfolio](https://github.com/Qin717) | [LinkedIn](https://www.linkedin.com/in/qinqin0717)
 
 
-### Overview of Findings
 
-Between 2000 and 2025, the U.S. housing market experienced three major cycles — expansion (2000–2007), collapse and recovery (2008–2015), and pandemic-driven resurgence (2020–2023).  
-The analysis reveals **strong regional divergence**, with **inland and Southern states outperforming traditional coastal markets** in both growth and recovery speed.
+# U.S. Housing Market Analytics (2000–2025)
 
-Key national performance indicators are summarized below:
+## 1. Project Background
 
-| Metric | 2008 Crash | 2020 Surge | 2025 Level | Interpretation |
-|:--|:--:|:--:|:--:|:--|
-| **National Home Value Growth (YoY)** | -12.6% | +16.8% | +3.5% | Prices peaked post-pandemic, then stabilized at moderate growth levels |
-| **Average Rent Growth (YoY)** | -6.2% | +14.4% | +2.7% | Rent inflation eased after a record surge during 2021–2022 |
-| **Most Volatile Region** | West | West | West | Western markets (CA, NV, AZ) remain the most cyclical |
-| **Fastest-Growing Region** | South | South | South | Sustained growth led by TX, FL, GA, and NC |
-| **Slowest-Growing Region** | Midwest | Northeast | Midwest | Limited post-2015 appreciation |
+> **Scope:** Analysis of 25 years (2000–2025) of U.S. housing and rental market performance using Zillow Research data.  
+> Covers all **50 states** and **4 regions** (West, South, Midwest, Northeast).
+
+**Purpose:**  
+To uncover how home values and rents evolved across major economic cycles — the 2000s boom, 2008 crash, and post-pandemic recovery — and translate those patterns into strategic insights for **investors, developers, and policymakers**.
+
+**Core Focus Areas**
+| Objective | Description |
+|------------|-------------|
+| **Market Trend Analysis** | Track 25-year national and regional price cycles. |
+| **Crisis & Recovery** | Measure market impact and rebound after 2008 & COVID-19. |
+| **Regional Comparison** | Identify top-performing and most volatile states. |
+| **Strategic Implications** | Convert housing metrics into policy & investment insights. |
+
+---
+
+## 2. Data Structure & Initial Checks
+
+**Datasets**
+- **Zillow Home Value Index (ZHVI)** — monthly median home values (2000–2025)  
+- **Zillow Rent Index (ZORI)** — monthly median rent values (2000–2025)
+
+**Data Prep & Validation**
+| Step | Description |
+|------|--------------|
+| Data Cleaning | Removed nulls, standardized state & region naming via Power Query |
+| Aggregation | Monthly → yearly averages for YoY, CAGR, and volatility analysis |
+| Quality Check | Verified complete data across 25 years for all 50 states |
+| Metrics Built | YoY Growth, Volatility (STDEV.P), CAGR (2000–2025) |
+
+**Sample Size:**  
+> ~6,000 records × 300 monthly observations (per dataset)  
+> Unified and reshaped for state-level and regional analysis.
+
+---
+
+## 3. Executive Summary
+
+### Overview of Market Performance (2000–2025)
+
+| Key Indicator | Value | Interpretation |
+|----------------|--------|----------------|
+| **National Average Home Value Growth (CAGR)** | **+5.1% / year** | Steady long-term housing appreciation across U.S. |
+| **Peak National Growth (2021)** | **+16.8% YoY** | Pandemic-fueled demand surge, record low interest rates |
+| **2008 Decline (National Avg.)** | **-12.6% YoY** | Sharp contraction following subprime crisis |
+| **Average Rent Growth (Post-2020)** | **+35% in South** | Affordability-driven migration reshaping demand |
+| **Volatility Index (West)** | **8.7 points (STDEV.P)** | Highest cyclical risk concentration |
+
+---
+
+### Top Market Performers
+
+| Metric | Top State | Performance | Period | Commentary |
+|:--|:--|--:|:--:|:--|
+| **Home Value Growth (CAGR)** | **Idaho** | **+11.8% per year** | 2015–2025 | Fastest sustained appreciation, driven by inland migration |
+| **Housing Volatility (STDEV.P)** | **Nevada** | **9.6 points** | 2000–2025 | Extreme boom-bust cycles; major correction post-2008 |
+| **Strongest Recovery from 2008 Crash** | **Texas** | **Full recovery in 3 years** | 2008–2011 | Early rebound, supported by economic diversification |
+| **Post-COVID Rent Growth Leader** | **Florida** | **+41% rent increase** | 2020–2025 | Reflects affordability migration from Northeast |
+
+---
+
+### Regional Snapshot
+
+| Region | Avg CAGR | Volatility | Key Trend |
+|:--|--:|--:|:--|
+| **West** | 6.2% | 8.7 | High-value, high-volatility markets (CA, NV, AZ) |
+| **South** | 6.8% | 5.3 | Fastest growth; strong affordability-driven inflow |
+| **Midwest** | 4.1% | 3.9 | Stable, predictable appreciation |
+| **Northeast** | 3.8% | 4.6 | Mature markets with moderate recovery rates |
+
+---
+
+### KPI Dashboard Summary
+
+> **25-Year Housing Evolution (2000–2025)**
+
+| Metric | 2008 | 2015 | 2021 | 2025 |
+|:--|:--:|:--:|:--:|:--:|
+| **National Home Value Index (Base=2000)** | 82.4 | 109.7 | 183.5 | 189.9 |
+| **Rent Index (Base=2000)** | 90.8 | 113.4 | 156.2 | 161.4 |
+| **YoY Growth (Home Values)** | -12.6% | +6.4% | +16.8% | +3.5% |
+| **YoY Growth (Rent Values)** | -6.2% | +4.8% | +14.4% | +2.7% |
+
+---
+
+## 4. Recommendations
+
+| Stakeholder | Key Actions |
+|--------------|--------------|
+| **Investors** | Diversify across high-growth (South/Mountain) and low-volatility (Midwest) states for balanced exposure. |
+| **Developers** | Prioritize construction in affordable, high-demand markets like Texas, Georgia, and North Carolina. |
+| **Policymakers** | Monitor rent-to-income ratios and incentivize balanced regional development to prevent affordability crises. |
+| **Data Analysts** | Extend analysis using Python for forecasting (ARIMA/Prophet) and integrate Census population data for demand modeling. |
+
+---
+
+## 👤 Author
+**Qin QIN**  
+Data Analytics Portfolio | Real Estate · Market Trends · Visualization  
+🔗 [GitHub Portfolio](https://github.com/Qin717) | [LinkedIn](https://www.linkedin.com/in/qinqin0717)
 
