@@ -78,10 +78,9 @@ While the West remains the most expensive, the **South and Mountain states** hav
 
 | Home Value Trends (2000–2025) | Post-COVID Rent Recovery (2015–2025) |
 |--------------------------------|--------------------------------------|
-| ![Regional Housing Value Trends](01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/_)_)
+| ![Regional Housing Value Trends](01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/Q5_top10_states_by_rent_recovery_post_covid.png) |
 
-
-*Visuals generated through Excel, SQL, and Python (Pandas, Matplotlib, Seaborn).*
+*Comparative visualization of U.S. home-value and rent-market performance using Zillow datasets.*
 
 ---
 
@@ -135,4 +134,3 @@ Data Analytics Portfolio | Real Estate · Market Trends · Visualization
 ---
 
 > 🧩 *This portfolio demonstrates an end-to-end analytics workflow — from data cleaning and SQL aggregation to Python visualization and storytelling — designed to extract actionable insights from Zillow’s long-term U.S. housing data.*
-
