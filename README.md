@@ -99,9 +99,10 @@ While the West remains the most expensive region, the **South and Mountain state
 
 ---
 
-<details>
-<summary><b>View Repository Structure</b></summary>
-
+**Qin Qin**  
+Data Analyst | Excel · SQL · Python · Data Storytelling  
+Montpellier, France  
+[LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/Qin717)
 
 
 
