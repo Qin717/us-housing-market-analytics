@@ -1,5 +1,5 @@
 # ------------------------------------------------------------
-# Q4: Top & Bottom 5 States by Rent Growth Consistency (2015–2025)
+# Q5: Top & Bottom 5 States by Rent Growth Consistency (2015–2025)
 # Simpler, clean version (horizontal bars + insight box)
 # ------------------------------------------------------------
 import pandas as pd
@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 
 # 1️⃣ Load dataset
-file_path = "../outputs/csv_files/Q4_top_bottom_5_rent_growth_consistency.csv"
+file_path = "../outputs/csv_files/Q5_top_bottom_5_rent_growth_consistency.csv"
 df = pd.read_csv(file_path)
 
 # 2️⃣ Prepare data for plotting
@@ -64,7 +64,7 @@ plt.figtext(0.5, -0.08,
 
 # 7️⃣ Save chart
 plt.tight_layout(rect=[0, 0, 1, 0.95])
-plt.savefig('../outputs/charts/q4_top_bottom_5_rent_growth_consistency.png',
+plt.savefig('../outputs/charts/q5_top_bottom_5_rent_growth_consistency.png',
             dpi=300, bbox_inches='tight')
 plt.show()
 

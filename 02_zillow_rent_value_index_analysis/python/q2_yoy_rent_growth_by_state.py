@@ -1,5 +1,5 @@
 # ------------------------------------------------------------
-# Q1: YoY Rent Growth by State (2016–2025) — Heatmap
+# Q2: YoY Rent Growth by State (2016–2025) — Heatmap
 # ------------------------------------------------------------
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -7,7 +7,7 @@ import seaborn as sns
 import matplotlib.ticker as ticker
 
 # 1️⃣ Load the data
-df = pd.read_csv('../outputs/csv_files/Q1_yoy_rent_growth_by_state.csv', index_col=0)
+df = pd.read_csv('../outputs/csv_files/Q2_yoy_rent_growth_by_state.csv', index_col=0)
 
 # Ensure numeric sorting of columns (years)
 df.columns = df.columns.astype(int)
@@ -53,6 +53,6 @@ cbar.ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%.0f'))
 
 # 8️⃣ Tight layout and save
 plt.tight_layout()
-plt.savefig('../outputs/charts/q1_yoy_rent_growth_by_state.png',
+plt.savefig('../outputs/charts/q2_yoy_rent_growth_by_state.png',
             dpi=300, bbox_inches='tight')
 plt.show()

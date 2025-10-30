@@ -1,5 +1,5 @@
 """
-Q3: Top & Bottom 5 States by Rent Volatility (2015–2025)
+Q4: Top & Bottom 5 States by Rent Volatility (2015–2025)
 Creates a horizontal bar chart showing most volatile and most stable states
 """
 
@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 
 # Load data
-df = pd.read_csv('../outputs/csv_files/Q3_top_bottom_5_states_rent_volatility.csv')
+df = pd.read_csv('../outputs/csv_files/Q4_top_bottom_5_states_rent_volatility.csv')
 
 # Create chart
 fig, ax = plt.subplots(figsize=(10, 6))
@@ -58,7 +58,7 @@ plt.figtext(0.5, -0.08, f"Insight:\n{insight_text}", ha='center', va='top',
 
 # Save chart
 plt.tight_layout(rect=[0, 0, 1, 0.95])
-plt.savefig('../outputs/charts/q3_top_bottom_5_states_rent_volatility.png', dpi=300, bbox_inches='tight')
+plt.savefig('../outputs/charts/q4_top_bottom_5_states_rent_volatility.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 print("Chart saved successfully!")

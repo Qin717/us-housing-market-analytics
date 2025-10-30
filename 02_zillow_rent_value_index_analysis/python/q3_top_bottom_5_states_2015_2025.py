@@ -1,5 +1,5 @@
 """
-Q2: Top & Bottom 5 States by Rent Growth (2015-2025)
+Q3: Top & Bottom 5 States by Rent Growth (2015-2025)
 Creates a combination chart showing rent values and growth percentages
 """
 
@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load data
-df = pd.read_csv('../outputs/csv_files/Q2_top_bottom_5_states_2015_2025.csv')
+df = pd.read_csv('../outputs/csv_files/Q3_top_bottom_5_states_2015_2025.csv')
 
 # Create figure and axes
 fig, ax1 = plt.subplots(figsize=(16, 10))
@@ -67,7 +67,7 @@ plt.figtext(0.5, 0.05, insight_text, ha='center', va='bottom',
 # Save chart
 plt.tight_layout()
 plt.subplots_adjust(bottom=0.2)
-plt.savefig('../outputs/charts/q2_top_bottom_5_states_2015_2025.png', dpi=300, bbox_inches='tight')
+plt.savefig('../outputs/charts/q3_top_bottom_5_states_2015_2025.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 print("Chart saved successfully!")

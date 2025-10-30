@@ -1,4 +1,4 @@
-"""Create Q5 charts: rent recovery map and bar chart (simplified version)."""
+"""Create Q6 charts: rent recovery map and bar chart (simplified version)."""
 
 import os
 
@@ -11,10 +11,10 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 
-CSV_FILE = "../outputs/csv_files/Q5_top_10_states_post_covid_recovery.csv"
+CSV_FILE = "../outputs/csv_files/q6_top_10_states_by_rent_recovery_growth_post_covid.csv"
 CHARTS_FOLDER = "../outputs/charts"
-MAP_OUTPUT = "q5_top_10_states_by_rent_recovery_grwoth_post_covid_map.png"
-BAR_OUTPUT = "q5_top_10_states_by_rent_recovery_grwoth_post_covid_chart.png"
+MAP_OUTPUT = "q6_top_10_states_by_rent_recovery_grwoth_post_covid_map.png"
+BAR_OUTPUT = "q6_top_10_states_by_rent_recovery_grwoth_post_covid_chart.png"
 
 STATE_CENTROIDS = {
     "RI": (-71.5, 41.6),
@@ -33,7 +33,7 @@ CUSTOM_LABEL_OFFSETS = {
 
 
 def load_top10_states() -> pd.DataFrame:
-    """Load the prepared Q5 CSV and return the Top 10 states by recovery."""
+    """Load the prepared Q6 CSV and return the Top 10 states by recovery."""
 
     data = pd.read_csv(CSV_FILE)
 
