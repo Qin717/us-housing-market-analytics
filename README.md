@@ -60,11 +60,11 @@ While the West remains the most expensive, the **South and Mountain states** hav
 ### Key Findings
 
 - **Long-Term Market Divergence (2000–2025):**  
-  Western states maintained the highest home values, but Southern and inland states recorded the most consistent long-term growth, reflecting population and economic realignment.
+  Western states maintained the highest home values, while Southern and inland states recorded the most consistent long-term growth, reflecting a realignment of population and economy.
 
 - **Impact of Economic Crises:**  
   The 2008 crash caused price declines exceeding 40% in markets like Nevada and Florida. Post-2012 recovery was uneven, with inland states recovering faster.  
-  The 2020 pandemic triggered a short-lived surge in housing demand, followed by cooling in 2023–2024.
+  The 2020 pandemic triggered a short-lived surge in housing demand, followed by a cooling in 2023–2024.
 
 - **Post-COVID Rental Market Rebalancing (2015–2025):**  
   Rent growth surged sharply between 2020–2022, particularly in Southern and Mountain regions, where average rent growth exceeded **35% above the national trend**.
@@ -89,7 +89,7 @@ While the West remains the most expensive, the **South and Mountain states** hav
 - **Excel Pivot Tables** – statistical summarization, volatility metrics  
 - **SQL (CTEs, Window Functions)** – analytical calculations and ranking  
 - **Python (Pandas, Matplotlib, Seaborn)** – automated chart generation and data visualization  
-- **Excel Dashboards / Power BI (optional)** – presentation and storytelling  
+- **Excel Dashboards** – presentation and storytelling  
 
 ---
 
@@ -97,7 +97,7 @@ While the West remains the most expensive, the **South and Mountain states** hav
 
 ### For Real-Estate Investors
 - **Diversify geographically:** Balance exposure between high-growth inland states and established coastal markets.  
-- **Monitor volatility:** Use standard deviation of YoY changes as a leading signal of market overheating or correction.
+- **Monitor volatility:** Use the standard deviation of YoY changes as a leading signal of market overheating or correction.
 
 ### For Developers & Builders
 - **Prioritize expansion** in affordable, high-demand regions (South, Mountain).  
@@ -106,11 +106,7 @@ While the West remains the most expensive, the **South and Mountain states** hav
 ### For Policymakers
 - **Target affordability programs** where rent inflation outpaces wage growth (notably the South post-2020).  
 - **Invest in infrastructure alignment** to support migration-driven housing demand.
-
-### For Data Analysts & Researchers
-- Combine housing metrics with **mortgage rates, income, and migration data** for predictive modeling.  
-- Extend current SQL pipelines with **Python-based forecasting** (ARIMA, Prophet) for 2030+ trend projections.
-
+  
 ---
 
 ## 5. Data Coverage Alignment
