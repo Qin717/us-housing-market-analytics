@@ -175,7 +175,9 @@ state_consistency AS (
     state,
     ROUND(avg_growth_pct, 3) AS avg_growth_pct,
     ROUND(rent_volatility, 3) AS rent_volatility,
-    ROUND(consistency_index, 3) AS consistency_index
+    ROUND(consistency_index, 3) AS consistency_index,
+    CONCAT(ROUND(avg_growth_pct, 2), '%') AS avg_growth_pct_formatted,
+    CONCAT(ROUND(rent_volatility, 2), '%') AS rent_volatility_formatted
   FROM state_consistency
   ORDER BY consistency_index DESC
   LIMIT 5
@@ -186,7 +188,9 @@ UNION ALL
     state,
     ROUND(avg_growth_pct, 3) AS avg_growth_pct,
     ROUND(rent_volatility, 3) AS rent_volatility,
-    ROUND(consistency_index, 3) AS consistency_index
+    ROUND(consistency_index, 3) AS consistency_index,
+    CONCAT(ROUND(avg_growth_pct, 2), '%') AS avg_growth_pct_formatted,
+    CONCAT(ROUND(rent_volatility, 2), '%') AS rent_volatility_formatted
   FROM state_consistency
   ORDER BY consistency_index ASC
   LIMIT 5

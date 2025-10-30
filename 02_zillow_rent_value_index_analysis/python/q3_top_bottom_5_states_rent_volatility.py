@@ -1,78 +1,64 @@
-# ------------------------------------------------------------
-# Q3: Top & Bottom 5 States by Rent Volatility (2015–2025)
-# Replicates Excel-style chart (horizontal bars + insight)
-# ------------------------------------------------------------
+"""
+Q3: Top & Bottom 5 States by Rent Volatility (2015–2025)
+Creates a horizontal bar chart showing most volatile and most stable states
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
+from matplotlib.patches import Patch
 
-# 1️⃣ Load data
-file_path = "/Users/qinqin/Desktop/Zillow/02_zillow_rent_value_index_analysis/outputs/csv_files/Q3_top_bottom_5_states_rent_volatility.csv"
-df = pd.read_csv(file_path)
+# Load data
+df = pd.read_csv('../outputs/csv_files/Q3_top_bottom_5_states_rent_volatility.csv')
 
-# 2️⃣ Prepare data for plotting
-top_bottom = df.copy()
-
-# 5️⃣ Plot setup
+# Create chart
 fig, ax = plt.subplots(figsize=(10, 6))
-red = "#C00000"
-blue = "#5B9BD5"
 
-# Assign colors: top 5 red, bottom 5 blue
-colors = [red]*5 + [blue]*5
+# Colors
+red = "darkred"
+blue = "steelblue"
+colors = [red] * 5 + [blue] * 5
 
-# 6️⃣ Horizontal bars
-bars = ax.barh(top_bottom['state'], top_bottom['rent_volatility'],
-               color=colors, edgecolor='none', height=0.6)
+# Create horizontal bars
+bars = ax.barh(df['state'], df['rent_volatility'], color=colors, height=0.6)
 
-# Add value labels to right of bars
+# Add value labels
 for i, bar in enumerate(bars):
     width = bar.get_width()
     ax.text(width + 0.2, bar.get_y() + bar.get_height()/2,
-            f"{width:.2f}%", ha='left', va='center', fontsize=10, color='black')
+            f"{width:.2f}%", ha='left', va='center', fontsize=10)
 
-# 7️⃣ Title & subtitle
-plt.title("Top & Bottom 5 States by Rent Volatility", fontsize=16, weight='bold', pad=10)
-plt.suptitle("Measured as standard deviation of YoY rent growth (%)\n(2015–2025)",
-             fontsize=11, y=0.91, color='gray')
+# Title and labels
+plt.suptitle("Top & Bottom 5 States by Rent Volatility", fontsize=16, weight='bold', y=0.95)
+plt.figtext(0.5, 0.88, "Measured as standard deviation of YoY rent growth (%) (2015–2025)", 
+            ha='center', va='center', fontsize=10, color='gray')
+ax.set_xlabel("Rent Volatility (%)", fontsize=10)
+ax.set_ylabel("State", fontsize=10)
 
-# 8️⃣ Axis formatting
-ax.set_xlabel("Rent Volatility (%)", fontsize=12)
-ax.set_xlim(0, top_bottom['rent_volatility'].max() + 2)
-ax.invert_yaxis()  # Top-down ordering (most volatile at top)
+# Format axes
+ax.set_xlim(0, df['rent_volatility'].max() + 2)
+ax.invert_yaxis()
 ax.set_xticks(range(0, 15, 2))
 ax.set_xticklabels([f"{x:.2f}%" for x in range(0, 15, 2)], fontsize=10)
+# Add vertical grid lines
+ax.grid(True, axis='x', alpha=0.3, linestyle='-', linewidth=0.5)
 
-# Remove grid and box for a clean layout
-ax.grid(False)
-plt.box(False)
-
-# 9️⃣ Custom legend
-from matplotlib.patches import Patch
+# Legend
 legend_elements = [
     Patch(facecolor=red, label='Most Volatile'),
     Patch(facecolor=blue, label='Most Stable')
 ]
-ax.legend(handles=legend_elements, loc='lower right', frameon=True, fontsize=10)
+ax.legend(handles=legend_elements, loc='lower right', frameon=True, fontsize=8)
 
-# 🔟 Add insight box
-insight_title = "Insight:"
-insight_text = (
-    "Western states like Montana, Vermont, and Wyoming experienced the highest rent volatility (6–12%), "
-    "while Ohio, Missouri, and Louisiana showed the most stable rent patterns across 2015–2025."
-)
-plt.figtext(0.5, -0.08,
-            f"{insight_title}\n{insight_text}",
-            ha='center', va='top', wrap=True,
+# Insight box
+insight_text = ("Western states like Montana, Vermont, and Wyoming experienced the highest rent volatility (6–12%),\n"
+                "while Ohio, Missouri, and Louisiana showed the most stable rent patterns across 2015–2025.")
+plt.figtext(0.5, -0.08, f"Insight:\n{insight_text}", ha='center', va='top',
             fontsize=10, linespacing=1.4,
             bbox=dict(facecolor='white', edgecolor='black', boxstyle='round,pad=0.6'))
 
-# 11️⃣ Save chart
+# Save chart
 plt.tight_layout(rect=[0, 0, 1, 0.95])
-charts_dir = "/Users/qinqin/Desktop/Zillow/02_zillow_rent_value_index_analysis/outputs/charts"
-os.makedirs(charts_dir, exist_ok=True)
-output_path = os.path.join(charts_dir, "q3_top_bottom_5_states_rent_volatility.png")
-plt.savefig(output_path, dpi=300, bbox_inches='tight')
+plt.savefig('../outputs/charts/q3_top_bottom_5_states_rent_volatility.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-print(f"✅ Chart saved to: {output_path}")
+print("Chart saved successfully!")
