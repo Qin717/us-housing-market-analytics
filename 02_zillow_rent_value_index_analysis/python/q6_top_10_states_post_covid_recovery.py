@@ -21,6 +21,7 @@ STATE_CENTROIDS = {
     "CT": (-72.7, 41.6),
     "NJ": (-74.5, 40.1),
     "DE": (-75.5, 39.0),
+    "NH": (-71.7, 43.2),
 }
 
 CUSTOM_LABEL_OFFSETS = {
@@ -28,6 +29,7 @@ CUSTOM_LABEL_OFFSETS = {
     "CT": (-1.6, 0.2),
     "NJ": (-1.5, 0.1),
     "DE": (-1.6, -0.1),
+    "NH": (2.2, 0.0),
 }
 
 
@@ -78,7 +80,7 @@ def build_map(top10: pd.DataFrame) -> None:
                     lat=[lat + offset_lat],
                     text=label,
                     mode="text",
-                    textfont=dict(size=5, color="black"),
+                    textfont=dict(size=3, color="black"),
                     showlegend=False,
                 )
             )
@@ -88,22 +90,27 @@ def build_map(top10: pd.DataFrame) -> None:
                 locationmode="USA-states",
                 text=label,
                 mode="text",
-                textfont=dict(size=5, color="black"),
+                textfont=dict(size=3, color="black"),
                 showlegend=False,
             )
 
     fig.update_layout(
-        width=1200,
+        width=1600,
         height=800,
         title={"font": {"size": 18}, "x": 0.5, "xanchor": "center"},
         font={"size": 11},
+        coloraxis=dict(cmin=30, cmax=70),
         coloraxis_colorbar={
-            "title": {"text": "Recovery (%)", "font": {"size": 10}},
-            "tickfont": {"size": 12},
-            "len": 0.6,
+            "title": {"text": "Recovery (%)", "font": {"size": 9}},
+            "tickfont": {"size": 6},
+            "len": 0.55,
             "thickness": 18,
+            "x": 1.04,
+            "xanchor": "left",
+            "tickvals": [30, 50, 70],
+            "ticktext": ["30%", "50%", "70%"],
         },
-        margin={"l": 60, "r": 80, "t": 120, "b": 140},
+        margin={"l": 120, "r": 120, "t": 120, "b": 140},
     )
 
     fig.add_annotation(
@@ -112,8 +119,9 @@ def build_map(top10: pd.DataFrame) -> None:
         xref="paper",
         yref="paper",
         text=(
-            "<b>Insight:</b><br>Montana’s rent market rebounded sharply after COVID-19, driven by migration into less-dense regions.<br>"
-            "Florida, Georgia and other Sun Belt states also recovered strongly, while Northeastern markets saw more moderate, steady growth."
+            "<b>Insight:</b><br>Montana and other Mountain states led post-COVID rent rebounds as remote work demand shifted inland.<br>"
+            "Florida, Georgia, and the wider Sun Belt saw strong recovery fueled by migration and job growth.<br>"
+            "Northeastern markets recovered steadily with moderate rent gains and lower volatility."
         ),
         showarrow=False,
         align="center",
@@ -191,9 +199,9 @@ def main() -> None:
     print(
         """
 📊 Insight:
-Montana’s rent market rebounded sharply after COVID-19, reflecting migration and housing
-demand in less-dense regions. Southeastern states like Florida and Georgia also recovered
-strongly, while Northeastern markets saw more moderate, steady growth.
+Montana and other Mountain states led post-COVID rent rebounds as remote work demand shifted inland.
+Florida, Georgia, and other Sun Belt markets posted strong gains, driven by migration and job growth.
+Northeastern states recovered steadily with moderate rent increases and lower volatility.
 """
     )
 
