@@ -97,10 +97,10 @@ DROP TABLE IF EXISTS avg_for_sale_listings_state_yearly_int;
 
 CREATE TABLE avg_for_sale_listings_state_yearly_int AS
 SELECT
-    statename,
+    UPPER(TRIM(StateName)) AS statename,
     year,
     ROUND(AVG(avg_inventory))::INT AS avg_inventory
 FROM avg_for_sale_listings_yearly_int
-WHERE statename IS NOT NULL
-GROUP BY statename, year
+WHERE StateName IS NOT NULL
+GROUP BY UPPER(TRIM(StateName)), year
 ORDER BY statename, year;
