@@ -21,7 +21,7 @@ It serves as the **foundation of the U.S. Housing Market Analytics portfolio**, 
   - `/data/clean/home_values_yearly_clean.csv`  
   - `/data/clean/home_value_yoy_growth.csv`
 
-> **About ZHVI:** Zillow’s Home Value Index is a smoothed, seasonally adjusted estimate of typical home values for a given region and time. It reflects broad market trends rather than individual transactions.
+> **About ZHVI:** Zillow's Home Value Index is a smoothed, seasonally adjusted estimate of typical home values for a given region and time. It reflects broad market trends rather than individual transactions.
 
 ---
 
@@ -29,9 +29,29 @@ It serves as the **foundation of the U.S. Housing Market Analytics portfolio**, 
 1. **Define the Question & Context** – Identify long-term state-level growth and volatility.  
 2. **Data Cleaning (Power Query)** – Remove missing years, aggregate monthly values to annual averages.  
 3. **Metric Computation (Excel Formulas)** – CAGR (2000-2025), YoY Growth %, Volatility (STDEV.P).  
-4. **Exploration & Visualization** – Six Excel files (q1–q6) each answer a specific business question.  
+4. **Exploration & Visualization** – Five Excel files (q1–q5) each answer a specific business question.  
 5. **Insight Synthesis** – Compare regional patterns and highlight top & bottom performers.  
 6. **Business Recommendations & Next Steps** – Summarize investment and policy implications; connect to rental (Project 02) and inventory (Project 03) analyses.
+
+---
+
+## Question-Specific Analysis
+
+### 1. Top 10 U.S. States by Average Home Value Growth  
+
+**Insight:** This analysis identifies the states with the highest average home value growth over the period.  
+These states demonstrate strong appreciation trends driven by various factors including economic growth, population migration, and housing market dynamics.  
+
+A chart can be downloaded [here](outputs/charts/q1_top10_u.s._states_by_average_home_value_growth.png).  
+
+---
+
+### 2. Top 5 U.S. States by Home Value Growth (Absolute vs Percentage)  
+
+**Insight:** This analysis compares the top 5 states by both absolute dollar growth and percentage growth in home values.  
+The visualization highlights how different states achieved growth through various patterns, showing both the magnitude of dollar increases and the relative percentage appreciation over the period.  
+
+A chart can be downloaded [here](outputs/charts/q2_top5_u.s._states_by_home_value_growth_absolute_vs_percentage.png).
 
 ---
 
@@ -39,12 +59,11 @@ It serves as the **foundation of the U.S. Housing Market Analytics portfolio**, 
 
 | Chart | Key Insight | Takeaway |
 |--------|--------------|-----------|
-| **Q1** | CA, TX, and FL dominate in absolute home values | Coastal states lead pricing; TX shows fast catch-up |
-| **Q2** | Top CAGR: TX (+6.3%), ID (+6.1%), TN (+5.8%) | Sunbelt states outperform national median growth |
-| **Q3** | Boise, Austin, and Phoenix show strongest % + absolute growth | Hybrid value + affordability advantage |
-| **Q4** | NV (14%) and FL (13.5%) most volatile; IA & OH < 5% | Volatility concentrated in tourism-driven markets |
-| **Q5** | NV & AZ recovered to 2007 levels by 2015 | Fastest post-crash rebounds in Sunbelt region |
-| **Q6** | South & West outperform Northeast & Midwest since 2010 | Structural shift toward affordable, high-growth regions |
+| **Q1** | Top 10 states by average home value growth | States with highest long-term appreciation |
+| **Q2** | Top 5 states by absolute vs percentage growth | Comparison of dollar growth vs percentage appreciation |
+| **Q3** | Top 5 states with highest volatility | Volatility concentrated in tourism-driven markets |
+| **Q4** | Impact and recovery from 2008 housing crash | Fastest post-crash rebounds in Sunbelt region |
+| **Q5** | Regional housing value trends in the U.S. | Structural shift toward affordable, high-growth regions |
 
 ---
 
