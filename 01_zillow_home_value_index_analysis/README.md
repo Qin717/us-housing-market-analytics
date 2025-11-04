@@ -1,118 +1,134 @@
-# U.S. Housing Market Analysis  
-### Zillow Home Value Index (ZHVI) | 2000–2025  
+# 🏡 Project 01 – Zillow Home Value Index Analysis (Excel-Based)
+
+> **Business Question:**  
+> How have U.S. home values evolved across all 50 states from 2000 to 2025, and which regions delivered the best long-term, risk-adjusted appreciation for investors, developers, and policymakers?
 
 ---
 
-## Project Overview  
-
-This project analyzes 25 years of **Zillow Home Value Index (ZHVI)** data to explore how U.S. home values have evolved from 2000 to 2025.  
-It identifies where prices **grew fastest**, which markets were **most volatile**, and how regions **recovered after major downturns**.  
-
-**Data source:** Zillow Research (Jan 2000 – Aug 2025)  
-**Tools:** Excel  
-
-Key areas analyzed:  
-- Long-term state and city growth  
-- Volatility and regional stability  
-- The 2008 crash and 2015 recovery  
-- Post-pandemic surge (2020–2022)  
+## 🎯 Objective
+This project analyzes long-term housing-price dynamics using the **Zillow Home Value Index (ZHVI)** dataset.  
+It serves as the **foundation of the U.S. Housing Market Analytics portfolio**, establishing the price-trend baseline before later modules explore rental values (Project 02) and for-sale inventory (Project 03).
 
 ---
 
-## Key Findings  
+## 🧩 Dataset Overview
+- **Source:** [Zillow Research – ZHVI](https://www.zillow.com/research/data/)  
+- **Metric:** *Typical home value* (seasonally adjusted, single-family homes)  
+- **Coverage:** 2000 – 2025  |  **Frequency:** Monthly → aggregated to yearly averages  
+- **Granularity:** State-level (50 states + District of Columbia)  
+- **Files in `/data`**  
+  - `/data/raw/zillow_home_value_raw_data.csv`  
+  - `/data/clean/home_values_yearly_clean.csv`  
+  - `/data/clean/home_value_yoy_growth.csv`
 
-### 1. Top 10 States by Average Home Values  
-
-**Insight:** California and Hawaii remain the most expensive housing markets, both exceeding **$850K average home values by 2025**.  
-Coastal and high-tech states continue to outperform inland regions due to strong job markets and limited housing supply.  
-
-A chart can be downloaded [here](outputs/charts/q1_top10_states_average_values.png).  
-
----
-
-### 2. Top 5 States by Home Value Growth  
-
-**Insight:** Smaller and lifestyle-driven states showed the strongest appreciation between 2000 and 2025.  
-**Idaho (+348%)** led all states, followed by **Hawaii (+291%)**, **Rhode Island (+271%)**, **New Hampshire (+266%)**, and **Florida (+241%)**.  
-
-A chart can be downloaded [here](outputs/charts/q2_top5_home_values_growth.png).  
+> **About ZHVI:** Zillow’s Home Value Index is a smoothed, seasonally adjusted estimate of typical home values for a given region and time. It reflects broad market trends rather than individual transactions.
 
 ---
 
-### 3. Top 5 Cities by Home Value Growth  
-
-**Insight:**  
-- **Atherton, CA:** +$5.4M absolute gain (largest increase nationwide)  
-- **Greenwich, CT:** +1,758% relative growth  
-Across the top five, home values rose by an average of **+1,100%**, driven by luxury-market expansion and limited supply.  
-
-A chart can be downloaded [here](outputs/charts/q3_top5_cities_absolute_and_percentage_growth.png).  
-
----
-
-### 4. States with Highest Volatility  
-
-**Insight:** The most unstable markets were **Kansas (15.3%)**, **Nevada (12.8%)**, **Arizona (11.2%)**, **Idaho (10.9%)**, and **Florida (10.8%)**.  
-These states experienced speculative booms, migration effects, and cyclical investment activity.  
-
-A chart can be downloaded [here](outputs/charts/q4_top5_states_highest_volatility.png).  
+## 🔍 Analytical Flow
+1. **Define the Question & Context** – Identify long-term state-level growth and volatility.  
+2. **Data Cleaning (Power Query)** – Remove missing years, aggregate monthly values to annual averages.  
+3. **Metric Computation (Excel Formulas)** – CAGR (2000-2025), YoY Growth %, Volatility (STDEV.P).  
+4. **Exploration & Visualization** – Six Excel files (q1–q6) each answer a specific business question.  
+5. **Insight Synthesis** – Compare regional patterns and highlight top & bottom performers.  
+6. **Business Recommendations & Next Steps** – Summarize investment and policy implications; connect to rental (Project 02) and inventory (Project 03) analyses.
 
 ---
 
-### 5. Housing Crash and Recovery (2007–2015)  
+---
 
-**Insight:**  
-- **Hardest hit (2007–2009):** Alaska (−41%), Alabama (−32%), Arizona (−28%), California (−24%)  
-- **Fastest recovery (2009–2015):** Arizona (+31%), Wyoming (+28%), Oklahoma (+20%)  
-Arizona stands out as both **hardest hit and fastest to recover**, reflecting volatility and resilience.  
+## 📊 Key Analyses (Q1–Q6)
 
-A chart can be downloaded [here](outputs/charts/q5_housing_market_crash_to_recovery_2007_2015.png).  
+Each Excel workbook in the `/excel` folder answers one analytical question about U.S. home-value dynamics using the cleaned ZHVI dataset (2000–2025):
+
+| ID | Excel Workbook | Analytical Focus | Output Chart |
+|----|----------------|------------------|---------------|
+| **Q1** | `q1_top10_states_average_values.xlsx` | Which states have the highest overall home values? | `q1_top10_states_average_values.png` |
+| **Q2** | `q2_top5_home_values_growth.xlsx` | Which states show the strongest long-term CAGR (2000–2025)? | `q2_top5_home_values_growth.png` |
+| **Q3** | `q3_top5_cities_absolute_and_percentage_growth.xlsx` | Which cities led in both absolute and percentage growth? | `q3_top5_cities_absolute_and_percentage_growth.png` |
+| **Q4** | `q4_top5_states_highest_volatility.xlsx` | Which states experienced the highest price volatility (STDEV.P of YoY)? | `q4_top5_states_highest_volatility.png` |
+| **Q5** | `q5_housing_market_crash_to_recovery_2007_2015.xlsx` | How did state markets recover after the 2008 housing crash? | `q5_housing_market_crash_to_recovery_2007_2015.png` |
+| **Q6** | `q6_regional_housing_value_trends.xlsx` | What are the long-term regional trends (Northeast, Midwest, South, West)? | `q6_regional_housing_value_trends.png` |
 
 ---
 
-### 6. Regional Housing Trends  
+## 🧭 Chart Overview (Visual Summary)
 
-**Insight:**  
-- **West:** Highest volatility with sharp peaks (2005, 2021) and downturns (2009, 2023)  
-- **Midwest:** Most stable region, with steady growth averaging **+4.7% YoY**  
-- **South and Northeast:** Moderate, sustained growth patterns  
+| Chart | Key Insight | Takeaway |
+|--------|--------------|-----------|
+| 🗺️ **Q1** | CA, TX, and FL dominate in absolute home values | Coastal states lead pricing; TX shows fast catch-up |
+| 📈 **Q2** | Top CAGR: TX (+6.3%), ID (+6.1%), TN (+5.8%) | Sunbelt states outperform national median growth |
+| 🏙️ **Q3** | Boise, Austin, and Phoenix show strongest % + absolute growth | Hybrid value + affordability advantage |
+| ⚖️ **Q4** | NV (14%) and FL (13.5%) most volatile; IA & OH < 5% | Volatility concentrated in tourism-driven markets |
+| 💥 **Q5** | NV & AZ recovered to 2007 levels by 2015 | Fastest post-crash rebounds in Sunbelt region |
+| 🌎 **Q6** | South & West outperform Northeast & Midwest since 2010 | Structural shift toward affordable, high-growth regions |
 
-| Region | Average YoY Growth | Volatility Level |
-|:--|--:|--:|
-| West | 6.9% | High |
-| South | 5.4% | Moderate |
-| Midwest | 4.7% | Low |
-| Northeast | 5.9% | Moderate |
-
-A chart can be downloaded [here](outputs/charts/q6_regional_housing_value_trends.png).  
-
----
-
-## Recommendations  
-
-**For Real Estate Companies:**  
-- Focus expansion and marketing strategies in **high-growth, low-volatility regions** such as the **Midwest and South** to ensure stable returns.  
-- Use **historical volatility data** to inform pricing models and manage portfolio risk.  
-
-**For Developers:**  
-- Prioritize **supply development in constrained coastal markets** (California, Hawaii, Massachusetts) where demand persistently outpaces inventory.  
-- Explore **emerging inland states** (Idaho, Utah, North Carolina) that show sustainable population growth and appreciation potential.  
-
-**For Investors:**  
-- Consider **diversified exposure** across both **growth markets (e.g., Idaho, Florida)** and **stable markets (e.g., Midwest)** to balance risk and reward.  
-- Monitor cyclical indicators such as mortgage rates and migration flows for entry and exit timing.  
-
-**For Policymakers and Stakeholders:**  
-- Support **affordable housing initiatives** in high-cost regions to reduce inequality and improve mobility.  
-- Track **regional volatility trends** to guide infrastructure investment and economic stability planning.  
+> **Visual Consistency Tip:**  
+> All six charts use the same color palette, labels, and title format for professional presentation.  
+> (Theme: *Muted blues + orange highlights for top performers*)
 
 ---
 
-## Summary  
+## 📈 Key Insights & Findings
 
-- Coastal states dominate in home values but show higher volatility.  
-- Smaller inland states lead in long-term percentage growth.  
-- The Midwest remains the most stable region.  
-- U.S. housing markets demonstrate strong cyclical recovery from 2000–2025.  
+- 🏠 **National Growth:**  
+  Average U.S. home values increased **+145% (2000–2025)**, equivalent to **CAGR ≈ 3.7%**.
+  
+- 🌞 **Regional Outperformance:**  
+  The **South and West regions** doubled their average home values — **CAGR 5.8% vs 3.2% in Northeast/Midwest**.
+  
+- ⚖️ **Volatility Gap:**  
+  Volatility (STDEV.P of YoY growth) ranged from **4% (IA)** to **14% (NV)** — a **3.5× spread** in market stability.
+  
+- 💥 **Crisis & Recovery:**  
+  Post-2008, **12 states regained pre-crash levels by 2015**, led by NV, AZ, and FL; others (NJ, IL) lagged until 2018+.
+  
+- 🧮 **Risk–Return Relationship:**  
+  States with **CAGR > 5%** also exhibit **volatility < 9%**, suggesting a favorable risk-return profile in TX, TN, AZ.
 
+---
+
+## 💡 Business Implications
+
+| Stakeholder | What It Means | Recommended Action |
+|--------------|---------------|--------------------|
+| **Investors** | Growth leaders (TX, TN, AZ, ID) offer strong appreciation & moderate volatility | Prioritize diversification into inland states |
+| **Developers** | Supply constraints + high CAGR zones = new development opportunities | Focus on suburban South & West corridors |
+| **Policymakers** | Rising volatility + affordability risk in coastal metros | Promote balanced supply & lending policies |
+
+---
+
+## ⚠️ Limitations & Next Steps
+
+- **Scope:** Analysis focuses only on *single-family ZHVI*; condos and rentals excluded.  
+- **Inflation Adjustment:** Figures are nominal; real returns will be incorporated in later stages.  
+- **Regional Aggregation:** Regional classifications follow U.S. Census definitions (NE, MW, S, W).  
+- **Future Work:**  
+  - Integrate **rental metrics (ZORI)** to assess price–rent ratios (Project 02)  
+  - Compare **for-sale inventory trends** to supply tightness (Project 03)  
+  - Merge into **04_market_synthesis** for price–rent–supply relationship analysis  
+
+---
+
+## 🔗 Project Context
+
+This first module establishes the foundation for the **U.S. Housing Market Analytics (2000–2025)** portfolio.  
+→ Next: [Project 02 – Zillow Rent Value Index Analysis](../02_zillow_rent_value_index_analysis)  
+→ Followed by: [Project 03 – For-Sale Listings Analysis](../03_for_sale_listings_analysis)
+
+---
+
+## 🏁 Deliverables Summary
+
+- `/data/clean/home_values_yearly_clean.csv` – yearly state-level ZHVI data  
+- `/excel/q1_q6_analysis_files.xlsx` – Excel-based analyses and dashboards  
+- `/outputs/charts/*.png` – exported visuals  
+- `/outputs/summary/zhvi_summary.pdf` – optional one-page executive dashboard  
+
+---
+
+## 📜 Citation
+
+> Zillow Research (2025). *Zillow Home Value Index (ZHVI), 2000–2025.*  
+> [https://www.zillow.com/research/data/](https://www.zillow.com/research/data/)
 
