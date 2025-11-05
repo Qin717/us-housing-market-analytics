@@ -1,4 +1,4 @@
--- Q7: Correlation Between Rent and Home-Value Growth (2015–2025)
+-- Q5: Correlation Between Rent and Home-Value Growth (2015–2025)
 -- Data sources: q1_state_avg_rent_yearly_clean.csv, home_values_yearly_clean.csv
 -- Output: State-level growth data + correlation coefficient
 
