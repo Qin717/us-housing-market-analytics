@@ -57,7 +57,7 @@ It serves as the **foundation of the U.S. Housing Market Analytics portfolio**, 
 
 **Concept:** This analysis identifies states with the most price fluctuation and market instability by measuring the standard deviation of year-over-year growth rates. Volatility serves as a risk assessment metric, helping investors and policymakers understand market stability.
 
-![Home Value Stability vs. Volatility Across States](outputs/charts/q3_home_value_stability_vs._volatility-across_states.png)
+![Top 5 U.S. States with the Most Volatile Home Values](outputs/charts/q3_top5_u.s. _states_with_the_most_volatile_home_values.png)
 
 ---
 
