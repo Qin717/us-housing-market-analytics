@@ -39,31 +39,83 @@ It serves as the **foundation of the U.S. Housing Market Analytics portfolio**, 
 
 ### 1. Top 10 U.S. States by Average Home Value Growth  
 
-**Insight:** This analysis identifies the states with the highest average home value growth over the period.  
-These states demonstrate strong appreciation trends driven by various factors including economic growth, population migration, and housing market dynamics.  
+**Concept:** This analysis identifies the states with the highest average home value growth over the 2000-2025 period. The metric uses average annual home values across all years to highlight states with consistent long-term appreciation trends.
 
-A chart can be downloaded [here](outputs/charts/q1_top10_u.s._states_by_average_home_value_growth.png).  
+**Key Insight:** These states demonstrate strong appreciation trends driven by various factors including economic growth, population migration, and housing market dynamics. The analysis reveals which markets have delivered the most consistent value appreciation over the 25-year period.
+
+**Methodology:** Uses `AVERAGE()` function applied to yearly index values grouped by state, then ranked by average growth to identify top performers.
+
+**Chart:** [Top 10 States by Average Home Value Growth](outputs/charts/q1_top10_states_by_average_home_value_growth.png)
 
 ---
 
 ### 2. Top 5 U.S. States by Home Value Growth (Absolute vs Percentage)  
 
-**Insight:** This analysis compares the top 5 states by both absolute dollar growth and percentage growth in home values.  
-The visualization highlights how different states achieved growth through various patterns, showing both the magnitude of dollar increases and the relative percentage appreciation over the period.  
+**Concept:** This analysis compares the top 5 states by both absolute dollar growth and percentage growth in home values. The dual-metric approach differentiates between high-value markets (large absolute gains) and high-growth markets (high percentage appreciation).
 
-A chart can be downloaded [here](outputs/charts/q2_top5_u.s._states_by_home_value_growth_absolute_vs_percentage.png).
+**Key Insight:** The visualization highlights how different states achieved growth through various patterns, showing both the magnitude of dollar increases and the relative percentage appreciation over the period. This reveals whether growth is driven by high baseline values or exceptional appreciation rates.
+
+**Methodology:** 
+- Absolute Growth: `Current_Value - Base_Value` (total dollar increase)
+- Percentage Growth: `(Current_Value - Base_Value) / Base_Value * 100` (percentage appreciation)
+- Visualization uses dual-axis chart to compare both metrics simultaneously.
+
+**Chart:** [Top 5 States by Home Value Growth (Absolute vs Percentage)](outputs/charts/q2_top5_states_by_home_value_growth_absolute_vs_percentage.png)
+
+---
+
+### 3. Top 5 U.S. States with the Most Volatile Home Values  
+
+**Concept:** This analysis identifies states with the most price fluctuation and market instability by measuring the standard deviation of year-over-year growth rates. Volatility serves as a risk assessment metric, helping investors and policymakers understand market stability.
+
+**Key Insight:** Volatility is often concentrated in tourism-driven markets and correlates with economic cycles and population shifts. The analysis reveals a 3.5× spread in market stability, with volatility ranging from 4% (IA) to 14% (NV), highlighting significant differences in market risk profiles across states.
+
+**Methodology:** Uses `STDEVP()` or `STDEV()` for standard deviation of year-over-year growth rates across all years (2000-2025). Higher standard deviation indicates greater price volatility and market instability.
+
+**Chart:** [Home Value Stability vs. Volatility Across States](outputs/charts/q3_home_value_stability_vs._volatility-across_states.png)
+
+---
+
+### 4. Housing Market Crash to Recovery (2007-2015)  
+
+**Concept:** This analysis examines the impact of the 2008 financial crisis and tracks recovery timelines by state. It identifies pre-crash peak values, measures crash depth, and determines when each state regained pre-crash levels.
+
+**Key Insight:** Recovery patterns varied significantly by region. Post-2008, 12 states regained pre-crash levels by 2015, led by Sunbelt states (NV, AZ, FL) which demonstrated fastest post-crash rebounds. Others (NJ, IL) lagged until 2018+, showing varying resilience and recovery capabilities across different markets.
+
+**Methodology:** 
+- Pre-crash peak: `MAX()` of values from 2005-2007
+- Recovery point: Comparison of values to identify when each state regained pre-crash levels
+- Recovery timeline: `IF()` statements to determine recovery year
+- Metrics include peak values, crash depth, recovery time, and percentage recovery
+
+**Chart:** [Housing Market Crash to Recovery 2007-2015](outputs/charts/q4_housing_market_crash_to_recovery_2007_2015.png)
+
+---
+
+### 5. Home Value Trends Vary Across U.S. Regions  
+
+**Concept:** This analysis identifies regional patterns and trends by aggregating state-level values into four U.S. Census regions (Northeast, Midwest, South, West). It reveals broader economic and demographic influences beyond individual state performance.
+
+**Key Insight:** Clear structural shift toward affordable, high-growth regions. The South and West regions doubled their average home values with CAGR 5.8% vs 3.2% in Northeast/Midwest, revealing broader macroeconomic factors that influence local markets. This trend reflects population migration, economic opportunities, and affordability dynamics.
+
+**Methodology:** 
+- Regional aggregation: `AVERAGE()` of state-level values grouped by region
+- Time series analysis: Trend lines and moving averages using `TREND()` or chart trendlines
+- CAGR calculation: `(End_Value / Start_Value) ^ (1 / Years) - 1` for long-term growth comparison
+
+**Chart:** [Home Value Trends Vary Across U.S. Regions](outputs/charts/q5_home_value_trends_vary_across_u.s._regions.png)
 
 ---
 
 ## Chart Overview (Visual Summary)
 
-| Chart | Key Insight | Takeaway |
-|--------|--------------|-----------|
-| **Q1** | Top 10 states by average home value growth | States with highest long-term appreciation |
-| **Q2** | Top 5 states by absolute vs percentage growth | Comparison of dollar growth vs percentage appreciation |
-| **Q3** | Top 5 states with highest volatility | Volatility concentrated in tourism-driven markets |
-| **Q4** | Impact and recovery from 2008 housing crash | Fastest post-crash rebounds in Sunbelt region |
-| **Q5** | Regional housing value trends in the U.S. | Structural shift toward affordable, high-growth regions |
+| Chart | Concept | Key Insight | Chart Link |
+|--------|---------|--------------|------------|
+| **Q1** | Top 10 states by average home value growth | States with highest long-term appreciation driven by economic growth and population migration | [View Chart](outputs/charts/q1_top10_states_by_average_home_value_growth.png) |
+| **Q2** | Top 5 states by absolute vs percentage growth | Comparison of dollar growth vs percentage appreciation reveals different market characteristics | [View Chart](outputs/charts/q2_top5_states_by_home_value_growth_absolute_vs_percentage.png) |
+| **Q3** | Top 5 states with highest volatility | Volatility concentrated in tourism-driven markets; 3.5× spread in market stability (4% to 14%) | [View Chart](outputs/charts/q3_home_value_stability_vs._volatility-across_states.png) |
+| **Q4** | Impact and recovery from 2008 housing crash | Fastest post-crash rebounds in Sunbelt region (NV, AZ, FL) by 2015; others lagged until 2018+ | [View Chart](outputs/charts/q4_housing_market_crash_to_recovery_2007_2015.png) |
+| **Q5** | Regional housing value trends in the U.S. | Structural shift toward affordable, high-growth regions (South/West CAGR 5.8% vs 3.2% Northeast/Midwest) | [View Chart](outputs/charts/q5_home_value_trends_vary_across_u.s._regions.png) |
 
 ---
 
