@@ -1,86 +1,149 @@
-# Zillow Home Rent Index Analysis (2000–2025)
+# 💰 Zillow Rent Value Index Analysis (2015–2025)
 
-This project analyzes long-term U.S. rent trends using the Zillow Observed Rent Index (ZORI), focusing on rent growth, volatility, and post-pandemic recovery patterns across all 50 states.
-It complements the Zillow Home Value Index project by examining how rental markets mirror and lag behind housing price dynamics.
+---
 
-## Executive Summary
+## 🏙️ Background  
+From 2015 to 2025, the U.S. rental housing market experienced a decade of strong divergence.  
+While rents surged in high-demand states across the **West and Mountain regions**, many **Midwestern and Southern** markets remained comparatively stable and affordable.  
+Understanding these differences is essential for **investors, developers, and policymakers** navigating housing affordability, investment risk, and long-term market sustainability.  
 
-Between 2015 and 2025, U.S. rent markets show strong divergence between high-growth Western states and stable Midwestern and Southern markets.
-Key findings reveal growth surges during the pandemic, significant volatility in the Mountain West, and robust post-COVID recovery in inland and Southeastern states.
+This project analyzes rent trends across all 50 U.S. states using the **Zillow Rent Index (ZORI)** — a measure of typical market rents weighted by housing stock.  
+It forms part of the broader **U.S. Housing Market Analytics Portfolio**, which also examines **home-value** and **for-sale inventory** data to provide a comprehensive view of national housing dynamics.
 
-## Key Analyses
+---
 
-### 1. Year-over-Year Rent Growth by State (2016–2025)
+## 📘 Executive Summary  
+This analysis explores the evolution of the **Zillow Rent Index (ZORI)** between 2015 and 2025 to uncover long-term patterns and regional disparities.  
+It focuses on three core dimensions:  
+1. Rent growth trends across states.  
+2. Rent volatility and market stability.  
+3. The relationship between rent growth and home-value appreciation.  
 
-Rent growth surged in 2021–2022, especially in Florida, Arizona, and Idaho, exceeding +10–15% YoY.
+The project demonstrates advanced **SQL analysis**, complemented by **Excel visualizations** that communicate insights clearly and effectively.
 
-By 2023–2025, growth stabilized across most regions but remained above pre-pandemic averages in Western states.
+---
 
-**Insight:** Rent growth peaked nationwide in 2022 due to migration and supply constraints, before normalizing toward 2025.
+## 🎯 Objectives  
+- Quantify rent growth across all 50 U.S. states during 2015–2025.  
+- Measure volatility to identify stable versus high-risk rental markets.  
+- Examine the relationship between rent growth and home-value appreciation.  
+- Translate analytical findings into actionable business insights.  
 
-📊 Chart available [here](outputs/charts/q1_yoy_rent_growth_by_state.png)
+---
 
-### 2. Top & Bottom 5 States by Total Rent Growth (2015–2025)
+## 🧾 Dataset Overview  
+- **Source:** Zillow Rent Index (ZORI)  
+- **Coverage:** 50 U.S. states | Monthly data from 2015–2025  
+- **Metric Definition:** Typical market rent weighted by local housing characteristics.  
+- **Transformation:** Monthly data aggregated into **annual averages** for trend and volatility analysis.  
+- **Supplementary Data:** Zillow Home Value Index (ZHVI) for correlation analysis.  
+- **Variables Derived:**  
+  - Rent Growth (%)  
+  - Year-over-Year % Change  
+  - Rent Volatility (Standard Deviation of YoY %)  
+  - Correlation with Home-Value Growth  
 
-Colorado (+117%) and Idaho (+99%) led all states, with rents more than doubling.
+---
 
-Louisiana (+14%) and Wisconsin (+15%) experienced the slowest gains, reflecting steady affordability.
+## ⚙️ Methodology  
+1. **Data Cleaning:** Removed missing values, standardized state names, and ensured continuous annual coverage (2015–2025).  
+2. **Aggregation:** Transformed monthly rent data into yearly averages to capture long-term trends.  
+3. **Computation:** Calculated total rent growth, year-over-year changes, and volatility (standard deviation of YoY %).  
+4. **Integration:** Combined rent metrics with home-value data to assess their relationship.  
+5. **Visualization:** Created Excel charts illustrating rent growth, volatility, and correlation patterns.  
 
-**Insight:** Western states benefited from population inflows and economic expansion, while the Midwest and South maintained steady but slower markets.
+---
 
-📊 Chart available [here](outputs/charts/q2_top_bottom_5_states_rent_growth.png)
+## 📊 Key Results  
 
-### 3. Rent Volatility (2015–2025)
+---
 
-Montana (11.8%), Vermont (8.3%), and Wyoming (6.7%) recorded the highest volatility.
+### 🏠 1️⃣ Which U.S. States Experienced the Fastest and Slowest Rent Growth (2015–2025)?  
 
-Ohio (1.8%), Missouri (1.9%), and Louisiana (2.1%) were the most stable.
+<p align="center">
+  <img src="outputs/charts/q1_top_bottom_5_states_rent_growth_2015_2025.png"
+       alt="Top and Bottom States by Rent Growth (2015–2025)"
+       width="70%">
+</p>
 
-**Insight:** Western states show greater rent swings tied to speculative surges, while Midwest states maintain consistent stability.
+Between 2015 and 2025, rent values grew unevenly across the United States.  
+**Colorado, Idaho, and Montana** led the nation with increases above **95 %**, while **Wisconsin** and **Louisiana** recorded growth below **20 %**.  
+The data reveals a clear regional divide — Western states experienced the strongest rent escalation, whereas the Midwest and South remained more stable.  
 
-📊 Chart available [here](outputs/charts/q3_top_bottom5_states_by_rent_volatility.png)
+💡 **Business Interpretation:**  
+High-growth states indicate strong demand but growing affordability pressure, while slower-growth markets remain stable and accessible.  
 
-### 4. Rent Growth Consistency Index (2015–2025)
+---
 
-Measured as average YoY growth ÷ volatility.
+### 📈 2️⃣ Where Were Rental Markets the Most Volatile — and Which States Remained Stable?  
 
-Most consistent: Rhode Island (2.86), Alabama (2.48), Colorado (2.40).
+<p align="center">
+  <img src="outputs/charts/q2_top_bottom_5_states_rent_volatility.png"
+       alt="Rent Volatility by U.S. State (2015–2025)"
+       width="70%">
+</p>
 
-Least consistent: Vermont (0.17), West Virginia (0.25).
+Rent fluctuations varied widely across regions.  
+**Montana (11.8 %)**, **Vermont (8.3 %)**, and **Wyoming (6.7 %)** recorded the highest volatility, showing larger year-to-year swings.  
+In contrast, **Ohio (1.7 %)**, **Missouri (1.9 %)**, and **Alabama (1.9 %)** remained the most stable, with minimal variation throughout the decade.  
+These differences highlight contrasting market dynamics — some states saw sharp annual changes while others maintained consistent rental patterns.  
 
-**Insight:** Balanced states like Rhode Island and Alabama achieved steady rent growth — ideal for long-term investment resilience.
+💡 **Business Interpretation:**  
+High-volatility markets carry greater short-term potential and risk, while stable states offer predictable, long-term rental returns.  
 
-📊 Chart available [here](outputs/charts/q4_top_bottom5_states_by_rent_growth_consistency.png)
+---
 
-### 5. Rent Recovery Post-COVID (2020–2023)
+### 💡 3️⃣ The Relationship Between Home-Value Appreciation and Rent Growth Across U.S. States (2015–2025)  
 
-Montana (+68.7%) saw the strongest rebound, followed by Florida (+38.9%) and Georgia (+34.2%).
+<p align="center">
+  <img src="outputs/charts/q3_correlation_between_rent_growth_and_home_value_appreciation.png"
+       alt="Relationship Between Home-Value Appreciation and Rent Growth (2015–2025)"
+       width="70%">
+</p>
 
-Recovery was moderate in Northeastern markets such as Connecticut and New Hampshire.
+The analysis reveals a **moderate positive relationship (R² = 0.38)** between rent growth and home-value appreciation.  
+States with faster home-value increases generally experienced stronger rent growth, although the strength of this link varied by region.  
+This pattern suggests that property and rental markets often move together, reflecting shared economic pressures.  
 
-**Insight:** Migration and affordability drove rapid recovery in inland and Southeastern regions after 2020.
+💡 **Business Interpretation:**  
+As home values rise, rents tend to follow — reinforcing the relationship between property appreciation and rental affordability across states.  
 
-📊 Chart available [here](outputs/charts/q5_top10_states_by_rent_recovery_post_covid.png)
+---
 
-## Recommendations for Stakeholders
+## 💼 Business Implications & Recommendations  
 
-### For Real-Estate Companies & Developers:
-Focus on high-growth, moderate-volatility states (e.g., Colorado, Georgia, North Carolina) for sustainable development.
+**For Investors:**  
+Balance exposure between high-growth (West, Mountain) and stable (Midwest, South) states to optimize returns while managing volatility.  
+Use volatility metrics to evaluate cash-flow stability and risk.  
 
-### For Investors:
-Diversify portfolios between high-return but volatile markets (Montana, Idaho) and stable yield regions (Ohio, Alabama).
+**For Developers:**  
+Focus new construction in high-growth states such as **Colorado, Idaho, and Montana**.  
+Use volatility insights to time market entry for better risk-adjusted returns.  
 
-### For Policymakers:
-Expand housing supply in high-volatility areas to mitigate rent inflation and migration pressure.
+**For Policymakers:**  
+Expand housing supply in rent-burdened states to mitigate affordability issues.  
+Encourage zoning reforms and affordable-housing initiatives.  
 
-## Data & Methodology
+**For Renters and Advocates:**  
+Track regional rent trends to anticipate future cost-of-living changes.  
+Consider stable markets for long-term affordability.  
 
-**Source:** Zillow Observed Rent Index (ZORI)
+---
 
-**Period:** 2000–2025 (latest: September 2025)
+## 🧠 Data Reproducibility & Transparency  
+- All transformations and calculations are reproducible using SQL scripts in the `/sql_scripts/` folder.  
+- Steps for data cleaning, aggregation, and metric calculation are clearly documented.  
+- Excel visualizations reference processed outputs directly to ensure accuracy and consistency.  
+- Anyone can replicate the analysis by running the SQL workflow and reviewing the charts.  
 
-**Aggregation:** Monthly → Annual averages by state
+---
 
-**Tools:** SQL, Excel
+## 🚀 Next Steps  
+- Expand analysis to **metro and county levels** for greater granularity.  
+- Integrate **income and vacancy data** to model affordability risk and rental pressure.  
+- Combine rent, home-value, and inventory datasets to study supply-demand relationships.  
+- Develop an **interactive Tableau dashboard** connecting rent, value, and inventory metrics.  
 
-✅ Clean, standardized dataset ready for rent growth, volatility, and recovery analysis.
+---
+
+⭐ *Part of the [U.S. Housing Market Analytics](https://github.com/Qin717/us-housing-market-analytics) portfolio — a data-driven exploration of America’s real-estate dynamics.*
