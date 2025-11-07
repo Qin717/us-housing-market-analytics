@@ -1,5 +1,5 @@
 """
-Q5: Correlation Between Inventory and Home-Value Growth (2018–2025)
+Q2: Correlation Between Inventory and Home-Value Growth (2018–2025)
 
 This script calculates the correlation between inventory growth percentage and 
 home value growth percentage across all states from 2018 to 2025.

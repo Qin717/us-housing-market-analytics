@@ -1,0 +1,51 @@
+state,year,listings_yoy,price_yoy,market_condition
+CT,2024,4.08,8.9,Stable or recovering
+NJ,2024,5.96,8.48,Stable or recovering
+RI,2024,8.96,7.83,Stable or recovering
+NH,2024,15.34,7.55,Stable or recovering
+MA,2024,9.61,6.76,Stable or recovering
+OH,2024,5.9,5.69,Stable or recovering
+IN,2024,14.04,5.51,Stable or recovering
+WY,2024,3.5,5.45,Stable or recovering
+MT,2024,18.67,5.32,Stable or recovering
+KS,2024,6.7,5.29,Stable or recovering
+WV,2024,-9.02,5.26,⚠️ Undersupplied — upward pressure
+ME,2024,13.74,5.2,Stable or recovering
+NY,2024,-5.63,5.07,⚠️ Undersupplied — upward pressure
+GA,2024,21.91,5.0,Stable or recovering
+WI,2024,1.15,4.61,Stable or recovering
+TN,2024,17.98,4.56,Stable or recovering
+IL,2024,-1.1,4.49,⚠️ Undersupplied — upward pressure
+NC,2024,13.82,4.49,Stable or recovering
+VA,2024,9.16,4.47,Stable or recovering
+MI,2024,1.73,4.17,Stable or recovering
+PA,2024,2.95,4.16,Stable or recovering
+MD,2024,7.49,4.07,Stable or recovering
+IA,2024,5.33,3.99,Stable or recovering
+NE,2024,10.26,3.93,Stable or recovering
+CA,2024,14.54,3.89,Stable or recovering
+SC,2024,29.31,3.85,Stable or recovering
+MO,2024,7.25,3.83,Stable or recovering
+NV,2024,1.79,3.6,Stable or recovering
+KY,2024,7.79,3.58,Stable or recovering
+WA,2024,11.64,3.36,Stable or recovering
+AR,2024,5.25,3.24,Stable or recovering
+AZ,2024,10.01,3.16,Stable or recovering
+OK,2024,13.64,2.91,Stable or recovering
+MN,2024,10.02,2.73,Stable or recovering
+DE,2024,25.14,2.56,Stable or recovering
+HI,2024,27.22,2.33,Stable or recovering
+NM,2024,19.33,2.3,Stable or recovering
+FL,2024,37.11,2.16,Stable or recovering
+CO,2024,16.48,2.11,Stable or recovering
+ID,2024,6.03,1.94,Stable or recovering
+VT,2024,25.14,1.92,Stable or recovering
+SD,2024,23.64,1.86,Stable or recovering
+AL,2024,22.11,1.63,Stable or recovering
+OR,2024,13.97,1.48,Stable or recovering
+AK,2024,6.25,1.44,Stable or recovering
+TX,2024,20.79,0.09,Stable or recovering
+UT,2024,4.47,0.09,Stable or recovering
+MS,2024,12.14,-0.21,Stable or recovering
+ND,2024,5.39,-0.3,Stable or recovering
+LA,2024,16.14,-3.08,Stable or recovering

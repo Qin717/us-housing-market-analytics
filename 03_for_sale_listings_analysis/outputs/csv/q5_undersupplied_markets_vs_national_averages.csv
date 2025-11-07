@@ -1,0 +1,51 @@
+state,year,listings_yoy,price_yoy,nat_listings_yoy,nat_price_yoy,market_condition
+CT,2024,4.08,8.9,11.5,3.65,⚠️ Undersupplied — upward pressure
+NJ,2024,5.96,8.48,11.5,3.65,⚠️ Undersupplied — upward pressure
+RI,2024,8.96,7.83,11.5,3.65,⚠️ Undersupplied — upward pressure
+NH,2024,15.34,7.55,11.5,3.65,Stable or recovering
+MA,2024,9.61,6.76,11.5,3.65,⚠️ Undersupplied — upward pressure
+OH,2024,5.9,5.69,11.5,3.65,⚠️ Undersupplied — upward pressure
+IN,2024,14.04,5.51,11.5,3.65,Stable or recovering
+WY,2024,3.5,5.45,11.5,3.65,⚠️ Undersupplied — upward pressure
+MT,2024,18.67,5.32,11.5,3.65,Stable or recovering
+KS,2024,6.7,5.29,11.5,3.65,⚠️ Undersupplied — upward pressure
+WV,2024,-9.02,5.26,11.5,3.65,⚠️ Undersupplied — upward pressure
+ME,2024,13.74,5.2,11.5,3.65,Stable or recovering
+NY,2024,-5.63,5.07,11.5,3.65,⚠️ Undersupplied — upward pressure
+GA,2024,21.91,5.0,11.5,3.65,Stable or recovering
+WI,2024,1.15,4.61,11.5,3.65,⚠️ Undersupplied — upward pressure
+TN,2024,17.98,4.56,11.5,3.65,Stable or recovering
+IL,2024,-1.1,4.49,11.5,3.65,⚠️ Undersupplied — upward pressure
+NC,2024,13.82,4.49,11.5,3.65,Stable or recovering
+VA,2024,9.16,4.47,11.5,3.65,⚠️ Undersupplied — upward pressure
+MI,2024,1.73,4.17,11.5,3.65,⚠️ Undersupplied — upward pressure
+PA,2024,2.95,4.16,11.5,3.65,⚠️ Undersupplied — upward pressure
+MD,2024,7.49,4.07,11.5,3.65,⚠️ Undersupplied — upward pressure
+IA,2024,5.33,3.99,11.5,3.65,⚠️ Undersupplied — upward pressure
+NE,2024,10.26,3.93,11.5,3.65,⚠️ Undersupplied — upward pressure
+CA,2024,14.54,3.89,11.5,3.65,Stable or recovering
+SC,2024,29.31,3.85,11.5,3.65,Stable or recovering
+MO,2024,7.25,3.83,11.5,3.65,⚠️ Undersupplied — upward pressure
+NV,2024,1.79,3.6,11.5,3.65,Stable or recovering
+KY,2024,7.79,3.58,11.5,3.65,Stable or recovering
+WA,2024,11.64,3.36,11.5,3.65,Stable or recovering
+AR,2024,5.25,3.24,11.5,3.65,Stable or recovering
+AZ,2024,10.01,3.16,11.5,3.65,Stable or recovering
+OK,2024,13.64,2.91,11.5,3.65,Stable or recovering
+MN,2024,10.02,2.73,11.5,3.65,Stable or recovering
+DE,2024,25.14,2.56,11.5,3.65,Stable or recovering
+HI,2024,27.22,2.33,11.5,3.65,Stable or recovering
+NM,2024,19.33,2.3,11.5,3.65,Stable or recovering
+FL,2024,37.11,2.16,11.5,3.65,Stable or recovering
+CO,2024,16.48,2.11,11.5,3.65,Stable or recovering
+ID,2024,6.03,1.94,11.5,3.65,Stable or recovering
+VT,2024,25.14,1.92,11.5,3.65,Stable or recovering
+SD,2024,23.64,1.86,11.5,3.65,Stable or recovering
+AL,2024,22.11,1.63,11.5,3.65,Stable or recovering
+OR,2024,13.97,1.48,11.5,3.65,Stable or recovering
+AK,2024,6.25,1.44,11.5,3.65,Stable or recovering
+TX,2024,20.79,0.09,11.5,3.65,Stable or recovering
+UT,2024,4.47,0.09,11.5,3.65,Stable or recovering
+MS,2024,12.14,-0.21,11.5,3.65,Stable or recovering
+ND,2024,5.39,-0.3,11.5,3.65,Stable or recovering
+LA,2024,16.14,-3.08,11.5,3.65,Stable or recovering
