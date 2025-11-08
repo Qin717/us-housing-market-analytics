@@ -71,7 +71,7 @@ The divergence in supply growth indicates structural differences in market elast
 ### 2️⃣ What Is the Relationship Between Inventory Growth and Home-Value Growth?
 
 
-Chart:  
+
 <div align="center">
   <img src="https://github.com/Qin717/us-housing-market-analytics/blob/main/03_for_sale_listings_analysis/outputs/charts/q2_correlation_inventory_home_value_growth_2018_2025.png?raw=true" alt="Correlation between Inventory and Home-Value Growth" width="70%">
 </div>  
@@ -109,7 +109,7 @@ These results highlight persistent structural shortages rather than temporary ma
 ### 5️⃣ How Do States Compare to National Supply Benchmarks?
 
 
-Chart:  
+
 <div align="center">
   <img src="https://github.com/Qin717/us-housing-market-analytics/blob/main/03_for_sale_listings_analysis/outputs/charts/q5_undersupplied_markets_vs_national_averages.png?raw=true" alt="Undersupplied Markets vs National Averages" width="70%">
 </div>  
