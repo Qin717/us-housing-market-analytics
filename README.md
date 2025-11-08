@@ -1,123 +1,147 @@
-# 🏠 U.S. Housing Market Analytics (2000–2025)
-
-**Comprehensive U.S. Housing and Rent Market Analysis (2000–2025)**  
-_Leveraging Zillow Research datasets (ZHVI & ZORI) to uncover 25 years of U.S. housing market evolution, affordability trends, and regional performance._
+# U.S. For-Sale Listings Analysis (Zillow Inventory Data)  
+### Project 03 | U.S. Housing Market Analytics Portfolio  
 
 ---
 
-## 1. Project Background
-
-The U.S. housing market — one of the most critical pillars of the global economy — has experienced extraordinary cycles over the past 25 years: the early-2000s housing boom, the 2008 financial crisis, a decade-long recovery, and the post-pandemic surge and correction.  
-Understanding these market shifts is essential for **investors, policymakers, and real-estate professionals** seeking to navigate volatility, forecast demand, and identify long-term opportunities for sustainable growth.
-
-This portfolio leverages **Zillow Research’s Home Value Index (ZHVI)** and **Zillow Observed Rent Index (ZORI)** to explore how property values and rental prices evolved across the United States.  
-Due to data availability differences, each dataset covers a distinct historical range:
-
-| Dataset | Period | Focus |
-|----------|---------|--------|
-| **ZHVI (Home Value Index)** | 2000–2025 | Long-term housing market cycles, volatility, and structural growth |
-| **ZORI (Rent Index)** | 2015–2025 | Modern rent market behavior, affordability, and post-pandemic recovery |
-
-This dual approach provides both **long-term structural insight** (home values) and **modern affordability analysis** (rents).
-
-### Analytical Objectives
-- **Market Trend Analysis:** Examine national and regional housing value trends to identify long-term growth and contraction cycles.  
-- **Crisis & Recovery Evaluation:** Quantify the impact of major economic disruptions — including the 2008 financial crash and the 2020 pandemic — on home and rent values.  
-- **Regional Performance Comparison:** Assess how U.S. regions (West, South, Midwest, Northeast) differ in growth, volatility, and recovery strength.  
-- **Investment & Policy Implications:** Translate analytical findings into actionable insights for investors, policymakers, and developers.
-
-> **Scope:**  
-> - ZHVI: 50 states · 4 regions · 2000–2025  
-> - ZORI: 50 states · 4 regions · 2015–2025  
+## Background  
+This project analyzes how U.S. housing for-sale listings have changed from 2018 to 2025 using Zillow’s For-Sale Listings dataset.  
+It measures state-level supply growth and benchmarks each state’s listings trend against the national average to identify which markets remain undersupplied.  
+By linking inventory growth to home-price performance, the analysis reveals where limited supply continues to sustain price pressure and affordability challenges.  
 
 ---
 
-## 2. Data Structure & Initial Checks
-
-### Data Sources
-- **Zillow Home Value Index (ZHVI):** Monthly median home value estimates by region and state (2000–2025).  
-- **Zillow Observed Rent Index (ZORI):** Monthly median rent estimates by region and state (2015–2025).  
-
-### Data Preparation
-- Cleaned and standardized datasets using **Excel Power Query** (duplicate removal, normalization, field alignment).  
-- Aggregated monthly data into **annual averages** for year-over-year (YoY) growth and volatility (STDEV.P).  
-- Verified completeness across all states and years within each dataset.  
-- Confirmed regional consistency between ZHVI and ZORI through matching `RegionID` and `StateName`.  
-- Created yearly summary tables to compute **CAGR**, **YoY Growth**, and **Volatility**.
-
-> ✅ These steps ensured clean, consistent, and comparable datasets for both long-term and modern-period analysis.
+## Executive Summary  
+This project delivers a SQL- and Excel-based analysis of Zillow’s For-Sale Listings dataset to evaluate housing-supply dynamics across the United States.  
+It cross-references Zillow Home Value Index (ZHVI) and Zillow Rent Index (ZORI) data to present a unified view of market balance.  
+By examining how listings growth aligns with home-value and rent trends, the analysis identifies which states remain undersupplied, how this affects price pressure, and what it implies for long-term housing equilibrium.  
 
 ---
 
-## 3. Executive Summary
-
-### Overview
-The analysis reveals clear evidence of **regional divergence and structural transformation** within the U.S. housing market.  
-While the West remains the most expensive, the **South and Mountain states** have shown the strongest sustained growth — driven by affordability, migration, and post-pandemic shifts.
-
----
-
-### Key Findings
-
-- **Long-Term Market Divergence (2000–2025):**  
-  Western states maintained the highest home values, while Southern and inland states recorded the most consistent long-term growth, reflecting a realignment of population and economy.
-
-- **Impact of Economic Crises:**  
-  The 2008 crash caused price declines exceeding 40% in markets like Nevada and Florida. Post-2012 recovery was uneven, with inland states recovering faster.  
-  The 2020 pandemic triggered a short-lived surge in housing demand, followed by a cooling in 2023–2024.
-
-- **Post-COVID Rental Market Rebalancing (2015–2025):**  
-  Rent growth surged sharply between 2020–2022, particularly in Southern and Mountain regions, where average rent growth exceeded **35% above the national trend**.
-
-- **Volatility & Risk Patterns:**  
-  Coastal states (CA, NY, MA) display higher volatility, while interior states (TX, NC, TN) show stable YoY growth — providing balanced long-term investment potential.
+## Objectives  
+- Measure **state-level listings growth** across the U.S. (2018–2025).  
+- Track yearly **YoY listings growth** to reveal supply-recovery trends.  
+- Examine how **inventory growth relates to home-value and rent growth** to understand market balance and affordability.  
+- Benchmark each state against **national averages** to identify:  
+  - Undersupplied markets with continued upward pressure  
+  - Stable or recovering markets  
+- Visualize results through clear, data-driven charts showing where supply recovery lags and price pressure remains strong.  
 
 ---
 
-### Visual Overview
+## Dataset Overview  
 
-| Home Value Trends (2000–2025) | Post-COVID Rent Recovery (2015–2025) |
-|--------------------------------|--------------------------------------|
-| ![Regional Housing Value Trends](01_zillow_home_value_index_analysis/outputs/charts/q6_regional_housing_value_trends.png) | ![Post-COVID Rent Recovery](02_zillow_rent_value_index_analysis/outputs/charts/q6_top_10_states_by_rent_recovery_grwoth_post_covid_map.png) |
+<div align="center">
 
-*Comparative visualization of U.S. home-value and rent-market performance using Zillow datasets.*
+| **Feature** | **Description** |
+|--------------|----------------|
+| **Source** | Zillow Research – For-Sale Listings Inventory |
+| **Coverage** | 2018 – 2025 |
+| **Geography** | 50 U.S. states |
+| **Frequency** | Monthly → aggregated to yearly averages |
+| **Metrics** | Listings YoY Growth (%) and Price YoY Growth (%) |
+| **File** | [Zillow_For_Sale_Listings_State.csv](https://github.com/Qin717/us-housing-market-analytics/blob/main/03_for_sale_listings_analysis/raw_data/Zillow_For_Sale_Listings_State.csv) |
 
----
-
-### Tools & Methods
-- **Excel Power Query** – cleaning, unpivoting, and yearly aggregation  
-- **Excel Pivot Tables** – statistical summarization, volatility metrics  
-- **SQL (CTEs, Window Functions)** – analytical calculations and ranking  
-- **Python (Pandas, Matplotlib, Seaborn)** – automated chart generation and data visualization  
-- **Excel Dashboards** – presentation and storytelling  
+</div>
 
 ---
 
-## 4. Recommendations
+## Methodology (SQL + Excel Workflow)  
 
-### For Real-Estate Investors
-- **Diversify geographically:** Balance exposure between high-growth inland states and established coastal markets.  
-- **Monitor volatility:** Use the standard deviation of YoY changes as a leading signal of market overheating or correction.
+**Data Cleaning:** Filtered Zillow data (2018–2025) and standardized state names.  
+**Aggregation:** Converted monthly listings into yearly state averages.  
+**Computation:** Calculated yearly growth for listings, prices, and rents.  
+**Integration:** Merged supply data with home-value and rent trends.  
+**Visualization:** Built Excel charts to show growth patterns and undersupplied states.  
 
-### For Developers & Builders
-- **Prioritize expansion** in affordable, high-demand regions (South, Mountain).  
-- **Leverage recovery insights** to identify early-stage expansion zones.
-
-### For Policymakers
-- **Target affordability programs** where rent inflation outpaces wage growth (notably the South post-2020).  
-- **Invest in infrastructure alignment** to support migration-driven housing demand.
-  
 ---
 
-## 5. Data Coverage Alignment
+## Key Results & Visualizations  
 
-| Dataset | Source | Coverage | Frequency | Analytical Focus |
-|----------|---------|-----------|------------|------------------|
-| 🏠 **ZHVI (Home Value Index)** | Zillow Research | 2000–2025 | Monthly → Yearly | Long-term housing cycles & volatility |
-| 🏘 **ZORI (Rent Index)** | Zillow Research | 2015–2025 | Monthly → Yearly | Modern rent dynamics & affordability |
+### 1️⃣ How Have For-Sale Listings Evolved Across States (2018–2025)?
 
-> The two analyses intentionally retain their native coverage periods to maintain analytical accuracy:  
-> **ZHVI** captures 25 years of structural housing evolution, while **ZORI** highlights the modern rental era (2015–2025).
+
+**Insight:**  
+Inventory recovery across the U.S. has been broad but uneven. Southern and Mountain West markets—particularly Florida, Texas, and South Carolina—have shown sustained expansion in listings since 2020, driven by population inflows and land availability. In contrast, the Northeast and parts of the Midwest remain supply-constrained, reflecting slower permitting processes, higher construction costs, and limited developable land.
+
+**Business Interpretation:**  
+The divergence in supply growth indicates structural differences in market elasticity. Regions with higher development capacity and pro-growth zoning continue to absorb national housing demand, while mature, land-limited markets are structurally undersupplied. This imbalance reinforces long-term affordability pressures and highlights how regional construction capacity has become a key determinant of market stability.
+
+---
+
+### 2️⃣ What Is the Relationship Between Inventory Growth and Home-Value Growth?
+
+
+
+<div align="center">
+  <img src="https://github.com/Qin717/us-housing-market-analytics/blob/main/03_for_sale_listings_analysis/outputs/charts/q2_correlation_inventory_home_value_growth_2018_2025.png?raw=true" alt="Correlation between Inventory and Home-Value Growth" width="70%">
+</div>  
+
+**Insight:**  
+Correlation analysis reveals that home-value growth is largely insensitive to short-term inventory fluctuations (R² ≈ 0.01). In most states, prices continued to rise despite increasing listings, suggesting that demand-side factors such as income growth, household formation, and borrowing costs play a more dominant role than supply adjustments in the near term.
+
+**Business Interpretation:**  
+This pattern underscores the inelastic nature of housing prices in the short run. Even when new listings increase, the market’s ability to translate supply expansion into price moderation remains limited without parallel adjustments in demand fundamentals. Long-term price stability depends on persistent, multi-year increases in housing stock rather than cyclical listing growth.
+
+---
+
+### 3️⃣ How Does Inventory Growth Compare with Rent Growth?
+
+
+**Insight:**  
+A mild inverse relationship exists between inventory growth and rent appreciation. States that experienced limited supply expansion—such as Hawaii, New York, and Massachusetts—also recorded the highest rent growth, while those with faster inventory recovery, including Texas and Georgia, saw comparatively stable rental prices.
+
+**Business Interpretation:**  
+The data confirm that rental affordability and ownership supply are interlinked. Markets with restricted for-sale inventory tend to experience downstream rent inflation, as constrained ownership options push demand into the rental sector. Sustained rental pressure signals broader structural tightness across both ownership and rental markets, emphasizing the need for balanced housing production across tenure types.
+
+---
+
+### 4️⃣ Which Markets Remain Undersupplied and Face Continued Upward Pressure?
+
+
+**Insight:**  
+As of 2024, roughly half of U.S. states remain below the national average in listings growth (11.5%) while exceeding the national average in price growth (3.65%). This cluster—led by Connecticut, New Jersey, and Rhode Island—exhibits persistent undersupply alongside continued home-value acceleration, indicating long-standing constraints on new housing production.
+
+**Business Interpretation:**  
+These results highlight persistent structural shortages rather than temporary market imbalances. States with chronically low supply elasticity and high price persistence are likely to maintain upward price pressure through 2025 and beyond. Without significant increases in housing starts, these regions risk prolonged affordability erosion and declining mobility within local labor markets.
+
+---
+
+### 5️⃣ How Do States Compare to National Supply Benchmarks?
+
+
+
+<div align="center">
+  <img src="https://github.com/Qin717/us-housing-market-analytics/blob/main/03_for_sale_listings_analysis/outputs/charts/q5_undersupplied_markets_vs_national_averages.png?raw=true" alt="Undersupplied Markets vs National Averages" width="70%">
+</div>  
+
+**Insight:**  
+When benchmarked against national averages, most Southern and Mountain West states exhibit inventory growth above 11.5%, while many Northeastern markets remain below. The regional divide suggests that supply recovery is concentrated in states with more flexible development environments and stronger in-migration, while legacy markets are adjusting more slowly.
+
+**Business Interpretation:**  
+The uneven recovery underscores a structural bifurcation of the U.S. housing market. Supply-responsive regions are gradually stabilizing, with inventory levels returning toward pre-2020 norms, while supply-constrained regions remain chronically tight. This geographic imbalance will continue to influence national affordability, migration trends, and regional investment patterns.
+
+---
+
+## Business Implications & Recommendations  
+
+Persistent regional disparities highlight that housing supply is a **structural, not cyclical, variable**.  
+- In supply-responsive regions, inventory levels are normalizing and price growth is cooling gradually, signaling a transition toward balance.  
+- In constrained regions, limited land availability and restrictive zoning continue to suppress new construction, sustaining affordability pressures.  
+- A coordinated policy focus on land-use flexibility, permitting reform, and infrastructure expansion is essential to achieve long-term market stability.  
+
+---
+
+## Next Steps  
+- Extend analysis to metro- and ZIP-level inventory patterns.  
+- Integrate rental and vacancy datasets for a complete supply-demand assessment.  
+- Develop an interactive Tableau dashboard to visualize regional recovery trajectories.  
+
+---
+
+## Data Attribution  
+Data © Zillow Group, Inc. – For-Sale Listings Inventory (2025)  
+Used under Zillow Research Terms of Use.  
+Analysis conducted for educational and non-commercial purposes.  
 
 ---
 
