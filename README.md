@@ -22,19 +22,65 @@ Zillow is the United States’ leading digital real-estate marketplace, curating
 ## Insights Deep-Dive  
 
 ### Project 01 — Home Value Index Analysis  
-- **Real-estate companies:** Pinpoint long-term appreciation leaders to prioritize development pipelines and pricing strategies, while monitoring volatility to calibrate sales pacing and incentive design.  
-- **Investors & lenders:** Balance portfolios by blending high-growth Sun Belt assets (Idaho, Utah, Arizona) with Midwest anchors that deliver steadier cash flows and lower downside risk.  
-- **Local stakeholders:** Use recovery timelines and regional differentials to argue for zoning flexibility, infrastructure investment, and resilience planning in markets still lagging pre-crisis peaks.
+**Key questions analyzed:**
+1. `Which states achieved the fastest sustained home value growth from 2000 to 2025?`  
+   <img src="01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_by_average_home_value_growth.png" alt="Top 10 States by Home Value Growth" width="60%">  
+   - *Insight:* National values climbed **+140% ($153K → $366K)**, with Hawaii and California holding the highest averages and emerging Mountain West states accelerating fastest.  
+   - *Business interpretation:* Premium coastal markets sustain pricing power; growth corridors like Colorado and Utah highlight long-term expansion plays.  
+2. `Which states recorded the largest dollar gains versus percentage growth?`  
+   <img src="01_zillow_home_value_index_analysis/outputs/charts/q2_top5_states_by_home_value_growth_absolute_vs_percentage.png" alt="Home Value Growth Absolute vs Percentage" width="60%">  
+   - *Insight:* Idaho’s +290% surge underscores inland momentum, while Hawaii’s $650K absolute gain reflects entrenched coastal demand—together signaling broad nationwide expansion.  
+   - *Business interpretation:* Pair percentage-growth leaders with high-dollar markets to balance upside potential and luxury exposure.  
+3. `Which markets exhibit the most volatile versus stable home-value trends?`  
+   <img src="01_zillow_home_value_index_analysis/outputs/charts/q3_top5_u.s.%20_states_with_the_most_volatile_home_values.png" alt="Most Volatile Home Value States" width="60%">  
+   - *Insight:* Kansas, Nevada, and Arizona show double-digit volatility while Iowa, Alaska, and Louisiana stay below 4%, mapping a clear risk–return spectrum.  
+   - *Business interpretation:* Investors can trade higher upside for steadier Midwest performance; operators modulate incentives in swing markets.  
+4. `How did states experience and recover from the 2008 housing crash?`  
+   <img src="01_zillow_home_value_index_analysis/outputs/charts/q4_housing_market_crash_to_recovery_2007_2015.png" alt="Housing Crash to Recovery" width="60%">  
+   - *Insight:* California and Arizona plunged more than 20%, yet post-2011 rebounds were fastest in Arizona, Wyoming, and Oklahoma, emphasizing the role of affordability and sector resilience.  
+   - *Business interpretation:* Stress-testing portfolios against boom-bust cycles remains critical; recovery velocity informs land banking.  
+5. `How do home-value trends vary across U.S. regions?`  
+   <img src="01_zillow_home_value_index_analysis/outputs/charts/q5_home_value_trends_vary_across_u.s._regions.png" alt="Regional Home Value Trends" width="60%">  
+   - *Insight:* Western markets cycle from +16% peaks to -17% troughs, while Midwest and Northeast arcs are smoother, highlighting divergent market elasticity.  
+   - *Business interpretation:* Regional diversification dampens shocks; policy makers can benchmark cycle amplitude for resilience planning.
 
 ### Project 02 — Rent Value Index Analysis  
-- **Real-estate companies:** Align build-to-rent and multifamily expansion plans with states experiencing durable rent growth yet manageable volatility to maximize lease-up velocity.  
-- **Investors & lenders:** Deploy underwriting guardrails in high-volatility markets (Montana, Vermont, Wyoming) while capturing stable coupons in Midwest/Southern states with sub-2% annual rent swings.  
-- **Housing advocates & policymakers:** Target rental assistance, affordability programs, and zoning reform to Western metros where rent inflation far outpaces wage growth.
+**Key questions analyzed:**
+1. `Which U.S. states experienced the fastest and slowest rent growth (2015–2025)?`  
+   <img src="02_zillow_rent_value_index_analysis/outputs/charts/q1_top_bottom_5_states_rent_growth_2015_2025.png" alt="Rent Growth Leaders and Laggards" width="60%">  
+   - *Insight:* Colorado, Idaho, and Montana exceeded **95% rent growth**, whereas Wisconsin and Louisiana stayed below 20%, illustrating a sharp West-versus-Midwest divide.  
+   - *Business interpretation:* Developers chase high-demand corridors; affordability advocates focus on slower-growth states to preserve access.  
+2. `Where were rental markets the most volatile versus stable?`  
+   <img src="02_zillow_rent_value_index_analysis/outputs/charts/q2_top_bottom_5_states_rent_volatility.png" alt="Rent Volatility by State" width="60%">  
+   - *Insight:* Montana (11.8%) and Vermont (8.3%) swing hardest year to year, while Ohio, Missouri, and Alabama hold variance under 2%, defining risk bands for rent cash flows.  
+   - *Business interpretation:* Lenders price risk premiums into volatile metros; institutional landlords lean into steady Midwest returns.  
+3. `What is the relationship between rent growth and home-value appreciation?`  
+   <img src="02_zillow_rent_value_index_analysis/outputs/charts/q3_correlation_between_rent_growth_and_home_value_appreciation.png" alt="Rent Growth vs Home Value Growth" width="60%">  
+   - *Insight:* A moderate positive correlation (R² = 0.38) confirms that ownership and rental markets generally rise together, reinforcing affordability pinch points.  
+   - *Business interpretation:* Policy and capital allocation should treat rents and prices as linked pressures when modeling intervention timing.
 
 ### Project 03 — For-Sale Inventory Analysis  
-- **Real-estate companies:** Identify undersupplied Northeast and coastal markets where even modest new construction can command premium absorption and pricing power.  
-- **Investors & builders:** Sequence capital toward inventory-recovering Sun Belt states to capture volume growth, while lobbying for entitlements in chronically undersupplied regions.  
-- **Public stakeholders:** Quantify the structural nature of supply shortages to support long-term permitting reform, transportation investments, and public–private partnerships that unlock housing stock.
+**Key questions analyzed:**
+1. `How have for-sale listings evolved year over year across states (2018–2025)?`  
+   <img src="03_for_sale_listings_analysis/outputs/charts/q1_yoy_growth_listings_state_yearly.png" alt="YoY Listings Growth by State" width="60%">  
+   - *Insight:* Southern and Mountain West states post sustained inventory rebounds post-2020, whereas Northeast corridors remain constrained by permitting and land scarcity.  
+   - *Business interpretation:* Builders prioritize high-capacity regions; policymakers fast-track approvals in chronically tight states.  
+2. `What is the relationship between inventory growth and home-value growth?`  
+   <img src="03_for_sale_listings_analysis/outputs/charts/q2_correlation_inventory_home_value_growth_2018_2025.png" alt="Inventory vs Home-Value Growth" width="60%">  
+   - *Insight:* With R² ≈ 0.01, prices stay elevated even when listings rise, signaling demand-side dominance and supply inelasticity in the short run.  
+   - *Business interpretation:* Affordability strategies must extend beyond episodic listing spikes; long-horizon supply expansion is required.  
+3. `How does inventory growth compare with rent growth?`  
+   <img src="03_for_sale_listings_analysis/outputs/charts/q3_inventory_vs_rent_growth.png" alt="Inventory vs Rent Growth" width="60%">  
+   - *Insight:* States with limited inventory recovery—Hawaii, New York, Massachusetts—also show elevated rent gains, proving ownership scarcity migrates pressure to rentals.  
+   - *Business interpretation:* Coordinated rental and ownership policies are needed to relieve cost burdens where supply gaps persist.  
+4. `Which markets remain undersupplied and face continued upward pressure?`  
+   <img src="03_for_sale_listings_analysis/outputs/charts/q4_undersupplied_markets_upward_pressure.png" alt="Undersupplied Markets with Upward Pressure" width="60%">  
+   - *Insight:* Connecticut, New Jersey, and Rhode Island sit below national supply growth yet above price growth averages, signaling entrenched shortages.  
+   - *Business interpretation:* Incentivize targeted development and zoning reform to unlock inventory in these high-pressure corridors.  
+5. `How do states compare to national supply benchmarks?`  
+   <img src="03_for_sale_listings_analysis/outputs/charts/q5_undersupplied_markets_vs_national_averages.png" alt="Supply Benchmarks vs National Averages" width="60%">  
+   - *Insight:* Supply recovery is concentrated in flexible Southern and Mountain states, whereas legacy Northeast markets lag, creating a structural two-speed housing landscape.  
+   - *Business interpretation:* Investors stagger capital toward responsive regions while public agencies support infrastructure that unlocks lagging markets.
 
 ---
 
@@ -60,31 +106,6 @@ Zillow is the United States’ leading digital real-estate marketplace, curating
 - Quantify regional patterns, volatility, and market resilience across multiple economic cycles.  
 - Translate quantitative findings into **investor, developer, and policy** recommendations.  
 - Provide reproducible assets (SQL, Python, Excel, visual exports) for rapid stakeholder reuse.
-
----
-
-## Project Spotlight  
-
-### Project 01 — `01_zillow_home_value_index_analysis`  
-- **Focus:** Two decades of U.S. home-value appreciation and volatility (2000–2025).  
-- **Signature insights:** Western states deliver the fastest growth but highest swings; Midwest/South provide steady appreciation for risk-balanced portfolios.  
-- **Deliverables:** Power Query pipeline, Excel dashboard, five executive-ready visuals.  
-- **Sample output:**  
-  <img src="01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_by_average_home_value_growth.png" alt="Top 10 States by Home Value Growth" width="60%">
-
-### Project 02 — `02_zillow_rent_value_index_analysis`  
-- **Focus:** Rent escalation, volatility, and rent-to-price dynamics (2015–2025).  
-- **Signature insights:** Western/Mountain states lead rent inflation; rent growth tracks home-value gains with R² = 0.38, signaling interconnected affordability pressure.  
-- **Deliverables:** SQL transformations, Excel reports, correlation analysis tying rents to ownership costs.  
-- **Sample output:**  
-  <img src="02_zillow_rent_value_index_analysis/outputs/charts/q3_correlation_between_rent_growth_and_home_value_appreciation.png" alt="Correlation Between Rent Growth and Home-Value Appreciation" width="60%">
-
-### Project 03 — `03_for_sale_listings_analysis`  
-- **Focus:** Inventory recovery and supply-pressure diagnostics (2018–2025).  
-- **Signature insights:** Half of U.S. states remain undersupplied despite post-pandemic listing rebounds; price growth resists short-run inventory gains (R² ≈ 0.01).  
-- **Deliverables:** SQL + Python workflows, Excel visuals, state-by-state supply benchmarking.  
-- **Sample output:**  
-  <img src="03_for_sale_listings_analysis/outputs/charts/q5_undersupplied_markets_vs_national_averages.png" alt="Undersupplied Markets vs National Averages" width="60%">
 
 ---
 
