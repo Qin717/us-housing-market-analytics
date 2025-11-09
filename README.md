@@ -1,23 +1,57 @@
-# U.S. Housing Market Analytics Portfolio  
+<h1 align="center">Zillow</h1>
+
+# U.S. Housing Marketing Performance Report  
 ### End-to-end insights across Zillow home values, rents, and inventory (2000 – 2025)
 
 > A three-project portfolio that blends SQL, Python, and Excel to explain how U.S. housing prices, rents, and supply evolved through multiple market cycles.
 
 ---
 
-## Portfolio Overview  
-- Synthesizes **108k+ housing observations** from Zillow Research into actionable storylines for real-estate decision makers.  
-- Connects **home-value appreciation (ZHVI)**, **rent dynamics (ZORI)**, and **for-sale inventory trends** to surface structural imbalances.  
-- Demonstrates a repeatable analytics workflow: data acquisition → cleaning → enrichment → visualization → business recommendations.  
-- Designed as a flagship piece for showcasing **market analytics, data storytelling, and stakeholder-ready deliverables**.
+## Project Background  
+Zillow is the United States’ leading digital real-estate marketplace, curating national coverage of property values, rental prices, and for-sale inventory. This portfolio converts more than **108,000 observations** from Zillow Research into business-ready intelligence that helps real-estate operators, investors, policymakers, and community stakeholders make faster, better-informed housing decisions. Each project follows a consistent workflow—data acquisition, cleaning, enrichment, visualization, and storytelling—to surface how U.S. housing dynamics evolved from 2000 through 2025.
 
 ---
 
 ## Executive Summary  
-- **Long-term appreciation:** U.S. median home values more than doubled (**+140%, $153K → $366K**) from 2000–2025, led by Western and Mountain states with higher volatility than inland markets.  
-- **Rental divergence:** Rent growth exceeded **95%** in high-demand Western states while staying below **20%** in parts of the Midwest/South; rent volatility and home-value appreciation show a **moderate positive link (R² = 0.38)**.  
-- **Persistent undersupply:** Even as listings recovered in fast-growing states, price growth remains **insensitive to short-term supply changes (R² ≈ 0.01)**, underscoring structural inventory shortages in the Northeast and select coastal markets.  
-- **Strategic takeaway:** Housing affordability hinges on sustained supply expansion plus policy support—short-cycle inventory bumps alone will not cool prices or rents in constrained regions.
+- **Project 01 – Home Value Index Analysis (2000–2025):** Distills 25 years of Zillow Home Value Index (ZHVI) data to quantify **+140% national appreciation** ($153K → $366K), highlight regional volatility gaps, and identify the states that recovered fastest from the 2008 housing crisis.  
+- **Project 02 – Rent Value Index Analysis (2015–2025):** Measures the pace and stability of rental inflation across every state, revealing **>95% rent growth** in high-demand Western markets, sub-20% growth in Midwest/Southern states, and a **moderate rent-to-price relationship (R² = 0.38)**.  
+- **Project 03 – For-Sale Inventory Analysis (2018–2025):** Benchmarks supply recovery in the post-pandemic era, showing that roughly half of states remain undersupplied and that home prices are **insensitive to short-term inventory swings (R² ≈ 0.01)**—evidence that structural supply gaps keep pressure on affordability.
+
+---
+
+## Insights Deep-Dive  
+
+### Project 01 — Home Value Index Analysis  
+- **Real-estate companies:** Pinpoint long-term appreciation leaders to prioritize development pipelines and pricing strategies, while monitoring volatility to calibrate sales pacing and incentive design.  
+- **Investors & lenders:** Balance portfolios by blending high-growth Sun Belt assets (Idaho, Utah, Arizona) with Midwest anchors that deliver steadier cash flows and lower downside risk.  
+- **Local stakeholders:** Use recovery timelines and regional differentials to argue for zoning flexibility, infrastructure investment, and resilience planning in markets still lagging pre-crisis peaks.
+
+### Project 02 — Rent Value Index Analysis  
+- **Real-estate companies:** Align build-to-rent and multifamily expansion plans with states experiencing durable rent growth yet manageable volatility to maximize lease-up velocity.  
+- **Investors & lenders:** Deploy underwriting guardrails in high-volatility markets (Montana, Vermont, Wyoming) while capturing stable coupons in Midwest/Southern states with sub-2% annual rent swings.  
+- **Housing advocates & policymakers:** Target rental assistance, affordability programs, and zoning reform to Western metros where rent inflation far outpaces wage growth.
+
+### Project 03 — For-Sale Inventory Analysis  
+- **Real-estate companies:** Identify undersupplied Northeast and coastal markets where even modest new construction can command premium absorption and pricing power.  
+- **Investors & builders:** Sequence capital toward inventory-recovering Sun Belt states to capture volume growth, while lobbying for entitlements in chronically undersupplied regions.  
+- **Public stakeholders:** Quantify the structural nature of supply shortages to support long-term permitting reform, transportation investments, and public–private partnerships that unlock housing stock.
+
+---
+
+## Recommendations  
+- **Scale supply where price pressure persists:** Fast-track permitting, infrastructure, and public–private initiatives in Northeast and coastal states that remain below national inventory benchmarks yet above-average price growth.  
+- **Balance portfolios with volatility-aware deployment:** Pair Western/Mountain exposure (higher appreciation, higher swings) with Midwest/Southern holdings for resilient cash flow and risk-adjusted returns.  
+- **Align rental strategies to affordability goals:** Expand multifamily development and rental vouchers in states posting double-digit rent growth while preserving naturally affordable stock in stable markets.  
+- **Institutionalize integrated monitoring:** Maintain cross-market dashboards that track ZHVI, ZORI, and inventory in tandem so leadership teams can anticipate affordability shock points and time capital allocation.  
+- **Advocate for systemic policy levers:** Support zoning modernization, infrastructure financing, and housing trust funds that enable sustained supply growth—short-term listing spikes alone will not resolve price pressure.
+
+---
+
+## Supporting Portfolio Overview  
+- Synthesizes **108k+ housing observations** into actionable storylines for decision makers.  
+- Connects **home-value appreciation (ZHVI)**, **rent dynamics (ZORI)**, and **for-sale inventory trends** to surface structural imbalances.  
+- Demonstrates a repeatable analytics workflow: data acquisition → cleaning → enrichment → visualization → business recommendations.  
+- Designed as a flagship piece for showcasing **market analytics, data storytelling, and stakeholder-ready deliverables**.
 
 ---
 
