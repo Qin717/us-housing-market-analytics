@@ -8,6 +8,8 @@
 End-to-End Insights Across Zillow Home Values, Rents, and Inventory  
 A data-analytics portfolio combining SQL, Python, and Excel to uncover how housing prices, rents, and supply evolved through multiple U.S. market cycles.
 
+## Project Background  
+
 ## Client Background
 
 Zillow is the United States’ leading digital real-estate marketplace, curating nationwide data on home values, rental prices, and for-sale listings. Established in 2006, the company’s housing research platform has become the industry benchmark for measuring property-market trends across all 50 states.
@@ -65,56 +67,49 @@ LISTINGS (state, year, inventory) ──┘
 
 ### Project 01 — Home Value Index Analysis (2000–2025)
 
-#### 1. How have home values evolved nationally over 25 years?
+#### 1. Which Top 10 states achieved the fastest home-value growth (2000–2025)?
 
 <div align="center">
-  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q1_home_value_trend_2000_2025.png" width="700">
+  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_by_average_home_value_growth.png" width="700">
 </div>
 
-U.S. median home values increased +140% (from $153K in 2000 to $366K in 2025).  
-The appreciation trend reflects sustained demand, constrained new supply, and demographic migration toward mid-cost states.  
-The Mountain West (ID, UT, CO) emerged as the new growth frontier, while coastal markets (CA, HI) retained top-tier valuations despite slower gains.
+U.S. home values climbed **+140%** overall, with Hawaii ($880K) and California ($870K) retaining the highest averages while Mountain West states such as Colorado and Utah posted the fastest sustained appreciation.
 
-#### 2. Which states achieved the fastest sustained home-value growth?
+#### 2. Which states recorded the largest home-value increases — in dollars vs. percentage?
 
 <div align="center">
-  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q2_fastest_sustained_home_value_growth.png" width="700">
+  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q2_top5_states_by_home_value_growth_absolute_vs_percentage.png" width="700">
 </div>
 
-Idaho (+290%) and Utah (+240%) led the nation in percentage growth, driven by affordability and inbound migration.  
-Hawaii, though slower in percentage terms, added over $650K per home — underscoring the persistence of premium-market value retention.  
-→ Combined, these trends mark a geographic redistribution of wealth creation across housing markets.
+Idaho and Hawaii led percentage and dollar gains respectively, highlighting both inland momentum and the resilience of premium coastal markets.
 
-#### 3. Which markets were most volatile versus most stable?
+#### 3. Which markets were most volatile versus the most stable?
 
 <div align="center">
-  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q3_home_value_volatility_spectrum.png" width="700">
+  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q3_top5_u.s. _states_with_the_most_volatile_home_values.png" width="700">
 </div>
 
-Western markets such as Nevada, Arizona, and Florida showed volatility above 10%, while Iowa, Alaska, and Louisiana remained below 4%.  
-This divergence indicates that supply elasticity and income stability strongly govern market risk levels.
+Mountain West boom states (Kansas, Nevada, Arizona) experienced double-digit volatility, while Iowa, Alaska, and Louisiana remained below 4%, defining a clear risk–return spectrum.
 
 #### 4. How did states experience and recover from the 2008 housing crash?
 
 <div align="center">
-  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q4_housing_crash_to_recovery.png" width="700">
+  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q4_housing_market_crash_to_recovery_2007_2015.png" width="700">
 </div>
 
-Coastal and speculative states lost more than 20% of value in 2008–2010, while affordable markets (AZ, WY, OK) rebounded within five years.  
-Markets with flexible construction pipelines recovered fastest — evidence that supply responsiveness improves crisis resilience.
+Coastal and speculative markets lost more than 20% of value in 2008–2010, while affordable markets such as Arizona, Wyoming, and Oklahoma rebounded within five years thanks to flexible supply pipelines.
 
 #### 5. How do regional housing cycles differ across the U.S.?
 
 <div align="center">
-  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q5_regional_housing_cycles.png" width="700">
+  <img src="./01_zillow_home_value_index_analysis/outputs/charts/q5_home_value_trends_vary_across_u.s._regions.png" width="700">
 </div>
 
-Western markets show wide amplitude (+16% to –17%), whereas the Midwest and Northeast remain stable with single-digit variation.  
-This dual-speed structure underscores the strategic value of regional diversification for both investors and policymakers.
+Western markets show wide amplitude (+16% to –17%), whereas the Midwest and Northeast stay comparatively stable, underscoring the value of regional diversification for investors and policymakers.
 
 ---
 
-### Project 02 — Rent Value Index Analysis (2015–2025)
+### Project 02 — Rent Value Index Analysis  
 
 #### 1. Which states experienced the fastest and slowest rent growth?
 
@@ -145,7 +140,7 @@ This interdependence confirms that ownership and rental affordability cannot be 
 
 ---
 
-### Project 03 — For-Sale Inventory Analysis (2018–2025)
+### Project 03 — For-Sale Inventory Analysis  
 
 #### 2. What is the relationship between inventory growth and home-value change?
 
@@ -176,7 +171,7 @@ Elastic markets (TX, FL, CO) maintain price stability and rental balance, while 
 
 ---
 
-## Key Recommendations
+## Recommendations  
 
 | Focus Area | Recommendation | Strategic Rationale |
 |-------------|----------------|---------------------|
