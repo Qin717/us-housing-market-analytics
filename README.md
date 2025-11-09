@@ -1,6 +1,6 @@
 <!-- Zillow Logo -->
 <p align="center">
-  <img src="./assets/z-logo-default.svg" alt="Zillow Logo" width="220">
+  <img src="./assets/z-logo-default.svg" alt="Zillow Logo" width="140">
 </p>
 
 # U.S. Housing Market Performance Report (2000–2025)
