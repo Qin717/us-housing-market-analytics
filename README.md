@@ -152,7 +152,7 @@ California (-23.6%), Arizona (-28.2%), Arkansas (-32.0%), Alabama (-32.4%), and 
 
 From 2009 to 2015, recovery unfolded unevenly: Arizona (+31%), Wyoming (+28%), Oklahoma (+20%), North Dakota (+18%), and New Mexico (+18%) rebounded the fastest—driven by affordability, stronger local economies, and energy-sector resilience.
 
-#### 5. How do regional housing cycles differ across the U.S.?
+#### 5. How Do Home-Value Trends Differ Across U.S. Regions (2000–2025)?
 
 <div align="center">
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q5_home_value_trends_vary_across_u.s._regions.png" width="700">
