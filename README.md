@@ -220,8 +220,13 @@ From 2015 to 2025, U.S. rental markets diverged sharply. **Colorado** led with 1
   <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q1_top_bottom_5_states_rent_growth_2015_2025.png" width="700">
 </div>
 
-Rents rose **over 95%** in Colorado, Idaho, and Montana, versus less than 20% in Wisconsin, Louisiana, and Alabama.  
-The West's explosive rent growth reflects concentrated demand, limited multifamily stock, and pandemic-era migration trends.
+Between 2015 and 2025, rent values grew unevenly across the United States.
+
+**Colorado, Idaho, and Montana** led the nation with increases above **95%**, while **Wisconsin** and **Louisiana** recorded growth below **20%**.
+
+The data reveals a clear regional divide — Western states experienced the strongest rent escalation, whereas the Midwest and South remained more stable.
+
+High-growth states indicate strong demand but growing affordability pressure, while slower-growth markets remain stable and accessible.
 
 #### 2. Which rental markets were the most volatile or stable?
 
