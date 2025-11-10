@@ -45,16 +45,16 @@ Reporting to housing-sector stakeholders, **this comprehensive analysis evaluate
 
 </div>
 
-Project 01 — Home Value Index Analysis (2000–2025)
+**Project 01 — Home Value Index Analysis (2000–2025)**
 
 Over 25 years of Zillow Home Value Index (ZHVI) data show that U.S. national average home values rose by **+140%** (from $153K to $366K).  
 While national appreciation has been strong, it masks widening volatility gaps: Mountain West and Sun Belt states led growth post-2011, while Midwest states displayed steady resilience. The 2008 crash revealed that regions with flexible supply and affordability — like Arizona and Colorado — recovered faster than constrained coastal markets.
 
-Project 02 — Rent Value Index Analysis (2015–2025)
+**Project 02 — Rent Value Index Analysis (2015–2025)**
 
 Across a decade of Zillow Rent Index (ZORI) data, rents surged over 95% in Western markets but grew less than 20% in the Midwest and South. Rental volatility peaked between 2021–2022, reflecting migration and affordability stress. Rent and home-value appreciation remain moderately correlated (R² = 0.38), confirming that both ownership and rental pressures move together.
 
-Project 03 — For-Sale Inventory Analysis (2018–2025)
+**Project 03 — For-Sale Inventory Analysis (2018–2025)**
 
 Post-pandemic inventory data reveal that nearly half of U.S. states remain structurally undersupplied.  
 Despite listing growth in flexible Southern and Mountain West regions, home prices show minimal short-term sensitivity (R² ≈ 0.01) to inventory fluctuations — proving that affordability challenges stem from chronic supply deficits rather than temporary demand shocks.
@@ -83,7 +83,7 @@ Overall takeaway: The U.S. housing market’s affordability crisis is structural
 
 <div align="center">
 
-### Project 01 — Home Value Index Analysis (2000–2025)
+### ****Project 01 — Home Value Index Analysis (2000–2025)****
 
 </div>
 
@@ -138,7 +138,7 @@ This dual-speed structure underscores the strategic value of regional diversific
 
 <div align="center">
 
-### Project 02 — Rent Value Index Analysis (2015–2025)
+### ****Project 02 — Rent Value Index Analysis (2015–2025)****
 
 </div>
 
@@ -173,7 +173,7 @@ This interdependence confirms that ownership and rental affordability cannot be 
 
 <div align="center">
 
-### Project 03 — For-Sale Inventory Analysis (2018–2025)
+### ****Project 03 — For-Sale Inventory Analysis (2018–2025)****
 
 </div>
 
