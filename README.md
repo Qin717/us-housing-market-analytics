@@ -266,6 +266,22 @@ As home values rise, rents tend to follow — reinforcing the relationship betwe
 
 </div>
 
+#### 1. How Have For-Sale Listings Evolved Across States (2019–2025)?
+
+<div align="center">
+  <img src="./03_for_sale_listings_analysis/outputs/charts/q1_yoy_growth_listings_state_yearly.png" width="700">
+</div>
+
+From 2019 to 2025, U.S. housing inventory experienced a dramatic cycle of contraction and recovery.
+
+**Pandemic Contraction (2019–2021):** Most states saw sharp inventory declines, with New Hampshire (-46.6% in 2021), Vermont (-47.7% in 2021), and South Carolina (-38.9% in 2021) experiencing the steepest drops. By 2021, average listings had fallen 20–30% across most markets as pandemic-driven demand surged while supply tightened.
+
+**Recovery Acceleration (2022–2025):** Southern and Mountain West states led the rebound. **Florida** posted the strongest recovery (+37.1% in 2024, +19.3% in 2025), followed by **South Carolina** (+29.3% in 2024), **Nevada** (+29.5% in 2025), and **Arizona** (+25.6% in 2025). These regions benefited from population inflows, flexible development environments, and land availability.
+
+**Persistent Constraints:** Several Northeastern and Midwestern markets remain supply-constrained. **Illinois** (-1.6% in 2025), **Wisconsin** (-0.8% in 2025), and **New York** (+3.4% in 2025) show minimal recovery, reflecting slower permitting processes, higher construction costs, and limited developable land.
+
+The data reveals a **structural regional divide**: supply-responsive states are normalizing inventory levels, while constrained markets face chronic undersupply that sustains affordability pressures.
+
 #### 2. What is the relationship between inventory growth and home-value change?
 
 <div align="center">
