@@ -200,13 +200,11 @@ The Midwest and Northeast showed more stable paths, while the South accelerated 
 
 <div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
 
-**Summary: Average Rent Evolution and Year-over-Year Growth Patterns (2015–2025)**
+**Executive Summary**
 
-From 2015 to 2025, average rents across U.S. states showed dramatic divergence. **Hawaii** maintained the highest average rent throughout the decade, rising from **$1,999** in 2015 to **$2,922** in 2025 (+46%). **California** followed closely, increasing from **$1,467** to **$2,302** (+57%), while **Colorado** experienced the most explosive growth, surging from **$1,122** to **$2,467** (+120%). At the opposite end, **Ohio** started at **$764** in 2015 and reached **$1,160** in 2025 (+52%), while **Arkansas** remained among the most affordable, growing from **$777** to **$1,100** (+42%).
+From 2015 to 2025, U.S. rental markets diverged sharply. **Colorado** led with 120% growth ($1,122 → $2,467), while **Hawaii** and **California** maintained premium pricing ($2,922 and $2,302 respectively in 2025). The decade unfolded in three phases: stable pre-pandemic growth (2–6% annually), a 2021–2022 surge where **Montana** peaked at **37%** YoY growth, and post-pandemic normalization to 2–5% annual increases.
 
-Year-over-year growth patterns reveal three distinct phases: **Pre-Pandemic Stability (2016–2020)** with moderate 2–6% annual growth; **Pandemic Surge (2021–2022)** with peak volatility—**Montana** recorded an extraordinary **37.0%** YoY increase in 2021, followed by **23.17%** in 2022, while **Florida** surged **15.12%** in 2021 and **16.85%** in 2022; and **Post-Pandemic Normalization (2023–2025)** with most states returning to 2–5% annual increases, though some experienced corrections like **Vermont (-11.99%)** and **Maryland (-7.34%)** in 2023.
-
-**Key patterns:** Western states (CO, ID, MT, AZ, UT) dominated growth rankings with both high base rents and strong absolute dollar increases, while Midwestern states (OH, MO, IA, WI) provided stability with consistent 2–5% growth and minimal volatility. The data confirms that **Western and Mountain states** not only started with higher base rents but also experienced the strongest absolute dollar increases, while **Midwestern states** maintained lower absolute levels despite similar percentage growth rates.
+**Strategic insight:** Western and Mountain states (CO, ID, MT, AZ, UT) delivered both high base rents and strong absolute dollar growth, while Midwestern markets (OH, MO, IA, WI) offered stability with consistent 2–5% growth and minimal volatility—creating distinct risk-return profiles for investors.
 
 </div>
 
