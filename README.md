@@ -266,7 +266,7 @@ As home values rise, rents tend to follow — reinforcing the relationship betwe
 
 </div>
 
-#### 1. How Have For-Sale Listings Evolved Across States (2019–2025)?
+#### For-Sale Listing Executive Summary
 
 From 2019 to 2025, U.S. housing inventory experienced a dramatic cycle of contraction and recovery.
 
