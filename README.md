@@ -47,7 +47,7 @@ Reporting to housing-sector stakeholders, **this comprehensive analysis evaluate
 
 Project 01 — Home Value Index Analysis (2000–2025)
 
-Over 25 years of Zillow Home Value Index (ZHVI) data show that U.S. national average home values rose by +140% (from $153K to $366K).  
+Over 25 years of Zillow Home Value Index (ZHVI) data show that U.S. national average home values rose by **+140%** (from $153K to $366K).  
 While national appreciation has been strong, it masks widening volatility gaps: Mountain West and Sun Belt states led growth post-2011, while Midwest states displayed steady resilience. The 2008 crash revealed that regions with flexible supply and affordability — like Arizona and Colorado — recovered faster than constrained coastal markets.
 
 Project 02 — Rent Value Index Analysis (2015–2025)
@@ -93,7 +93,7 @@ Overall takeaway: The U.S. housing market’s affordability crisis is structural
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_by_average_home_value_growth.png" width="700">
 </div>
 
-U.S. median home values increased +140% (from $153K in 2000 to $366K in 2025).  
+U.S. median home values increased **+140%** (from $153K in 2000 to $366K in 2025).  
 The appreciation trend reflects sustained demand, constrained new supply, and demographic migration toward mid-cost states.  
 The Mountain West (ID, UT, CO) emerged as the new growth frontier, while coastal markets (CA, HI) retained top-tier valuations despite slower gains.
 
