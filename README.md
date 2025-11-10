@@ -12,9 +12,6 @@
 
 </div>
 
-End-to-End Insights Across Zillow Home Values, Rents, and Inventory  
-A data-analytics portfolio combining SQL, Python, and Excel to uncover how housing prices, rents, and supply evolved through multiple U.S. market cycles.
-
 <div align="center">
 
 <h1 style="font-size: 2.0em;">Project Background</h1>
@@ -75,12 +72,6 @@ Overall takeaway: The U.S. housing market’s affordability crisis is structural
 | ZHVI (Home Values) | 2000–2025 | Median value, YoY %, CAGR, volatility | Measure appreciation, resilience, and volatility |
 | ZORI (Rent Index) | 2015–2025 | Typical rent, YoY %, volatility | Track rental inflation and affordability |
 | For-Sale Inventory | 2018–2025 | Listings count, YoY %, supply ratio | Benchmark supply and housing tightness |
-
-ZHVI (state, year, zhvi) ──┬──► joined on [state, year]
-ZORI (state, year, zori) ──┤
-LISTINGS (state, year, inventory) ──┘
-→ Output Table: avg_for_sale_listings_state_yearly_int
-
 
 ---
 
@@ -232,33 +223,6 @@ Elastic markets (TX, FL, CO) maintain price stability and rental balance, while 
 | Affordability Alignment | Prioritize multifamily and rental housing investment in high-growth regions. | Tackles parallel pressures in both ownership and rental markets. |
 | Cross-Metric Monitoring | Create dashboards combining ZHVI, ZORI, and Inventory trends. | Enables early detection of affordability shifts. |
 | Policy Innovation | Support housing trust funds and infrastructure financing. | Promotes long-term, sustainable supply growth. |
-
----
-
-<div align="center">
-
-<h1 style="font-size: 2.0em;">Analytics Workflow and Tooling</h1>
-
-</div>
-
-Data Engineering: SQL CTEs and Excel Power Query for reshaping time-series data.  
-Analysis: Python (Pandas, NumPy) and Excel for calculating growth, volatility, and correlation.  
-Visualization: Matplotlib, Excel charts, and Tableau dashboards for presentation-ready visuals.  
-Validation: Cross-checks between values, rents, and inventory data.  
-Storytelling: Executive summaries and investor-focused narratives translating analytics into strategic decisions.
-
----
-
-<div align="center">
-
-<h1 style="font-size: 2.0em;">Cross-Market Insights</h1>
-
-</div>
-
-Affordability is structurally constrained — inventory shortages keep both prices and rents high.  
-Migration reshapes opportunity — Mountain West and Sun Belt regions attract population and investment.  
-Diversification mitigates volatility — balanced exposure across regions stabilizes returns.  
-Policy levers matter — sustained infrastructure and supply-side incentives outperform short-term fixes.
 
 ---
 
