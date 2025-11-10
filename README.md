@@ -102,6 +102,8 @@ ZHVI_HOME_VALUES ──[StateName → statename, year]──► ZORI_RENT_INDEX
 
 </div>
 
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 #### 1. Which Top 10 States Achieved the Fastest Home Value Growth Over the Past Two Decades?
 
 <div align="center">
@@ -113,6 +115,10 @@ From 2000 to 2025, U.S. home values increased **+140%**, rising from $153K → $
 Among the Top 10 states, Hawaii ($880K) and California ($870K) maintain the highest average home values, followed by Massachusetts ($701K) and New Jersey/Washington ($653K).
 
 Western states such as Colorado and Utah show the fastest sustained appreciation, underscoring long-term regional growth patterns.
+
+</div>
+
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
 
 #### 2. Which States Recorded the Largest Home Value Increases — in Dollars and in Growth Rate? (2000–2025)
 
@@ -128,6 +134,10 @@ While Hawaii's surge reflects high absolute prices, Idaho's exceptional percenta
 
 Together, these patterns reveal a broad nationwide housing expansion—driven by both premium coastal demand and strong inland momentum.
 
+</div>
+
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 #### 3. Which U.S. States Show the Most Stable vs. Volatile Home-Value Trends (2000–2025)?
 
 <div align="center">
@@ -140,6 +150,10 @@ Coastal and boom-cycle markets like Florida and Idaho also showed elevated swing
 
 This variation underscores the U.S. housing market's diverse risk–return profile—volatile states offer higher upside but sharper corrections, whereas stable regions reflect resilient local economies and balanced supply–demand dynamics.
 
+</div>
+
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 #### 4. How Did U.S. States Experience and Recover from the 2008 Housing Crash (2007–2015)?
 
 <div align="center">
@@ -151,6 +165,10 @@ Between 2007 and 2009, several states suffered sharp home-value declines as the 
 California (-23.6%), Arizona (-28.2%), Arkansas (-32.0%), Alabama (-32.4%), and Alaska (-41.3%) were the hardest hit, reflecting steep corrections after years of rapid pre-crash appreciation.
 
 From 2009 to 2015, recovery unfolded unevenly: Arizona (+31%), Wyoming (+28%), Oklahoma (+20%), North Dakota (+18%), and New Mexico (+18%) rebounded the fastest—driven by affordability, stronger local economies, and energy-sector resilience.
+
+</div>
+
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
 
 #### 5. How Do Home-Value Trends Differ Across U.S. Regions (2000–2025)?
 
@@ -170,6 +188,8 @@ The West experienced the strongest swings (peak +16.2% in 2005, trough -17.1% in
 
 The Midwest and Northeast showed more stable paths, while the South accelerated post-2012—driven by affordability and migration inflows.
 
+</div>
+
 ---
 
 <div align="center">
@@ -185,7 +205,7 @@ The Midwest and Northeast showed more stable paths, while the South accelerated 
 </div>
 
 Rents rose **over 95%** in Colorado, Idaho, and Montana, versus less than 20% in Wisconsin, Louisiana, and Alabama.  
-The West’s explosive rent growth reflects concentrated demand, limited multifamily stock, and pandemic-era migration trends.
+The West's explosive rent growth reflects concentrated demand, limited multifamily stock, and pandemic-era migration trends.
 
 #### 2. Which rental markets were the most volatile or stable?
 
