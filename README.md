@@ -120,9 +120,13 @@ Western states such as Colorado and Utah show the fastest sustained appreciation
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q2_top5_states_by_home_value_growth_absolute_vs_percentage.png" width="700">
 </div>
 
-Idaho (+290%) and Utah (+240%) led the nation in percentage growth, driven by affordability and inbound migration.  
-Hawaii, though slower in percentage terms, added over $650K per home — underscoring the persistence of premium-market value retention.  
-→ Combined, these trends mark a geographic redistribution of wealth creation across housing markets.
+Idaho and Hawaii led U.S. home-value appreciation, with gains exceeding +290% and price increases up to $650K.
+
+Rhode Island, New Hampshire, and Florida followed with steady growth between +240%–270%.
+
+While Hawaii's surge reflects high absolute prices, Idaho's exceptional percentage growth highlights the rise of emerging inland markets.
+
+Together, these patterns reveal a broad nationwide housing expansion—driven by both premium coastal demand and strong inland momentum.
 
 #### 3. Which markets were most volatile versus most stable?
 
