@@ -288,14 +288,15 @@ Correlation analysis reveals that home-value growth is largely insensitive to sh
 
 This pattern underscores the inelastic nature of housing prices in the short run. Even when new listings increase, the market's ability to translate supply expansion into price moderation remains limited without parallel adjustments in demand fundamentals. Long-term price stability depends on persistent, multi-year increases in housing stock rather than cyclical listing growth.
 
-#### 5. Which states remain structurally undersupplied?
+#### 2. How Do States Compare to National Supply Benchmarks?
 
 <div align="center">
   <img src="./03_for_sale_listings_analysis/outputs/charts/q5_undersupplied_markets_vs_national_averages.png" width="700">
 </div>
 
-Connecticut, New Jersey, and Rhode Island remain below national inventory recovery levels yet continue to post above-average price growth.  
-These states represent entrenched supply bottlenecks with elevated affordability risk.
+When benchmarked against national averages, most Southern and Mountain West states exhibit inventory growth above 11.5%, while many Northeastern markets remain below. The regional divide suggests that supply recovery is concentrated in states with more flexible development environments and stronger in-migration, while legacy markets are adjusting more slowly.
+
+The uneven recovery underscores a structural bifurcation of the U.S. housing market. Supply-responsive regions are gradually stabilizing, with inventory levels returning toward pre-2020 norms, while supply-constrained regions remain chronically tight. This geographic imbalance will continue to influence national affordability, migration trends, and regional investment patterns.
 
 ---
 
