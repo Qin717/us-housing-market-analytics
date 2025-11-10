@@ -16,7 +16,7 @@ A data-analytics portfolio combining SQL, Python, and Excel to uncover how housi
 
 <div align="center">
 
-<h2 style="font-size: 1.8em;">Project Background</h2>
+<h2 style="font-size: 2.0em;">Project Background</h2>
 
 </div>
 
@@ -30,7 +30,7 @@ Reporting to housing-sector stakeholders, this comprehensive analysis evaluates 
 
 <div align="center">
 
-<h2 style="font-size: 1.8em;">Northstar Metrics</h2>
+<h2 style="font-size: 2.0em;">Northstar Metrics</h2>
 
 </div>
 
@@ -43,7 +43,7 @@ The report focuses on four primary lenses of housing-market performance:
 
 <div align="center">
 
-<h2 style="font-size: 1.8em;">Executive Summary</h2>
+<h2 style="font-size: 2.0em;">Executive Summary</h2>
 
 </div>
 
@@ -65,7 +65,7 @@ Overall takeaway: The U.S. housing market’s affordability crisis is structural
 
 <div align="center">
 
-<h2 style="font-size: 1.8em;">Dataset Structure and ERD</h2>
+<h2 style="font-size: 2.0em;">Dataset Structure and ERD</h2>
 
 </div>
 
@@ -85,7 +85,7 @@ LISTINGS (state, year, inventory) ──┘
 
 <div align="center">
 
-<h2 style="font-size: 1.8em;">Insights Deep-Dive</h2>
+<h2 style="font-size: 2.0em;">Insights Deep-Dive</h2>
 
 </div>
 
@@ -220,7 +220,7 @@ Elastic markets (TX, FL, CO) maintain price stability and rental balance, while 
 
 <div align="center">
 
-<h2 style="font-size: 1.8em;">Key Recommendations</h2>
+<h2 style="font-size: 2.0em;">Key Recommendations</h2>
 
 </div>
 
@@ -236,7 +236,7 @@ Elastic markets (TX, FL, CO) maintain price stability and rental balance, while 
 
 <div align="center">
 
-<h2 style="font-size: 1.8em;">Analytics Workflow and Tooling</h2>
+<h2 style="font-size: 2.0em;">Analytics Workflow and Tooling</h2>
 
 </div>
 
@@ -250,7 +250,7 @@ Storytelling: Executive summaries and investor-focused narratives translating an
 
 <div align="center">
 
-<h2 style="font-size: 1.8em;">Cross-Market Insights</h2>
+<h2 style="font-size: 2.0em;">Cross-Market Insights</h2>
 
 </div>
 
@@ -263,7 +263,7 @@ Policy levers matter — sustained infrastructure and supply-side incentives out
 
 <div align="center">
 
-<h2 style="font-size: 1.8em;">Data Attribution</h2>
+<h2 style="font-size: 2.0em;">Data Attribution</h2>
 
 </div>
 
