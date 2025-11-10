@@ -8,7 +8,7 @@
 
 <div align="center">
 
-# Comprehensive U.S. Housing Analytics Portfolio • 2000–2025
+# Comprehensive U.S. Housing Analytics Portfolio <span style="font-size: 0.7em;">(2000–2025)</span>
 
 </div>
 
