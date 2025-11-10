@@ -47,7 +47,7 @@ Reporting to housing-sector stakeholders, **this comprehensive analysis evaluate
 
 Project 01 — Home Value Index Analysis (2000–2025)
 
-Over 25 years of Zillow Home Value Index (ZHVI) data show that U.S. home values rose by +140% (from $153K to $366K).  
+Over 25 years of Zillow Home Value Index (ZHVI) data show that U.S. national average home values rose by +140% (from $153K to $366K).  
 While national appreciation has been strong, it masks widening volatility gaps: Mountain West and Sun Belt states led growth post-2011, while Midwest states displayed steady resilience. The 2008 crash revealed that regions with flexible supply and affordability — like Arizona and Colorado — recovered faster than constrained coastal markets.
 
 Project 02 — Rent Value Index Analysis (2015–2025)
