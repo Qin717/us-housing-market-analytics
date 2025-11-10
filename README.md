@@ -5,6 +5,7 @@
 
 
 
+
 <div align="center">
 
 # U.S. Housing Market Performance Report (2000–2025)
@@ -16,7 +17,7 @@ A data-analytics portfolio combining SQL, Python, and Excel to uncover how housi
 
 <div align="center">
 
-<h2 style="font-size: 2.0em;">Project Background</h2>
+<h1 style="font-size: 2.0em;">Project Background</h1>
 
 </div>
 
@@ -30,7 +31,7 @@ Reporting to housing-sector stakeholders, this comprehensive analysis evaluates 
 
 <div align="center">
 
-<h2 style="font-size: 2.0em;">Northstar Metrics</h2>
+<h1 style="font-size: 2.0em;">Northstar Metrics</h1>
 
 </div>
 
@@ -43,7 +44,7 @@ The report focuses on four primary lenses of housing-market performance:
 
 <div align="center">
 
-<h2 style="font-size: 2.0em;">Executive Summary</h2>
+<h1 style="font-size: 2.0em;">Executive Summary</h1>
 
 </div>
 
@@ -65,7 +66,7 @@ Overall takeaway: The U.S. housing market’s affordability crisis is structural
 
 <div align="center">
 
-<h2 style="font-size: 2.0em;">Dataset Structure and ERD</h2>
+<h1 style="font-size: 2.0em;">Dataset Structure and ERD</h1>
 
 </div>
 
@@ -85,7 +86,7 @@ LISTINGS (state, year, inventory) ──┘
 
 <div align="center">
 
-<h2 style="font-size: 2.0em;">Insights Deep-Dive</h2>
+<h1 style="font-size: 2.0em;">Insights Deep-Dive</h1>
 
 </div>
 
@@ -220,7 +221,7 @@ Elastic markets (TX, FL, CO) maintain price stability and rental balance, while 
 
 <div align="center">
 
-<h2 style="font-size: 2.0em;">Key Recommendations</h2>
+<h1 style="font-size: 2.0em;">Key Recommendations</h1>
 
 </div>
 
@@ -236,7 +237,7 @@ Elastic markets (TX, FL, CO) maintain price stability and rental balance, while 
 
 <div align="center">
 
-<h2 style="font-size: 2.0em;">Analytics Workflow and Tooling</h2>
+<h1 style="font-size: 2.0em;">Analytics Workflow and Tooling</h1>
 
 </div>
 
@@ -250,7 +251,7 @@ Storytelling: Executive summaries and investor-focused narratives translating an
 
 <div align="center">
 
-<h2 style="font-size: 2.0em;">Cross-Market Insights</h2>
+<h1 style="font-size: 2.0em;">Cross-Market Insights</h1>
 
 </div>
 
@@ -263,7 +264,7 @@ Policy levers matter — sustained infrastructure and supply-side incentives out
 
 <div align="center">
 
-<h2 style="font-size: 2.0em;">Data Attribution</h2>
+<h1 style="font-size: 2.0em;">Data Attribution</h1>
 
 </div>
 
