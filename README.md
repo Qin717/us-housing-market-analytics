@@ -284,8 +284,9 @@ The data reveals a **structural regional divide**: supply-responsive states are 
   <img src="./03_for_sale_listings_analysis/outputs/charts/q2_correlation_inventory_home_value_growth_2018_2025.png" width="700">
 </div>
 
-Correlation is near zero **(R² ≈ 0.01)** — prices remain elevated even as listings increase.  
-Demand strength and long-term supply deficits dominate short-term price adjustments.
+Correlation analysis reveals that home-value growth is largely insensitive to short-term inventory fluctuations **(R² ≈ 0.01)**. In most states, prices continued to rise despite increasing listings, suggesting that demand-side factors such as income growth, household formation, and borrowing costs play a more dominant role than supply adjustments in the near term.
+
+This pattern underscores the inelastic nature of housing prices in the short run. Even when new listings increase, the market's ability to translate supply expansion into price moderation remains limited without parallel adjustments in demand fundamentals. Long-term price stability depends on persistent, multi-year increases in housing stock rather than cyclical listing growth.
 
 #### 5. Which states remain structurally undersupplied?
 
