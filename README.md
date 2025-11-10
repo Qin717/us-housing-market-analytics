@@ -114,7 +114,7 @@ Among the Top 10 states, Hawaii ($880K) and California ($870K) maintain the high
 
 Western states such as Colorado and Utah show the fastest sustained appreciation, underscoring long-term regional growth patterns.
 
-#### 2. Which states achieved the fastest sustained home-value growth?
+#### 2. Which States Recorded the Largest Home Value Increases — in Dollars and in Growth Rate? (2000–2025)
 
 <div align="center">
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q2_top5_states_by_home_value_growth_absolute_vs_percentage.png" width="700">
