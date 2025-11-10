@@ -52,12 +52,12 @@ While national appreciation has been strong, it masks widening volatility gaps: 
 
 **Project 02 — Rent Value Index Analysis (2015–2025)**
 
-Across a decade of Zillow Rent Index (ZORI) data, rents surged over 95% in Western markets but grew less than 20% in the Midwest and South. Rental volatility peaked between 2021–2022, reflecting migration and affordability stress. Rent and home-value appreciation remain moderately correlated (R² = 0.38), confirming that both ownership and rental pressures move together.
+Across a decade of Zillow Rent Index (ZORI) data, rents surged **over 95%** in Western markets but grew less than 20% in the Midwest and South. Rental volatility peaked between 2021–2022, reflecting migration and affordability stress. Rent and home-value appreciation remain moderately **correlated (R² = 0.38)**, confirming that both ownership and rental pressures move together.
 
 **Project 03 — For-Sale Inventory Analysis (2018–2025)**
 
 Post-pandemic inventory data reveal that nearly half of U.S. states remain structurally undersupplied.  
-Despite listing growth in flexible Southern and Mountain West regions, home prices show minimal short-term sensitivity (R² ≈ 0.01) to inventory fluctuations — proving that affordability challenges stem from chronic supply deficits rather than temporary demand shocks.
+Despite listing growth in flexible Southern and Mountain West regions, home prices show minimal short-term sensitivity **(R² ≈ 0.01)** to inventory fluctuations — proving that affordability challenges stem from chronic supply deficits rather than temporary demand shocks.
 
 Overall takeaway: The U.S. housing market’s affordability crisis is structural — fueled by long-term supply shortages, regional migration, and persistent price inelasticity.
 
@@ -148,7 +148,7 @@ This dual-speed structure underscores the strategic value of regional diversific
   <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q1_top_bottom_5_states_rent_growth_2015_2025.png" width="700">
 </div>
 
-Rents rose over 95% in Colorado, Idaho, and Montana, versus less than 20% in Wisconsin, Louisiana, and Alabama.  
+Rents rose **over 95%** in Colorado, Idaho, and Montana, versus less than 20% in Wisconsin, Louisiana, and Alabama.  
 The West’s explosive rent growth reflects concentrated demand, limited multifamily stock, and pandemic-era migration trends.
 
 #### 2. Which rental markets were the most volatile or stable?
@@ -166,7 +166,7 @@ This highlights two distinct profiles: speculative high-yield markets versus sta
   <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q3_correlation_between_rent_growth_and_home_value_appreciation.png" width="700">
 </div>
 
-A moderate positive correlation (R² = 0.38) indicates rents generally rise in tandem with home values, with a 6–12 month lag.  
+A moderate positive correlation **(R² = 0.38)** indicates rents generally rise in tandem with home values, with a 6–12 month lag.  
 This interdependence confirms that ownership and rental affordability cannot be addressed in isolation.
 
 ---
@@ -183,7 +183,7 @@ This interdependence confirms that ownership and rental affordability cannot be 
   <img src="./03_for_sale_listings_analysis/outputs/charts/q2_correlation_inventory_home_value_growth_2018_2025.png" width="700">
 </div>
 
-Correlation is near zero (R² ≈ 0.01) — prices remain elevated even as listings increase.  
+Correlation is near zero **(R² ≈ 0.01)** — prices remain elevated even as listings increase.  
 Demand strength and long-term supply deficits dominate short-term price adjustments.
 
 #### 5. Which states remain structurally undersupplied?
