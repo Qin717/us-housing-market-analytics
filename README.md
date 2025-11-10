@@ -67,24 +67,25 @@ Despite listing growth in flexible Southern and Mountain West regions, home pric
 
 </div>
 
-The database consists of three primary datasets with a total of **108,000+ data observations** across all 50 U.S. states from 2000 to 2025.
+The database consists of three primary raw datasets with a total of **108,000+ data observations** across all 50 U.S. states from 2000 to 2025.
 
-| Dataset | Coverage | Key Columns | Join Keys | Purpose |
-|---------|----------|-------------|-----------|---------|
-| **ZHVI_HOME_VALUES** | 2000–2025 | `statename`, `year`, `yearlyindex` | `statename`, `year` | Home value trends and appreciation analysis |
-| **ZORI_RENT_INDEX** | 2015–2025 | `state`, `year`, `state_avg_rent` | `state`, `year` | Rental inflation and affordability tracking |
-| **FOR_SALE_INVENTORY** | 2018–2025 | `StateName`, `year`, `avg_inventory` | `StateName`, `year` | Supply levels and inventory analysis |
+| Dataset | Coverage | Key Columns (Raw Data) | Data Types | Purpose |
+|---------|----------|------------------------|------------|---------|
+| **ZHVI_HOME_VALUES** | 2000–2025 | `RegionID`, `SizeRank`, `RegionName`, `RegionType`, `StateName`, `[YYYY-MM-DD]` (monthly columns) | Integer, String, Float64 | Home value trends and appreciation analysis |
+| **ZORI_RENT_INDEX** | 2015–2025 | `regionid`, `sizerank`, `regionname`, `regiontype`, `statename`, `[YYYY_MM_DD]` (monthly columns) | Integer, String, Float64 | Rental inflation and affordability tracking |
+| **FOR_SALE_INVENTORY** | 2018–2025 | `RegionID`, `SizeRank`, `RegionName`, `RegionType`, `StateName`, `[YYYY-MM-DD]` (monthly columns) | Integer, String, Integer | Supply levels and inventory analysis |
 
-**Table Relationships:**
+**Table Relationships (After Aggregation):**
 ```
-ZHVI_HOME_VALUES ──[statename, year]──► ZORI_RENT_INDEX
-        │                                      │
-        │                                      │
-        └──[statename, year]──► FOR_SALE_INVENTORY ◄──[StateName, year]──┘
+ZHVI_HOME_VALUES ──[StateName → statename, year]──► ZORI_RENT_INDEX
+        │                                                  │
+        │                                                  │
+        └──[StateName, year]──► FOR_SALE_INVENTORY ◄──[StateName, year]──┘
 ```
 
 **Join Logic:**
-- All tables join on **state** (mapped: `statename` ↔ `state` ↔ `StateName`) and **year**
+- Raw monthly data is aggregated to yearly averages by state
+- All tables join on **state** (mapped: `StateName` ↔ `statename`) and **year** after aggregation
 - Enables cross-metric analysis: home values vs. rents, inventory vs. prices, rents vs. supply
 
 ---
