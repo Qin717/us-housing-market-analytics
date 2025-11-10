@@ -134,8 +134,11 @@ Together, these patterns reveal a broad nationwide housing expansion—driven by
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q3_top5_u.s.%20_states_with_the_most_volatile_home_values.png" width="700">
 </div>
 
-Western markets such as Nevada, Arizona, and Florida showed volatility above 10%, while Iowa, Alaska, and Louisiana remained below 4%.  
-This divergence indicates that supply elasticity and income stability strongly govern market risk levels.
+From 2000 to 2025, Kansas (15%), Nevada (12.8%), and Arizona (11.2%) posted the highest price volatility, while Iowa, Alaska, and Louisiana remained the most stable, each below 4%.
+
+Coastal and boom-cycle markets like Florida and Idaho also showed elevated swings, contrasting with the steadier Midwest and South.
+
+This variation underscores the U.S. housing market's diverse risk–return profile—volatile states offer higher upside but sharper corrections, whereas stable regions reflect resilient local economies and balanced supply–demand dynamics.
 
 #### 4. How did states experience and recover from the 2008 housing crash?
 
