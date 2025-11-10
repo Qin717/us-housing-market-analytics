@@ -59,7 +59,7 @@ Across a decade of Zillow Rent Index (ZORI) data, rents surged **over 95%** in W
 Post-pandemic inventory data reveal that nearly half of U.S. states remain structurally undersupplied.  
 Despite listing growth in flexible Southern and Mountain West regions, home prices show minimal short-term sensitivity **(R² ≈ 0.01)** to inventory fluctuations — proving that affordability challenges stem from chronic supply deficits rather than temporary demand shocks.
 
-Overall takeaway: The U.S. housing market’s affordability crisis is structural — fueled by long-term supply shortages, regional migration, and persistent price inelasticity.
+**Overall takeaway: The U.S. housing market's affordability crisis is structural — fueled by long-term supply shortages, regional migration, and persistent price inelasticity.**
 
 <div align="center">
 
