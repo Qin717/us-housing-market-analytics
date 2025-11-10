@@ -315,17 +315,37 @@ Elastic markets (TX, FL, CO) maintain price stability and rental balance, while 
 
 <div align="center">
 
-<h1 style="font-size: 2.0em;">Key Recommendations</h1>
+<h1 style="font-size: 2.0em;">Recommendations</h1>
 
 </div>
 
-| Focus Area | Recommendation | Strategic Rationale |
-|-------------|----------------|---------------------|
-| Supply Expansion | Streamline permits and zoning to accelerate construction in undersupplied regions. | Structural shortages are the root cause of affordability issues. |
-| Portfolio Diversification | Balance volatile, high-growth Western states with steady Midwest markets. | Reduces portfolio risk and ensures stable returns. |
-| Affordability Alignment | Prioritize multifamily and rental housing investment in high-growth regions. | Tackles parallel pressures in both ownership and rental markets. |
-| Cross-Metric Monitoring | Create dashboards combining ZHVI, ZORI, and Inventory trends. | Enables early detection of affordability shifts. |
-| Policy Innovation | Support housing trust funds and infrastructure financing. | Promotes long-term, sustainable supply growth. |
+The findings across Zillow's datasets highlight that restoring balance to the U.S. housing market requires coordinated action from real estate developers, investors, corporate stakeholders, and policymakers.
+
+Each group has a distinct but interdependent role in addressing structural supply shortages, managing volatility, and improving long-term affordability.
+
+**Real Estate Developers**
+
+- Accelerate supply in undersupplied regions: Prioritize construction in states where inventory growth lags but demand and prices remain high.
+- Streamline project approvals: Collaborate with local authorities to modernize zoning and shorten permitting cycles.
+- Leverage market analytics: Use home value, rent, and inventory data to identify profitable development corridors and optimize timing.
+
+**Investors**
+
+- Diversify portfolios geographically: Balance exposure between high-growth Western markets and steady-performing Midwest and Southern states.
+- Track rent–price relationships: Monitor cross-market correlations to anticipate affordability inflection points.
+- Invest in sustainable housing: Channel capital toward affordable and energy-efficient developments that offer stable, long-term returns.
+
+**Corporate Stakeholders**
+
+- Integrate housing data into strategy: Build dashboards that track home values, rents, and supply to inform workforce planning and real-estate investment.
+- Align business operations with affordability trends: Consider housing costs when making decisions about expansion, compensation, or relocation.
+- Foster partnerships: Work with local developers and governments to ensure accessible housing near employment hubs.
+
+**Policymakers**
+
+- Enable long-term supply elasticity: Reform restrictive zoning laws and expand infrastructure to unlock new development capacity.
+- Facilitate public–private partnerships: Use incentives, housing trust funds, and financing tools to encourage private sector participation.
+- Promote affordability and transparency: Support balanced rental frameworks and open access to housing data for evidence-based policy design.
 
 ---
 
