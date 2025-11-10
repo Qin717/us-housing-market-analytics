@@ -108,9 +108,11 @@ ZHVI_HOME_VALUES ──[StateName → statename, year]──► ZORI_RENT_INDEX
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_by_average_home_value_growth.png" width="700">
 </div>
 
-U.S. median home values increased **+140%** (from $153K in 2000 to $366K in 2025).  
-The appreciation trend reflects sustained demand, constrained new supply, and demographic migration toward mid-cost states.  
-The Mountain West (ID, UT, CO) emerged as the new growth frontier, while coastal markets (CA, HI) retained top-tier valuations despite slower gains.
+From 2000 to 2025, U.S. home values increased **+140%**, rising from $153K → $366K.
+
+Among the Top 10 states, Hawaii ($880K) and California ($870K) maintain the highest average home values, followed by Massachusetts ($701K) and New Jersey/Washington ($653K).
+
+Western states such as Colorado and Utah show the fastest sustained appreciation, underscoring long-term regional growth patterns.
 
 #### 2. Which states achieved the fastest sustained home-value growth?
 
