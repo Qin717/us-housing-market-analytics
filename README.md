@@ -228,7 +228,7 @@ The data reveals a clear regional divide — Western states experienced the stro
 
 High-growth states indicate strong demand but growing affordability pressure, while slower-growth markets remain stable and accessible.
 
-#### 2. Which rental markets were the most volatile or stable?
+#### 2. Where Were Rental Markets the Most Volatile — and Which States Remained Stable?
 
 <div align="center">
   <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q2_top_bottom_5_states_rent_volatility.png" width="700">
