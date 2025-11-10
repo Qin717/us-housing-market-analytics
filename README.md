@@ -278,7 +278,7 @@ From 2019 to 2025, U.S. housing inventory experienced a dramatic cycle of contra
 
 The data reveals a **structural regional divide**: supply-responsive states are normalizing inventory levels, while constrained markets face chronic undersupply that sustains affordability pressures.
 
-#### 2. What is the relationship between inventory growth and home-value change?
+#### 1. What is the relationship between inventory growth and home-value change?
 
 <div align="center">
   <img src="./03_for_sale_listings_analysis/outputs/charts/q2_correlation_inventory_home_value_growth_2018_2025.png" width="700">
