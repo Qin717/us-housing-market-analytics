@@ -1,16 +1,24 @@
 <!-- Zillow Logo -->
 <p align="center">
-  <img src="./assets/z-logo-default.svg" alt="Zillow Logo" width="220">
+  <img src="./assets/z-logo-default.svg" alt="Zillow Logo" width="120">
 </p>
 
 
 
+<div align="center">
+
 # U.S. Housing Market Performance Report (2000–2025)
+
+</div>
 
 End-to-End Insights Across Zillow Home Values, Rents, and Inventory  
 A data-analytics portfolio combining SQL, Python, and Excel to uncover how housing prices, rents, and supply evolved through multiple U.S. market cycles.
 
-## Client Background
+<div align="center">
+
+## Project Background
+
+</div>
 
 Zillow is the United States' leading digital real-estate marketplace, curating nationwide data on home values, rental prices, and for-sale listings. Established in 2006, the company’s housing research platform has become the industry benchmark for measuring property-market trends across all 50 states.
 
@@ -20,7 +28,11 @@ This portfolio converts over 108,000 data observations from Zillow Research into
 
 Reporting to housing-sector stakeholders, this comprehensive analysis evaluates Zillow data from 2000 to 2025 to surface key patterns in value appreciation, rent growth, and inventory shifts — and connects them to underlying economic realities.
 
+<div align="center">
+
 ## Northstar Metrics
+
+</div>
 
 The report focuses on four primary lenses of housing-market performance:
 
@@ -29,7 +41,11 @@ The report focuses on four primary lenses of housing-market performance:
 - For-Sale Inventory Trends: Supply recovery, structural shortages, and post-pandemic resilience (2018–2025).
 - Cross-Metric Relationships: Interactions between supply, home values, and rents that drive affordability.
 
+<div align="center">
+
 ## Executive Summary
+
+</div>
 
 Project 01 — Home Value Index Analysis (2000–2025)
 
@@ -47,7 +63,11 @@ Despite listing growth in flexible Southern and Mountain West regions, home pric
 
 Overall takeaway: The U.S. housing market’s affordability crisis is structural — fueled by long-term supply shortages, regional migration, and persistent price inelasticity.
 
+<div align="center">
+
 ## Dataset Structure and ERD
+
+</div>
 
 | Dataset | Coverage | Key Metrics | Purpose |
 |----------|-----------|-------------|----------|
@@ -63,9 +83,17 @@ LISTINGS (state, year, inventory) ──┘
 
 ---
 
+<div align="center">
+
 ## Insights Deep-Dive
 
+</div>
+
+<div align="center">
+
 ### Project 01 — Home Value Index Analysis (2000–2025)
+
+</div>
 
 #### 1. How have home values evolved nationally over 25 years?
 
@@ -116,7 +144,11 @@ This dual-speed structure underscores the strategic value of regional diversific
 
 ---
 
+<div align="center">
+
 ### Project 02 — Rent Value Index Analysis (2015–2025)
+
+</div>
 
 #### 1. Which states experienced the fastest and slowest rent growth?
 
@@ -147,7 +179,11 @@ This interdependence confirms that ownership and rental affordability cannot be 
 
 ---
 
+<div align="center">
+
 ### Project 03 — For-Sale Inventory Analysis (2018–2025)
+
+</div>
 
 #### 2. What is the relationship between inventory growth and home-value change?
 
@@ -169,7 +205,11 @@ These states represent entrenched supply bottlenecks with elevated affordability
 
 ---
 
+<div align="center">
+
 ### Cross-Metric Summary
+
+</div>
 
 Home values and rents move together, with rent growth lagging ownership cycles by roughly one year.  
 Inventory recovery correlates negatively with both value and rent acceleration, confirming supply constraints as the primary affordability driver.  
@@ -178,7 +218,11 @@ Elastic markets (TX, FL, CO) maintain price stability and rental balance, while 
 
 ---
 
+<div align="center">
+
 ## Key Recommendations
+
+</div>
 
 | Focus Area | Recommendation | Strategic Rationale |
 |-------------|----------------|---------------------|
@@ -190,7 +234,11 @@ Elastic markets (TX, FL, CO) maintain price stability and rental balance, while 
 
 ---
 
+<div align="center">
+
 ## Analytics Workflow and Tooling
+
+</div>
 
 Data Engineering: SQL CTEs and Excel Power Query for reshaping time-series data.  
 Analysis: Python (Pandas, NumPy) and Excel for calculating growth, volatility, and correlation.  
@@ -200,7 +248,11 @@ Storytelling: Executive summaries and investor-focused narratives translating an
 
 ---
 
+<div align="center">
+
 ## Cross-Market Insights
+
+</div>
 
 Affordability is structurally constrained — inventory shortages keep both prices and rents high.  
 Migration reshapes opportunity — Mountain West and Sun Belt regions attract population and investment.  
@@ -209,6 +261,10 @@ Policy levers matter — sustained infrastructure and supply-side incentives out
 
 ---
 
+<div align="center">
+
 ## Data Attribution
+
+</div>
 
 Data © Zillow Group, Inc. (ZHVI, ZORI, For-Sale Inventory) — used under Zillow Research Terms of Use for educational, non-commercial analysis.
