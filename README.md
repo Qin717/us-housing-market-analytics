@@ -67,11 +67,40 @@ Despite listing growth in flexible Southern and Mountain West regions, home pric
 
 </div>
 
-| Dataset | Coverage | Key Metrics | Purpose |
-|----------|-----------|-------------|----------|
-| ZHVI (Home Values) | 2000–2025 | Median value, YoY %, CAGR, volatility | Measure appreciation, resilience, and volatility |
-| ZORI (Rent Index) | 2015–2025 | Typical rent, YoY %, volatility | Track rental inflation and affordability |
-| For-Sale Inventory | 2018–2025 | Listings count, YoY %, supply ratio | Benchmark supply and housing tightness |
+The database consists of three primary datasets with a total of **108,000+ data observations** across all 50 U.S. states from 2000 to 2025.
+
+**1. ZHVI_HOME_VALUES Table**
+- **Purpose:** Stores annual home value data aggregated from monthly Zillow Home Value Index (ZHVI) data
+- **Coverage:** 2000–2025
+- **Columns and Data Types:**
+  - `regionname`: String (ZIP code or region identifier)
+  - `statename`: String (U.S. state name)
+  - `city`: String (City name)
+  - `countyname`: String (County name)
+  - `metro`: String (Metropolitan area)
+  - `year`: Integer (Year of observation)
+  - `yearlyindex`: Float64 (Median home value in USD)
+
+**2. ZORI_RENT_INDEX Table**
+- **Purpose:** Stores annual average rent data aggregated from monthly Zillow Rent Index (ZORI) data
+- **Coverage:** 2015–2025
+- **Columns and Data Types:**
+  - `state`: String (U.S. state abbreviation)
+  - `year`: Integer (Year of observation)
+  - `state_avg_rent`: Float64 (Average monthly rent in USD)
+
+**3. FOR_SALE_INVENTORY Table**
+- **Purpose:** Stores annual average for-sale listing counts by state
+- **Coverage:** 2018–2025
+- **Columns and Data Types:**
+  - `StateName`: String (U.S. state name)
+  - `year`: Integer (Year of observation)
+  - `avg_inventory`: Integer (Average number of for-sale listings)
+
+**Relationships between Tables:**
+- **ZHVI_HOME_VALUES to ZORI_RENT_INDEX:** Joined on `statename` (ZHVI) = `state` (ZORI) and `year` for correlation analysis
+- **ZHVI_HOME_VALUES to FOR_SALE_INVENTORY:** Joined on `statename` (ZHVI) = `StateName` (Inventory) and `year` for supply-price relationship analysis
+- **ZORI_RENT_INDEX to FOR_SALE_INVENTORY:** Joined on `state` (ZORI) = `StateName` (Inventory) and `year` for rent-inventory correlation analysis
 
 ---
 
