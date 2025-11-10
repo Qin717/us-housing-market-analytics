@@ -128,7 +128,7 @@ While Hawaii's surge reflects high absolute prices, Idaho's exceptional percenta
 
 Together, these patterns reveal a broad nationwide housing expansion—driven by both premium coastal demand and strong inland momentum.
 
-#### 3. Which markets were most volatile versus most stable?
+#### 3. Which U.S. States Show the Most Stable vs. Volatile Home-Value Trends (2000–2025)?
 
 <div align="center">
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q3_top5_u.s.%20_states_with_the_most_volatile_home_values.png" width="700">
