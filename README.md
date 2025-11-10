@@ -22,9 +22,9 @@ Zillow is the United States' leading digital real-estate marketplace, curating n
 
 As the U.S. housing market entered two decades of economic transformation — spanning the 2008 housing crash, post-crisis recovery, pandemic-driven surge, and post-2022 affordability reset — Zillow’s datasets provide an unparalleled window into how property values, rents, and inventory levels evolved across states and regions.
 
-This portfolio converts over **108,000 data observations** from Zillow Research into actionable insights that help real estate investors, developers, and policymakers understand market cycles, assess regional performance, and anticipate future affordability pressures.
+This portfolio converts over **108,000 data observations** from Zillow Research into actionable insights that **help real estate investors, developers, and policymakers understand market cycles, assess regional performance, and anticipate future affordability pressures.**
 
-Reporting to housing-sector stakeholders, this comprehensive analysis evaluates Zillow data from 2000 to 2025 to surface key patterns in value appreciation, rent growth, and inventory shifts — and connects them to underlying economic realities.
+Reporting to housing-sector stakeholders, **this comprehensive analysis evaluates Zillow data from 2000 to 2025 to surface key patterns in value appreciation, rent growth, and inventory shifts — and connects them to underlying economic realities.**
 
 <div align="center">
 
