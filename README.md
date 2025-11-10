@@ -158,8 +158,17 @@ From 2009 to 2015, recovery unfolded unevenly: Arizona (+31%), Wyoming (+28%), O
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q5_home_value_trends_vary_across_u.s._regions.png" width="700">
 </div>
 
-Western markets show wide amplitude (+16% to –17%), whereas the Midwest and Northeast remain stable with single-digit variation.  
-This dual-speed structure underscores the strategic value of regional diversification for both investors and policymakers.
+From 2000 to 2025, U.S. housing markets moved through three major cycles:
+
+**Boom (2000–2006)**
+
+**Crash (2007–2011)**
+
+**Sustained Recovery (2012–2022)**
+
+The West experienced the strongest swings (peak +16.2% in 2005, trough -17.1% in 2009, surge +17.2% in 2021).
+
+The Midwest and Northeast showed more stable paths, while the South accelerated post-2012—driven by affordability and migration inflows.
 
 ---
 
