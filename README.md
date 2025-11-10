@@ -140,7 +140,7 @@ Coastal and boom-cycle markets like Florida and Idaho also showed elevated swing
 
 This variation underscores the U.S. housing market's diverse risk–return profile—volatile states offer higher upside but sharper corrections, whereas stable regions reflect resilient local economies and balanced supply–demand dynamics.
 
-#### 4. How did states experience and recover from the 2008 housing crash?
+#### 4. How Did U.S. States Experience and Recover from the 2008 Housing Crash (2007–2015)?
 
 <div align="center">
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q4_housing_market_crash_to_recovery_2007_2015.png" width="700">
