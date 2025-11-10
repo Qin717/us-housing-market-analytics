@@ -268,10 +268,6 @@ As home values rise, rents tend to follow — reinforcing the relationship betwe
 
 #### 1. How Have For-Sale Listings Evolved Across States (2019–2025)?
 
-<div align="center">
-  <img src="./03_for_sale_listings_analysis/outputs/charts/q1_yoy_growth_listings_state_yearly.png" width="700">
-</div>
-
 From 2019 to 2025, U.S. housing inventory experienced a dramatic cycle of contraction and recovery.
 
 **Pandemic Contraction (2019–2021):** Most states saw sharp inventory declines, with New Hampshire (-46.6% in 2021), Vermont (-47.7% in 2021), and South Carolina (-38.9% in 2021) experiencing the steepest drops. By 2021, average listings had fallen 20–30% across most markets as pandemic-driven demand surged while supply tightened.
