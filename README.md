@@ -250,8 +250,13 @@ High-volatility markets carry greater short-term potential and risk, while stabl
   <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q3_correlation_between_rent_growth_and_home_value_appreciation.png" width="700">
 </div>
 
-A moderate positive correlation **(R² = 0.38)** indicates rents generally rise in tandem with home values, with a 6–12 month lag.  
-This interdependence confirms that ownership and rental affordability cannot be addressed in isolation.
+The analysis reveals a **moderate positive relationship (R² = 0.38)** between rent growth and home-value appreciation.
+
+States with faster home-value increases generally experienced stronger rent growth, although the strength of this link varied by region.
+
+This pattern suggests that property and rental markets often move together, reflecting shared economic pressures.
+
+As home values rise, rents tend to follow — reinforcing the relationship between property appreciation and rental affordability across states.
 
 ---
 
