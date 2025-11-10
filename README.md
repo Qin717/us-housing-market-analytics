@@ -204,6 +204,13 @@ The Midwest and Northeast showed more stable paths, while the South accelerated 
 
 From 2015 to 2025, U.S. rental markets diverged sharply. **Colorado** led with 120% growth ($1,122 → $2,467), while **Hawaii** and **California** maintained premium pricing ($2,922 and $2,302 respectively in 2025). The decade unfolded in three phases: stable pre-pandemic growth (2–6% annually), a 2021–2022 surge where **Montana** peaked at **37%** YoY growth, and post-pandemic normalization to 2–5% annual increases.
 
+**Key findings from state-level analysis:**
+- **Peak volatility:** Montana (37% YoY in 2021), Wyoming (23.84% in 2024), Florida (16.85% in 2022)
+- **Premium markets:** Hawaii ($2,922), California ($2,302), Colorado ($2,467) — highest 2025 rents
+- **Stable performers:** Ohio, Missouri, Alabama — consistent 2–5% annual growth, minimal swings
+- **Market corrections:** Vermont (-14.37% in 2025), Maryland (-7.34% in 2023) — post-surge adjustments
+- **Consistent growth leaders:** Colorado (15.52% in 2016, sustained 5–13%), Idaho (12.19% in 2017, 14.08% in 2025)
+
 **Strategic insight:** Western and Mountain states (CO, ID, MT, AZ, UT) delivered both high base rents and strong absolute dollar growth, while Midwestern markets (OH, MO, IA, WI) offered stability with consistent 2–5% growth and minimal volatility—creating distinct risk-return profiles for investors.
 
 </div>
