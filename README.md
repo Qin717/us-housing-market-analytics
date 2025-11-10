@@ -102,7 +102,7 @@ ZHVI_HOME_VALUES ──[StateName → statename, year]──► ZORI_RENT_INDEX
 
 </div>
 
-#### 1. How have home values evolved nationally over 25 years?
+#### 1. Which Top 10 States Achieved the Fastest Home Value Growth Over the Past Two Decades?
 
 <div align="center">
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_by_average_home_value_growth.png" width="700">
