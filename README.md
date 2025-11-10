@@ -146,8 +146,11 @@ This variation underscores the U.S. housing market's diverse risk–return profi
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q4_housing_market_crash_to_recovery_2007_2015.png" width="700">
 </div>
 
-Coastal and speculative states lost more than 20% of value in 2008–2010, while affordable markets (AZ, WY, OK) rebounded within five years.  
-Markets with flexible construction pipelines recovered fastest — evidence that supply responsiveness improves crisis resilience.
+Between 2007 and 2009, several states suffered sharp home-value declines as the housing bubble burst.
+
+California (-23.6%), Arizona (-28.2%), Arkansas (-32.0%), Alabama (-32.4%), and Alaska (-41.3%) were the hardest hit, reflecting steep corrections after years of rapid pre-crash appreciation.
+
+From 2009 to 2015, recovery unfolded unevenly: Arizona (+31%), Wyoming (+28%), Oklahoma (+20%), North Dakota (+18%), and New Mexico (+18%) rebounded the fastest—driven by affordability, stronger local economies, and energy-sector resilience.
 
 #### 5. How do regional housing cycles differ across the U.S.?
 
