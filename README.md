@@ -32,12 +32,12 @@ Reporting to housing-sector stakeholders, **this comprehensive analysis evaluate
 
 </div>
 
-The report focuses on four primary lenses of housing-market performance:
+**The report focuses on four primary lenses of housing-market performance:**
 
-- Home Value Trends: Long-term appreciation, volatility cycles, and regional divergence (2000–2025).
-- Rent Value Trends: Rental inflation, affordability, and correlation to home values (2015–2025).
-- For-Sale Inventory Trends: Supply recovery, structural shortages, and post-pandemic resilience (2018–2025).
-- Cross-Metric Relationships: Interactions between supply, home values, and rents that drive affordability.
+- **Home Value Trends: Long-term appreciation, volatility cycles, and regional divergence (2000–2025).**
+- **Rent Value Trends: Rental inflation, affordability, and correlation to home values (2015–2025).**
+- **For-Sale Inventory Trends: Supply recovery, structural shortages, and post-pandemic resilience (2018–2025).**
+- **Cross-Metric Relationships: Interactions between supply, home values, and rents that drive affordability.**
 
 <div align="center">
 
