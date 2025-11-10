@@ -8,7 +8,7 @@
 
 <div align="center">
 
-# U.S. Housing Market Performance Report (2000–2025)
+# Comprehensive U.S. Housing Analytics Portfolio • 2000–2025
 
 </div>
 
@@ -28,7 +28,7 @@ Reporting to housing-sector stakeholders, this comprehensive analysis evaluates 
 
 <div align="center">
 
-<h1 style="font-size: 2.0em;">Northstar Metrics</h1>
+<h1 style="font-size: 2.0em;">Core Analytical Dimensions</h1>
 
 </div>
 
