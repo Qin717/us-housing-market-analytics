@@ -349,10 +349,8 @@ Each group has a distinct but interdependent role in addressing structural suppl
 
 ---
 
-<div align="center">
+## 👤 Author
 
-<h1 style="font-size: 2.0em;">Data Attribution</h1>
-
-</div>
-
-Data © Zillow Group, Inc. (ZHVI, ZORI, For-Sale Inventory) — used under Zillow Research Terms of Use for educational, non-commercial analysis.
+**Qin Qin**  
+Data Analytics Portfolio | Real Estate · Market Trends · Visualization  
+🔗 [GitHub Portfolio](https://github.com/Qin717) | [LinkedIn](https://www.linkedin.com/in/qinqin0717)
