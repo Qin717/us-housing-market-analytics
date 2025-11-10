@@ -234,8 +234,15 @@ High-growth states indicate strong demand but growing affordability pressure, wh
   <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q2_top_bottom_5_states_rent_volatility.png" width="700">
 </div>
 
-Volatility peaked in Montana (11.8%) and Vermont (8.3%), while Ohio, Missouri, and Alabama maintained sub-2% variation.  
-This highlights two distinct profiles: speculative high-yield markets versus stable cash-flow markets preferred by institutional investors.
+Rent fluctuations varied widely across regions.
+
+**Montana (11.8%)**, **Vermont (8.3%)**, and **Wyoming (6.7%)** recorded the highest volatility, showing larger year-to-year swings.
+
+In contrast, **Ohio (1.7%)**, **Missouri (1.9%)**, and **Alabama (1.9%)** remained the most stable, with minimal variation throughout the decade.
+
+These differences highlight contrasting market dynamics — some states saw sharp annual changes while others maintained consistent rental patterns.
+
+High-volatility markets carry greater short-term potential and risk, while stable states offer predictable, long-term rental returns.
 
 #### 3. What is the relationship between rent growth and home-value appreciation?
 
