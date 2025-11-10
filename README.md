@@ -63,7 +63,7 @@ Despite listing growth in flexible Southern and Mountain West regions, home pric
 
 <div align="center">
 
-<h1 style="font-size: 2.0em;">Dataset Structure and ERD</h1>
+<h1 style="font-size: 2.0em;">Dataset Structure</h1>
 
 </div>
 
