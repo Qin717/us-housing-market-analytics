@@ -244,7 +244,7 @@ These differences highlight contrasting market dynamics — some states saw shar
 
 High-volatility markets carry greater short-term potential and risk, while stable states offer predictable, long-term rental returns.
 
-#### 3. What is the relationship between rent growth and home-value appreciation?
+#### 3. The Relationship Between Home-Value Appreciation and Rent Growth Across U.S. States (2015–2025)
 
 <div align="center">
   <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q3_correlation_between_rent_growth_and_home_value_appreciation.png" width="700">
