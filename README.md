@@ -111,14 +111,13 @@ ZHVI_HOME_VALUES ──[StateName → statename, year]──► ZORI_RENT_INDEX
 </div>
 
 From 2000 to 2025, U.S. home values increased **+140%**, rising from $153K → $366K.
-
-Among the Top 10 states, Hawaii ($880K) and California ($870K) maintain the highest average home values, followed by Massachusetts ($701K) and New Jersey/Washington ($653K).
-
+Among the Top 10 states, **Hawaii ($880K) and California ($870K)** maintain the highest average home values, followed by Massachusetts ($701K) and New Jersey/Washington ($653K).
 Western states such as Colorado and Utah show the fastest sustained appreciation, underscoring long-term regional growth patterns.
 
 </div>
 
 <div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 
 #### 2. Which States Recorded the Largest Home Value Increases — in Dollars and in Growth Rate? (2000–2025)
 
@@ -126,17 +125,15 @@ Western states such as Colorado and Utah show the fastest sustained appreciation
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q2_top5_states_by_home_value_growth_absolute_vs_percentage.png" width="700">
 </div>
 
-Idaho and Hawaii led U.S. home-value appreciation, with gains exceeding +290% and price increases up to $650K.
-
+**Idaho and Hawaii** led U.S. home-value appreciation, with gains exceeding **+290%** and price increases up to **$650K**.
 Rhode Island, New Hampshire, and Florida followed with steady growth between +240%–270%.
-
 While Hawaii's surge reflects high absolute prices, Idaho's exceptional percentage growth highlights the rise of emerging inland markets.
-
 Together, these patterns reveal a broad nationwide housing expansion—driven by both premium coastal demand and strong inland momentum.
 
 </div>
 
 <div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 
 #### 3. Which U.S. States Show the Most Stable vs. Volatile Home-Value Trends (2000–2025)?
 
@@ -144,15 +141,14 @@ Together, these patterns reveal a broad nationwide housing expansion—driven by
   <img src="01_zillow_home_value_index_analysis/outputs/charts/q3_top5_u.s.%20_states_with_the_most_volatile_home_values.png" width="700">
 </div>
 
-From 2000 to 2025, Kansas (15%), Nevada (12.8%), and Arizona (11.2%) posted the highest price volatility, while Iowa, Alaska, and Louisiana remained the most stable, each below 4%.
-
+From 2000 to 2025, **Kansas (15%), Nevada (12.8%), and Arizona (11.2%) posted the highest price volatility**, while **Iowa, Alaska, and Louisiana remained the most stable, each below 4%**.
 Coastal and boom-cycle markets like Florida and Idaho also showed elevated swings, contrasting with the steadier Midwest and South.
-
 This variation underscores the U.S. housing market's diverse risk–return profile—volatile states offer higher upside but sharper corrections, whereas stable regions reflect resilient local economies and balanced supply–demand dynamics.
 
 </div>
 
 <div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 
 #### 4. How Did U.S. States Experience and Recover from the 2008 Housing Crash (2007–2015)?
 
@@ -161,14 +157,13 @@ This variation underscores the U.S. housing market's diverse risk–return profi
 </div>
 
 Between 2007 and 2009, several states suffered sharp home-value declines as the housing bubble burst.
-
-California (-23.6%), Arizona (-28.2%), Arkansas (-32.0%), Alabama (-32.4%), and Alaska (-41.3%) were the hardest hit, reflecting steep corrections after years of rapid pre-crash appreciation.
-
-From 2009 to 2015, recovery unfolded unevenly: Arizona (+31%), Wyoming (+28%), Oklahoma (+20%), North Dakota (+18%), and New Mexico (+18%) rebounded the fastest—driven by affordability, stronger local economies, and energy-sector resilience.
+**California (-23.6%), Arizona (-28.2%), Arkansas (-32.0%), Alabama (-32.4%), and Alaska (-41.3%) were the hardest hit**, reflecting steep corrections after years of rapid pre-crash appreciation.
+From 2009 to 2015, recovery unfolded unevenly: **Arizona (+31%), Wyoming (+28%), Oklahoma (+20%), North Dakota (+18%), and New Mexico (+18%) rebounded the fastest—driven** by affordability, stronger local economies, and energy-sector resilience.
 
 </div>
 
 <div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 
 #### 5. How Do Home-Value Trends Differ Across U.S. Regions (2000–2025)?
 
@@ -179,13 +174,9 @@ From 2009 to 2015, recovery unfolded unevenly: Arizona (+31%), Wyoming (+28%), O
 From 2000 to 2025, U.S. housing markets moved through three major cycles:
 
 **Boom (2000–2006)**
-
 **Crash (2007–2011)**
-
 **Sustained Recovery (2012–2022)**
-
 The West experienced the strongest swings (peak +16.2% in 2005, trough -17.1% in 2009, surge +17.2% in 2021).
-
 The Midwest and Northeast showed more stable paths, while the South accelerated post-2012—driven by affordability and migration inflows.
 
 </div>
@@ -193,6 +184,7 @@ The Midwest and Northeast showed more stable paths, while the South accelerated 
 ---
 
 <div align="center">
+
 
 ## ****Project 02 — Rent Value Index Analysis (2015–2025)****
 
@@ -223,11 +215,8 @@ From 2015 to 2025, U.S. rental markets diverged sharply. **Colorado** led with 1
 </div>
 
 Between 2015 and 2025, rent values grew unevenly across the United States.
-
 **Colorado, Idaho, and Montana** led the nation with increases above **95%**, while **Wisconsin** and **Louisiana** recorded growth below **20%**.
-
 The data reveals a clear regional divide — Western states experienced the strongest rent escalation, whereas the Midwest and South remained more stable.
-
 High-growth states indicate strong demand but growing affordability pressure, while slower-growth markets remain stable and accessible.
 
 </div>
@@ -241,13 +230,9 @@ High-growth states indicate strong demand but growing affordability pressure, wh
 </div>
 
 Rent fluctuations varied widely across regions.
-
 **Montana (11.8%)**, **Vermont (8.3%)**, and **Wyoming (6.7%)** recorded the highest volatility, showing larger year-to-year swings.
-
 In contrast, **Ohio (1.7%)**, **Missouri (1.9%)**, and **Alabama (1.9%)** remained the most stable, with minimal variation throughout the decade.
-
 These differences highlight contrasting market dynamics — some states saw sharp annual changes while others maintained consistent rental patterns.
-
 High-volatility markets carry greater short-term potential and risk, while stable states offer predictable, long-term rental returns.
 
 </div>
@@ -261,11 +246,8 @@ High-volatility markets carry greater short-term potential and risk, while stabl
 </div>
 
 The analysis reveals a **moderate positive relationship (R² = 0.38)** between rent growth and home-value appreciation.
-
 States with faster home-value increases generally experienced stronger rent growth, although the strength of this link varied by region.
-
 This pattern suggests that property and rental markets often move together, reflecting shared economic pressures.
-
 As home values rise, rents tend to follow — reinforcing the relationship between property appreciation and rental affordability across states.
 
 </div>
@@ -287,7 +269,6 @@ From 2019 to 2025, U.S. housing inventory experienced a dramatic cycle of contra
 **Recovery Acceleration (2022–2025):** Southern and Mountain West states led the rebound. **Florida** posted the strongest recovery (+37.1% in 2024, +19.3% in 2025), followed by **South Carolina** (+29.3% in 2024), **Nevada** (+29.5% in 2025), and **Arizona** (+25.6% in 2025). These regions benefited from population inflows, flexible development environments, and land availability.
 
 **Persistent Constraints:** Several Northeastern and Midwestern markets remain supply-constrained. **Illinois** (-1.6% in 2025), **Wisconsin** (-0.8% in 2025), and **New York** (+3.4% in 2025) show minimal recovery, reflecting slower permitting processes, higher construction costs, and limited developable land.
-
 The data reveals a **structural regional divide**: supply-responsive states are normalizing inventory levels, while constrained markets face chronic undersupply that sustains affordability pressures.
 
 <div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
@@ -299,7 +280,6 @@ The data reveals a **structural regional divide**: supply-responsive states are 
 </div>
 
 Correlation analysis reveals that home-value growth is largely insensitive to short-term inventory fluctuations **(R² ≈ 0.01)**. In most states, prices continued to rise despite increasing listings, suggesting that demand-side factors such as income growth, household formation, and borrowing costs play a more dominant role than supply adjustments in the near term.
-
 This pattern underscores the inelastic nature of housing prices in the short run. Even when new listings increase, the market's ability to translate supply expansion into price moderation remains limited without parallel adjustments in demand fundamentals. Long-term price stability depends on persistent, multi-year increases in housing stock rather than cyclical listing growth.
 
 </div>
@@ -312,8 +292,7 @@ This pattern underscores the inelastic nature of housing prices in the short run
   <img src="./03_for_sale_listings_analysis/outputs/charts/q5_undersupplied_markets_vs_national_averages.png" width="700">
 </div>
 
-When benchmarked against national averages, most Southern and Mountain West states exhibit inventory growth above 11.5%, while many Northeastern markets remain below. The regional divide suggests that supply recovery is concentrated in states with more flexible development environments and stronger in-migration, while legacy markets are adjusting more slowly.
-
+When benchmarked against national averages, most Southern and Mountain West states exhibit inventory growth above **11.5%**, while many Northeastern markets remain below. The regional divide suggests that supply recovery is concentrated in states with more flexible development environments and stronger in-migration, while legacy markets are adjusting more slowly.
 The uneven recovery underscores a structural bifurcation of the U.S. housing market. Supply-responsive regions are gradually stabilizing, with inventory levels returning toward pre-2020 norms, while supply-constrained regions remain chronically tight. This geographic imbalance will continue to influence national affordability, migration trends, and regional investment patterns.
 
 </div>
