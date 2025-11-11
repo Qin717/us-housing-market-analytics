@@ -107,7 +107,7 @@ ZHVI_HOME_VALUES ──[StateName → statename, year]──► ZORI_RENT_INDEX
 #### 1. Which Top 10 States Achieved the Fastest Home Value Growth Over the Past Two Decades?
 
 <div align="center">
-  <img src="01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_by_average_home_value_growth.png" width="700">
+  <img src="01_zillow_home_value_index_analysis/outputs/charts/q1_top10_states_by_average_home_value_growth.png" width="900">
 </div>
 
 From 2000 to 2025, U.S. home values increased **+140%**, rising from $153K → $366K.
@@ -122,7 +122,7 @@ Western states such as Colorado and Utah show the fastest sustained appreciation
 #### 2. Which States Recorded the Largest Home Value Increases — in Dollars and in Growth Rate? (2000–2025)
 
 <div align="center">
-  <img src="01_zillow_home_value_index_analysis/outputs/charts/q2_top5_states_by_home_value_growth_absolute_vs_percentage.png" width="700">
+  <img src="01_zillow_home_value_index_analysis/outputs/charts/q2_top5_states_by_home_value_growth_absolute_vs_percentage.png" width="900">
 </div>
 
 **Idaho and Hawaii** led U.S. home-value appreciation, with gains exceeding **+290%** and price increases up to **$650K**.
@@ -138,7 +138,7 @@ Together, these patterns reveal a broad nationwide housing expansion—driven by
 #### 3. Which U.S. States Show the Most Stable vs. Volatile Home-Value Trends (2000–2025)?
 
 <div align="center">
-  <img src="01_zillow_home_value_index_analysis/outputs/charts/q3_top5_u.s.%20_states_with_the_most_volatile_home_values.png" width="700">
+  <img src="01_zillow_home_value_index_analysis/outputs/charts/q3_top5_u.s.%20_states_with_the_most_volatile_home_values.png" width="900">
 </div>
 
 From 2000 to 2025, **Kansas (15%), Nevada (12.8%), and Arizona (11.2%) posted the highest price volatility**, while **Iowa, Alaska, and Louisiana remained the most stable, each below 4%**.
@@ -153,7 +153,7 @@ This variation underscores the U.S. housing market's diverse risk–return profi
 #### 4. How Did U.S. States Experience and Recover from the 2008 Housing Crash (2007–2015)?
 
 <div align="center">
-  <img src="01_zillow_home_value_index_analysis/outputs/charts/q4_housing_market_crash_to_recovery_2007_2015.png" width="700">
+  <img src="01_zillow_home_value_index_analysis/outputs/charts/q4_housing_market_crash_to_recovery_2007_2015.png" width="900">
 </div>
 
 Between 2007 and 2009, several states suffered sharp home-value declines as the housing bubble burst.
@@ -168,7 +168,7 @@ From 2009 to 2015, recovery unfolded unevenly: **Arizona (+31%), Wyoming (+28%),
 #### 5. How Do Home-Value Trends Differ Across U.S. Regions (2000–2025)?
 
 <div align="center">
-  <img src="01_zillow_home_value_index_analysis/outputs/charts/q5_home_value_trends_vary_across_u.s._regions.png" width="700">
+  <img src="01_zillow_home_value_index_analysis/outputs/charts/q5_home_value_trends_vary_across_u.s._regions.png" width="900">
 </div>
 
 From 2000 to 2025, U.S. housing markets moved through three major cycles:
@@ -211,7 +211,7 @@ From 2015 to 2025, U.S. rental markets diverged sharply. **Colorado** led with 1
 #### 1. Which states experienced the fastest and slowest rent growth?
 
 <div align="center">
-  <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q1_top_bottom_5_states_rent_growth_2015_2025.png" width="700">
+  <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q1_top_bottom_5_states_rent_growth_2015_2025.png" width="900">
 </div>
 
 Between 2015 and 2025, rent values grew unevenly across the United States.
@@ -226,7 +226,7 @@ High-growth states indicate strong demand but growing affordability pressure, wh
 #### 2. Where Were Rental Markets the Most Volatile — and Which States Remained Stable?
 
 <div align="center">
-  <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q2_top_bottom_5_states_rent_volatility.png" width="700">
+  <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q2_top_bottom_5_states_rent_volatility.png" width="900">
 </div>
 
 Rent fluctuations varied widely across regions.
@@ -242,7 +242,7 @@ High-volatility markets carry greater short-term potential and risk, while stabl
 #### 3. The Relationship Between Home-Value Appreciation and Rent Growth Across U.S. States (2015–2025)
 
 <div align="center">
-  <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q3_correlation_between_rent_growth_and_home_value_appreciation.png" width="700">
+  <img src="./02_zillow_rent_value_index_analysis/outputs/charts/q3_correlation_between_rent_growth_and_home_value_appreciation.png" width="900">
 </div>
 
 The analysis reveals a **moderate positive relationship (R² = 0.38)** between rent growth and home-value appreciation.
@@ -276,7 +276,7 @@ The data reveals a **structural regional divide**: supply-responsive states are 
 #### 1. What is the relationship between inventory growth and home-value change?
 
 <div align="center">
-  <img src="./03_for_sale_listings_analysis/outputs/charts/q2_correlation_inventory_home_value_growth_2018_2025.png" width="700">
+  <img src="./03_for_sale_listings_analysis/outputs/charts/q2_correlation_inventory_home_value_growth_2018_2025.png" width="900">
 </div>
 
 Correlation analysis reveals that home-value growth is largely insensitive to short-term inventory fluctuations **(R² ≈ 0.01)**. In most states, prices continued to rise despite increasing listings, suggesting that demand-side factors such as income growth, household formation, and borrowing costs play a more dominant role than supply adjustments in the near term.
@@ -289,7 +289,7 @@ This pattern underscores the inelastic nature of housing prices in the short run
 #### 2. How Do States Compare to National Supply Benchmarks?
 
 <div align="center">
-  <img src="./03_for_sale_listings_analysis/outputs/charts/q5_undersupplied_markets_vs_national_averages.png" width="700">
+  <img src="./03_for_sale_listings_analysis/outputs/charts/q5_undersupplied_markets_vs_national_averages.png" width="900">
 </div>
 
 When benchmarked against national averages, most Southern and Mountain West states exhibit inventory growth above **11.5%**, while many Northeastern markets remain below. The regional divide suggests that supply recovery is concentrated in states with more flexible development environments and stronger in-migration, while legacy markets are adjusting more slowly.
