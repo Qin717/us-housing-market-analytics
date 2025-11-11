@@ -214,6 +214,8 @@ From 2015 to 2025, U.S. rental markets diverged sharply. **Colorado** led with 1
 
 </div>
 
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 #### 1. Which states experienced the fastest and slowest rent growth?
 
 <div align="center">
@@ -227,6 +229,10 @@ Between 2015 and 2025, rent values grew unevenly across the United States.
 The data reveals a clear regional divide — Western states experienced the strongest rent escalation, whereas the Midwest and South remained more stable.
 
 High-growth states indicate strong demand but growing affordability pressure, while slower-growth markets remain stable and accessible.
+
+</div>
+
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
 
 #### 2. Where Were Rental Markets the Most Volatile — and Which States Remained Stable?
 
@@ -244,6 +250,10 @@ These differences highlight contrasting market dynamics — some states saw shar
 
 High-volatility markets carry greater short-term potential and risk, while stable states offer predictable, long-term rental returns.
 
+</div>
+
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 #### 3. The Relationship Between Home-Value Appreciation and Rent Growth Across U.S. States (2015–2025)
 
 <div align="center">
@@ -257,6 +267,8 @@ States with faster home-value increases generally experienced stronger rent grow
 This pattern suggests that property and rental markets often move together, reflecting shared economic pressures.
 
 As home values rise, rents tend to follow — reinforcing the relationship between property appreciation and rental affordability across states.
+
+</div>
 
 ---
 
@@ -278,6 +290,8 @@ From 2019 to 2025, U.S. housing inventory experienced a dramatic cycle of contra
 
 The data reveals a **structural regional divide**: supply-responsive states are normalizing inventory levels, while constrained markets face chronic undersupply that sustains affordability pressures.
 
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 #### 1. What is the relationship between inventory growth and home-value change?
 
 <div align="center">
@@ -288,6 +302,10 @@ Correlation analysis reveals that home-value growth is largely insensitive to sh
 
 This pattern underscores the inelastic nature of housing prices in the short run. Even when new listings increase, the market's ability to translate supply expansion into price moderation remains limited without parallel adjustments in demand fundamentals. Long-term price stability depends on persistent, multi-year increases in housing stock rather than cyclical listing growth.
 
+</div>
+
+<div style="border: 2px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 5px;">
+
 #### 2. How Do States Compare to National Supply Benchmarks?
 
 <div align="center">
@@ -297,6 +315,8 @@ This pattern underscores the inelastic nature of housing prices in the short run
 When benchmarked against national averages, most Southern and Mountain West states exhibit inventory growth above 11.5%, while many Northeastern markets remain below. The regional divide suggests that supply recovery is concentrated in states with more flexible development environments and stronger in-migration, while legacy markets are adjusting more slowly.
 
 The uneven recovery underscores a structural bifurcation of the U.S. housing market. Supply-responsive regions are gradually stabilizing, with inventory levels returning toward pre-2020 norms, while supply-constrained regions remain chronically tight. This geographic imbalance will continue to influence national affordability, migration trends, and regional investment patterns.
+
+</div>
 
 ---
 
